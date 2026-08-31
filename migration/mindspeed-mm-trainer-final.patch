@@ -1,0 +1,19 @@
+diff --git a/mindspeed_mm/fsdp/train/trainer.py b/mindspeed_mm/fsdp/train/trainer.py
+index d0676ba..bf71111 100644
+--- a/mindspeed_mm/fsdp/train/trainer.py
++++ b/mindspeed_mm/fsdp/train/trainer.py
+@@ -454,10 +454,10 @@ class Trainer:
+             )
+ 
+             if val_dataloader_param.get("sampler_type") == "BaseRandomBatchSampler":
+-                raise ValueError(
+-                    "Validation requires drop_last=False, but BaseRandomBatchSampler does not support "
+-                    "drop_last=False yet. Please use a sampler that supports keeping the tail batch for validation."
+-                )
++                # Keep the random batch sampler for training, but use the base
++                # dataloader so validation can retain its final partial batch.
++                val_dataloader_param["dataloader_mode"] = "base"
++                val_dataloader_param["sampler_type"] = "validation_base"
+ 
+             val_build_dataloader = partial(
+                 build_mm_dataloader,

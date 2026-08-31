@@ -1,0 +1,7 @@
+model=/workspace/kaoyan-lab/models/Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80
+model_file_count=7
+model_total_bytes=3472962572
+model_tree_sha256=dc2645497d8f05f4571e1af64d46af3640f9f58b034b66db63075716071931ac
+mindspeed_mm=fe67dc4b690087a8def4c05e61cf3804ec57f959
+mindspeed=a15490cd75453201ec02fdb18787ba33ae773ce3
+megatron=a845aa7e12b3a117e24c2352b9e3e60bad2e3a17
