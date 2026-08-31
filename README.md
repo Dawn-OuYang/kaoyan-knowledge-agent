@@ -99,18 +99,7 @@ reports/：
 用户输入问题后，server.py 接收请求；KaoyanAgent 根据问题判断专业和使用场景；KnowledgeBase 检索相关知识并进行专业过滤；模型网关将问题和检索证据发送给 Qwen3.5；系统对模型输出进行引用、链接、重复内容和证据充分性检查；最终返回回答、引用来源、置信度、风险提示和耗时信息。
 当用户询问招生人数、考试科目或复试安排等时效性内容时，系统会检查现有证据是否包含对应年份和具体信息。如果证据不足，系统会明确提示无法确认，不生成没有依据的具体数字。
 
-
-
-
-
-
-
-
-
-
-
-
-六、PR 链接 本次 README 更新对应的 PR 将在提交后生成。
+六、PR 链接
 参考工程仓库：
 
 MindSpeed-MM：
@@ -124,7 +113,8 @@ https://gitee.com/mirrors/Megatron-LM.git
 
 本项目 PR 链接：
 
-【此处填写真实的项目 PR URL】
+https://github.com/Dawn-OuYang/kaoyan-knowledge-agent/pull/1
+
 七、测试结果与已知限制
 1 测试结果
 项目已在 Ascend NPU 环境完成 Qwen3.5-0.8B 微调模型的推理验证。
