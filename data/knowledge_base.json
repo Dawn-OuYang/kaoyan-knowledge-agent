@@ -1,0 +1,218 @@
+[
+  {
+    "id": "cs-408-ds-001",
+    "specialty": "计算机",
+    "subject": "数据结构",
+    "title": "线性表与顺序表",
+    "source": "样例知识库-计算机408数据结构",
+    "content": "线性表是具有相同数据类型的 n 个数据元素的有限序列。顺序表用一组地址连续的存储单元依次存储线性表中的数据元素，支持随机访问。顺序表插入和删除通常需要移动元素，平均时间复杂度为 O(n)，按位查找时间复杂度为 O(1)。"
+  },
+  {
+    "id": "cs-408-ds-002",
+    "specialty": "计算机",
+    "subject": "数据结构",
+    "title": "链表与顺序表对比",
+    "source": "样例知识库-计算机408数据结构",
+    "content": "链表通过指针表示元素之间的逻辑关系，不要求存储空间连续。链表插入和删除在已知结点位置时可以达到 O(1)，但查找第 i 个元素需要从头遍历，时间复杂度为 O(n)。顺序表适合频繁随机访问，链表适合频繁插入删除。"
+  },
+  {
+    "id": "cs-408-os-001",
+    "specialty": "计算机",
+    "subject": "操作系统",
+    "title": "进程与线程",
+    "source": "样例知识库-计算机408操作系统",
+    "content": "进程是资源分配的基本单位，线程是 CPU 调度的基本单位。同一进程中的线程共享进程地址空间和资源，但拥有各自的程序计数器、寄存器和栈。线程切换开销通常小于进程切换。"
+  },
+  {
+    "id": "cs-408-net-001",
+    "specialty": "计算机",
+    "subject": "计算机网络",
+    "title": "TCP 三次握手",
+    "source": "样例知识库-计算机408计算机网络",
+    "content": "TCP 建立连接需要三次握手：客户端发送 SYN，服务器回复 SYN+ACK，客户端再发送 ACK。三次握手用于确认双方收发能力并同步初始序列号，减少历史连接请求造成的错误连接。"
+  },
+  {
+    "id": "comm-signal-001",
+    "specialty": "通信工程",
+    "subject": "信号与系统",
+    "title": "卷积的物理意义",
+    "source": "样例知识库-通信工程信号与系统",
+    "content": "卷积描述线性时不变系统中输入信号与系统冲激响应共同决定输出的过程。连续系统输出可表示为输入与冲激响应的卷积积分，离散系统输出可表示为卷积和。考研题中常用卷积分析系统响应、零状态响应和频域乘积关系。"
+  },
+  {
+    "id": "comm-principle-001",
+    "specialty": "通信工程",
+    "subject": "通信原理",
+    "title": "香农公式",
+    "source": "样例知识库-通信工程通信原理",
+    "content": "香农公式给出了带宽受限且存在高斯白噪声信道的理论信道容量：C = B log2(1 + S/N)。其中 B 为信道带宽，S/N 为信噪比。它说明在给定带宽和信噪比条件下，可靠通信速率存在理论上限。"
+  },
+  {
+    "id": "comm-dsp-001",
+    "specialty": "通信工程",
+    "subject": "数字信号处理",
+    "title": "采样定理",
+    "source": "样例知识库-通信工程数字信号处理",
+    "content": "采样定理指出，对最高频率为 fm 的带限连续信号，采样频率 fs 应满足 fs >= 2fm，才能在理想条件下由采样值无失真重构原信号。若采样频率不足，会产生频谱混叠。"
+  },
+  {
+    "id": "law-civil-001",
+    "specialty": "法学",
+    "subject": "民法学",
+    "title": "民事法律行为",
+    "source": "样例知识库-法学民法学",
+    "content": "民事法律行为是民事主体通过意思表示设立、变更、终止民事法律关系的行为。有效的民事法律行为通常需要行为人具有相应民事行为能力、意思表示真实、不违反法律行政法规强制性规定和公序良俗。"
+  },
+  {
+    "id": "law-criminal-001",
+    "specialty": "法学",
+    "subject": "刑法学",
+    "title": "犯罪构成",
+    "source": "样例知识库-法学刑法学",
+    "content": "犯罪构成是刑法规定的决定某一行为构成犯罪所必须具备的一切主客观要件的有机统一，通常包括犯罪客体、犯罪客观方面、犯罪主体和犯罪主观方面。分析案例时应依次判断各构成要件。"
+  },
+  {
+    "id": "law-jurisprudence-001",
+    "specialty": "法学",
+    "subject": "法理学",
+    "title": "法律规则与法律原则",
+    "source": "样例知识库-法学法理学",
+    "content": "法律规则通常具有明确的行为模式和法律后果，适用方式较为确定；法律原则具有概括性、价值导向性和弹性，常用于解释法律、填补漏洞和处理规则冲突。主观题作答时应先界定概念，再比较特征和适用场景。"
+  },
+  {
+    "id": "law-constitution-001",
+    "specialty": "法学",
+    "subject": "宪法学",
+    "title": "宪法基本原则",
+    "source": "样例知识库-法学宪法学",
+    "content": "宪法基本原则是宪法制度和宪法规范的基础性准则，通常包括人民主权原则、基本人权原则、法治原则和权力制约原则。答题时应结合宪法文本、制度安排和现实功能展开。"
+  },
+  {
+    "id": "school-info-001",
+    "specialty": "通用",
+    "subject": "院校信息",
+    "title": "招生信息使用原则",
+    "source": "样例知识库-院校招生信息规范",
+    "content": "院校招生信息应优先引用目标院校研究生院、学院官网、招生目录、考试大纲、复试录取办法等正式来源。回答涉及年份、人数、分数线、参考书时，应标注具体年份并提示以当年官方通知为准。"
+  },
+  {
+    "id": "planning-001",
+    "specialty": "通用",
+    "subject": "复习规划",
+    "title": "三阶段复习框架",
+    "source": "样例知识库-备考规划方法",
+    "content": "考研专业课复习可分为基础、强化、冲刺三个阶段。总周期可按基础约三分之一、强化约40%至45%、冲刺约20%至25%分配，并根据个人基础和剩余天数调整。基础阶段建立知识框架并完成教材通读，强化阶段进行真题训练和专题归纳，冲刺阶段进行错题回炉、整套模拟和答题模板稳定。"
+  },
+  {
+    "id": "yz-chsi-school-db",
+    "specialty": "通用",
+    "subject": "院校信息",
+    "title": "研招网院校库使用原则",
+    "source": "研招网-院校库",
+    "content": "研招网院校库可用于核验招生单位名称、所在地、主管部门、院校特性，以及招生简章、网报公告、在线咨询等入口。院校库信息由招生单位自主维护，疑问应咨询发布单位。"
+  },
+  {
+    "id": "yz-chsi-zsjz-index",
+    "specialty": "通用",
+    "subject": "招生简章",
+    "title": "研招网招生简章索引使用原则",
+    "source": "研招网-招生简章",
+    "content": "研招网招生简章板块可用于查找各招生单位发布的招生章程、招生简章和发布日期。回答院校招生问题时，应同时保留院校名称、年份、发布日期和原始链接。"
+  },
+  {
+    "id": "yz-chsi-zsml-principle",
+    "specialty": "通用",
+    "subject": "硕士目录",
+    "title": "研招网硕士专业目录使用原则",
+    "source": "研招网-硕士专业目录",
+    "content": "研招网硕士专业目录可用于按地区、院校、专业、学习方式等条件查询招生专业。整理目录数据时，应保留查询条件、查询日期和对应年份，避免把不同年份目录混用。"
+  },
+  {
+    "id": "school-sut-official-sources",
+    "specialty": "通用",
+    "subject": "院校信息",
+    "title": "沈阳工业大学考研官方信息源",
+    "source": "研招网+沈阳工业大学官网",
+    "content": "沈阳工业大学院校信息优先核验研招网院校库、研招网招生简章、研招网硕士目录、学校官网和研究生院官网。用户提供的入口包括研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-368034.dhtml，招生简章 https://yz.chsi.com.cn/sch/viewZszc--infoId-3430305238,categoryId-10461044,schId-368034,mindex-12.dhtml，硕士目录查询结果，学校官网 https://www.sut.edu.cn/，研究生院官网 https://yjsxy.sut.edu.cn/。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。"
+  },
+  {
+    "id": "school-bit-official-sources",
+    "specialty": "通用",
+    "subject": "院校信息",
+    "title": "北京理工大学考研官方信息源",
+    "source": "研招网+北京理工大学官网",
+    "content": "北京理工大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367811.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E5%8C%97%E4%BA%AC%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-367811.dhtml，学校官网 https://www.bit.edu.cn/，研究生院官网 https://grd.bit.edu.cn/，研究生招生页面 https://grd.bit.edu.cn/zsgz/ssyjs/index.htm。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。"
+  },
+  {
+    "id": "school-sjtu-official-sources",
+    "specialty": "通用",
+    "subject": "院校信息",
+    "title": "上海交通大学考研官方信息源",
+    "source": "研招网+上海交通大学官网",
+    "content": "上海交通大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-368012.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-368012.dhtml，学校官网 https://www.sjtu.edu.cn/，研究生院官网 https://www.gs.sjtu.edu.cn/，研究生招生网 https://yzb.sjtu.edu.cn/。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。"
+  },
+  {
+    "id": "school-tsinghua-official-sources",
+    "specialty": "通用",
+    "subject": "院校信息",
+    "title": "清华大学考研官方信息源",
+    "source": "研招网+清华大学研究生招生网",
+    "content": "清华大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367824.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-367824.dhtml，学校官网 https://www.tsinghua.edu.cn/，清华大学研究生招生网 https://yz.tsinghua.edu.cn/。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。"
+  },
+  {
+    "id": "scope-specialty-school-demo",
+    "specialty": "通用",
+    "subject": "项目范围",
+    "title": "本项目示例专业方向和示例学校",
+    "source": "项目范围设定",
+    "content": "本项目初赛示例专业方向选择计算机408、通信工程、法学；示例学校选择沈阳工业大学、北京理工大学、上海交通大学、清华大学。该组合覆盖工科专业课、信息通信、法学主观题，以及不同地区和不同层次高校的院校信息核验。"
+  },
+  {
+    "id": "dept-tsinghua-cs",
+    "specialty": "计算机",
+    "subject": "学院信息",
+    "title": "清华大学计算机科学与技术系官方入口",
+    "source": "清华大学计算机科学与技术系官网",
+    "content": "清华大学计算机方向学院级信息应优先核验清华大学计算机科学与技术系官网 https://www.cs.tsinghua.edu.cn/，并与清华大学研究生招生网和研招网院校库交叉核验。涉及招生人数、考试科目、复试安排、导师方向时必须以对应年份官方通知为准。"
+  },
+  {
+    "id": "dept-tsinghua-ee",
+    "specialty": "通信工程",
+    "subject": "学院信息",
+    "title": "清华大学电子工程系官方入口",
+    "source": "清华大学电子工程系官网",
+    "content": "清华大学通信工程相关方向学院级信息应优先核验清华大学电子工程系官网 https://www.ee.tsinghua.edu.cn/，并与清华大学研究生招生网和研招网硕士目录交叉核验。涉及招生方向、考试科目、复试安排、导师方向时必须以对应年份官方通知为准。"
+  },
+  {
+    "id": "dept-tsinghua-law",
+    "specialty": "法学",
+    "subject": "学院信息",
+    "title": "清华大学法学院官方入口",
+    "source": "清华大学法学院官网",
+    "content": "清华大学法学方向学院级信息应优先核验清华大学法学院官网 https://www.law.tsinghua.edu.cn/，并与清华大学研究生招生网和研招网院校库交叉核验。涉及法学专业方向、招生计划、复试安排时必须以对应年份官方通知为准。"
+  },
+  {
+    "id": "dept-bit-cs",
+    "specialty": "计算机",
+    "subject": "学院信息",
+    "title": "北京理工大学计算机学院官方入口",
+    "source": "北京理工大学计算机学院官网",
+    "content": "北京理工大学计算机方向学院级信息应优先核验北京理工大学计算机学院官网 https://cs.bit.edu.cn/，并与北京理工大学研究生院、研究生招生页面和研招网院校库交叉核验。涉及招生人数、考试科目、复试安排时必须以对应年份官方通知为准。"
+  },
+  {
+    "id": "dept-bit-sie",
+    "specialty": "通信工程",
+    "subject": "学院信息",
+    "title": "北京理工大学信息与电子学院官方入口",
+    "source": "北京理工大学信息与电子学院官网",
+    "content": "北京理工大学通信工程相关方向学院级信息应优先核验北京理工大学信息与电子学院官网 https://sie.bit.edu.cn/，并与北京理工大学研究生院、研究生招生页面和研招网硕士目录交叉核验。涉及招生方向、考试科目、复试安排时必须以对应年份官方通知为准。"
+  },
+  {
+    "id": "dept-bit-law",
+    "specialty": "法学",
+    "subject": "学院信息",
+    "title": "北京理工大学法学院官方入口",
+    "source": "北京理工大学法学院官网",
+    "content": "北京理工大学法学方向学院级信息应优先核验北京理工大学法学院官网 https://law.bit.edu.cn/，并与北京理工大学研究生院、研究生招生页面和研招网院校库交叉核验。涉及法学专业方向、招生计划、复试安排时必须以对应年份官方通知为准。"
+  }
+]

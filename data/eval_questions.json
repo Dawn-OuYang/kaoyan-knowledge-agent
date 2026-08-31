@@ -1,0 +1,248 @@
+[
+  {
+    "id": "QA-CS-001",
+    "mode": "qa",
+    "specialty": "计算机",
+    "question": "顺序表和链表的区别是什么？",
+    "expected_citation": "链表与顺序表对比",
+    "expected_keywords": [
+      "顺序表",
+      "链表",
+      "随机访问",
+      "插入删除"
+    ]
+  },
+  {
+    "id": "QA-CS-002",
+    "mode": "qa",
+    "specialty": "计算机",
+    "question": "进程和线程在操作系统里怎么区分？",
+    "expected_citation": "进程与线程",
+    "expected_keywords": [
+      "资源分配",
+      "CPU 调度",
+      "共享"
+    ]
+  },
+  {
+    "id": "EXAM-CS-003",
+    "mode": "exam",
+    "specialty": "计算机",
+    "question": "真题解析：为什么 TCP 建立连接需要三次握手？",
+    "expected_citation": "TCP 三次握手",
+    "expected_keywords": [
+      "SYN",
+      "ACK",
+      "序列号",
+      "历史连接"
+    ]
+  },
+  {
+    "id": "QA-COMM-001",
+    "mode": "qa",
+    "specialty": "通信工程",
+    "question": "通信原理中香农公式表达了什么含义？",
+    "expected_citation": "香农公式",
+    "expected_keywords": [
+      "信道容量",
+      "带宽",
+      "信噪比"
+    ]
+  },
+  {
+    "id": "EXAM-COMM-002",
+    "mode": "exam",
+    "specialty": "通信工程",
+    "question": "真题解析：采样定理为什么要求采样频率至少为最高频率的两倍？",
+    "expected_citation": "采样定理",
+    "expected_keywords": [
+      "fs",
+      "2fm",
+      "带限",
+      "混叠"
+    ]
+  },
+  {
+    "id": "QA-COMM-003",
+    "mode": "qa",
+    "specialty": "通信工程",
+    "question": "信号与系统中卷积的物理意义是什么？",
+    "expected_citation": "卷积的物理意义",
+    "expected_keywords": [
+      "线性时不变",
+      "冲激响应",
+      "输出"
+    ]
+  },
+  {
+    "id": "QA-LAW-001",
+    "mode": "qa",
+    "specialty": "法学",
+    "question": "法律规则和法律原则有什么区别？",
+    "expected_citation": "法律规则与法律原则",
+    "expected_keywords": [
+      "行为模式",
+      "法律后果",
+      "价值导向"
+    ]
+  },
+  {
+    "id": "EXAM-LAW-002",
+    "mode": "exam",
+    "specialty": "法学",
+    "question": "案例分析题中犯罪构成应该从哪些方面展开？",
+    "expected_citation": "犯罪构成",
+    "expected_keywords": [
+      "犯罪客体",
+      "客观方面",
+      "主体",
+      "主观方面"
+    ]
+  },
+  {
+    "id": "QA-LAW-003",
+    "mode": "qa",
+    "specialty": "法学",
+    "question": "宪法基本原则通常包括哪些？",
+    "expected_citation": "宪法基本原则",
+    "expected_keywords": [
+      "人民主权",
+      "基本人权",
+      "法治",
+      "权力制约"
+    ]
+  },
+  {
+    "id": "SCHOOL-001",
+    "mode": "school",
+    "specialty": "全部",
+    "question": "清华大学通信工程相关方向应该看哪个学院官网？",
+    "expected_citation": "清华大学电子工程系官方入口",
+    "expected_keywords": [
+      "电子工程系",
+      "ee.tsinghua.edu.cn",
+      "研究生招生网"
+    ]
+  },
+  {
+    "id": "SCHOOL-002",
+    "mode": "school",
+    "specialty": "全部",
+    "question": "北京理工大学法学方向要核验哪个学院官网？",
+    "expected_citation": "北京理工大学法学院官方入口",
+    "expected_keywords": [
+      "法学院",
+      "law.bit.edu.cn",
+      "研究生院"
+    ]
+  },
+  {
+    "id": "SCHOOL-003",
+    "mode": "school",
+    "specialty": "全部",
+    "question": "清华大学计算机方向应该优先看哪个学院官网？",
+    "expected_citation": "清华大学计算机科学与技术系官方入口",
+    "expected_keywords": [
+      "计算机科学与技术系",
+      "cs.tsinghua.edu.cn"
+    ]
+  },
+  {
+    "id": "SCHOOL-004",
+    "mode": "school",
+    "specialty": "全部",
+    "question": "北京理工大学通信工程相关方向应该核验哪个学院官网？",
+    "expected_citation": "北京理工大学信息与电子学院官方入口",
+    "expected_keywords": [
+      "信息与电子学院",
+      "sie.bit.edu.cn"
+    ]
+  },
+  {
+    "id": "SCHOOL-005",
+    "mode": "school",
+    "specialty": "全部",
+    "question": "沈阳工业大学考研信息应该看哪些官方来源？",
+    "expected_citation": "沈阳工业大学考研官方信息源",
+    "expected_keywords": [
+      "研招网",
+      "sut.edu.cn",
+      "yjsxy.sut.edu.cn"
+    ]
+  },
+  {
+    "id": "SCHOOL-006",
+    "mode": "school",
+    "specialty": "全部",
+    "question": "上海交通大学考研信息应该看哪些官方来源？",
+    "expected_citation": "上海交通大学考研官方信息源",
+    "expected_keywords": [
+      "研招网",
+      "sjtu.edu.cn",
+      "yzb.sjtu.edu.cn"
+    ]
+  },
+  {
+    "id": "SCHOOL-007",
+    "mode": "school",
+    "specialty": "全部",
+    "question": "研招网硕士目录数据使用时要注意什么？",
+    "expected_citation": "研招网硕士专业目录使用原则",
+    "expected_keywords": [
+      "查询条件",
+      "查询日期",
+      "年份"
+    ]
+  },
+  {
+    "id": "SCHOOL-008",
+    "mode": "school",
+    "specialty": "全部",
+    "question": "今年清华大学计算机专业招生人数是多少？",
+    "expected_citation": "清华大学计算机科学与技术系官方入口",
+    "expected_keywords": [
+      "年份",
+      "官方通知",
+      "招生人数"
+    ]
+  },
+  {
+    "id": "PLAN-001",
+    "mode": "plan",
+    "specialty": "计算机",
+    "question": "距离考试 120 天，计算机408应该怎么复习？",
+    "expected_citation": "408 120天复习安排",
+    "expected_keywords": [
+      "40天",
+      "50天",
+      "30天",
+      "整套"
+    ]
+  },
+  {
+    "id": "PLAN-002",
+    "mode": "plan",
+    "specialty": "通信工程",
+    "question": "通信工程专业课剩 90 天怎么安排？",
+    "expected_citation": "通信专业课90天复习安排",
+    "expected_keywords": [
+      "30天",
+      "40天",
+      "20天",
+      "计算纠错"
+    ]
+  },
+  {
+    "id": "PLAN-003",
+    "mode": "plan",
+    "specialty": "法学",
+    "question": "法学专业课冲刺阶段怎么复习主观题？",
+    "expected_citation": "法学主观题冲刺方法",
+    "expected_keywords": [
+      "构成要件",
+      "限时作答",
+      "评分点",
+      "复盘"
+    ]
+  }
+]

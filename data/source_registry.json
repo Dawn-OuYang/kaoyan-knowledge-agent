@@ -1,0 +1,62 @@
+[
+  {
+    "id": "yz-chsi-home",
+    "name": "中国研究生招生信息网",
+    "url": "https://yz.chsi.com.cn/",
+    "owner": "教育部学生服务与素质发展中心",
+    "use_for": ["政策资讯入口", "研招服务入口", "官方信息导航"],
+    "collection_method": "manual-first",
+    "refresh_policy": "每周检查；报名、复试、调剂阶段每日检查",
+    "notes": "作为权威入口，不直接替代院校官网细则。"
+  },
+  {
+    "id": "yz-chsi-school",
+    "name": "研招网院校库",
+    "url": "https://yz.chsi.com.cn/sch/",
+    "owner": "中国研究生招生信息网",
+    "use_for": ["招生单位核验", "所在地", "主管部门", "院校特性", "招生简章入口", "网报公告入口"],
+    "collection_method": "manual-first",
+    "refresh_policy": "新增目标院校时检查；关键报考阶段复核",
+    "notes": "页面提示各招生单位的院校库信息由其自主维护，如有疑问咨询发布单位。"
+  },
+  {
+    "id": "yz-chsi-zsjz",
+    "name": "研招网招生简章",
+    "url": "https://yz.chsi.com.cn/kyzx/zsjz/",
+    "owner": "中国研究生招生信息网",
+    "use_for": ["招生章程索引", "招生简章发布日期", "院校招生政策核验"],
+    "collection_method": "manual-first",
+    "refresh_policy": "每周检查；9-10 月重点检查",
+    "notes": "只整理摘要和链接，不整篇复制原文。"
+  },
+  {
+    "id": "yz-chsi-zyk",
+    "name": "研招网专业库",
+    "url": "https://yz.chsi.com.cn/zyk/",
+    "owner": "中国研究生招生信息网",
+    "use_for": ["专业代码", "专业名称", "专业类别"],
+    "collection_method": "manual-first",
+    "refresh_policy": "专业目录调整期检查",
+    "notes": "用于专业名称和代码标准化。"
+  },
+  {
+    "id": "yz-chsi-zsml",
+    "name": "研招网硕士专业目录",
+    "url": "https://yz.chsi.com.cn/zsml/",
+    "owner": "中国研究生招生信息网",
+    "use_for": ["招生单位-专业目录查询", "地区筛选", "学习方式筛选"],
+    "collection_method": "manual-first",
+    "refresh_policy": "每年招生目录发布后集中更新",
+    "notes": "查询结果需要保留查询条件和检索日期。"
+  },
+  {
+    "id": "yz-chsi-sswbgg",
+    "name": "研招网网报公告",
+    "url": "https://yz.chsi.com.cn/sswbgg/",
+    "owner": "中国研究生招生信息网",
+    "use_for": ["网报公告", "报考点提醒", "省级招办通知", "招生单位报名提醒"],
+    "collection_method": "manual-first",
+    "refresh_policy": "网报阶段每日检查",
+    "notes": "强时效信息，回答必须提示年份和官方来源。"
+  }
+]

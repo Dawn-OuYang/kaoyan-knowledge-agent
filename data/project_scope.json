@@ -1,0 +1,102 @@
+{
+  "updated_at": "2026-07-21",
+  "specialties": [
+    {
+      "id": "cs408",
+      "name": "计算机408",
+      "subjects": ["数据结构", "计算机组成原理", "操作系统", "计算机网络"],
+      "demo_value": "覆盖统考知识点、真题解析和算法/系统类问答。"
+    },
+    {
+      "id": "communication-engineering",
+      "name": "通信工程",
+      "subjects": ["信号与系统", "通信原理", "数字信号处理", "信息论基础"],
+      "demo_value": "覆盖工科专业课公式推导、概念辨析和院校专业目录核验。"
+    },
+    {
+      "id": "law",
+      "name": "法学",
+      "subjects": ["法理学", "宪法学", "民法学", "刑法学"],
+      "demo_value": "覆盖文科法条概念、案例分析和主观题答题结构。"
+    }
+  ],
+  "schools": [
+    {
+      "name": "沈阳工业大学",
+      "province": "辽宁",
+      "yz_chsi_school_url": "https://yz.chsi.com.cn/sch/schoolInfo--schId-368034.dhtml",
+      "yz_chsi_search_url": "https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E6%B2%88%E9%98%B3%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6",
+      "yz_chsi_zsjz_url": "https://yz.chsi.com.cn/sch/viewZszc--infoId-3430305238,categoryId-10461044,schId-368034,mindex-12.dhtml",
+      "yz_chsi_zsml_url": "https://yz.chsi.com.cn/zsml/dwzy.do?dwdm=10142&dwmc=%E6%B2%88%E9%98%B3%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6&ssmc=%E8%BE%BD%E5%AE%81&schId=368034&xxfs=&mldm=&dwlxs%5B0%5D=bs&tydxs=&jsggjh=&sign=b587bcc9eba5477d020285d0a9375d21",
+      "official_site": "https://www.sut.edu.cn/",
+      "graduate_site": "https://yjsxy.sut.edu.cn/"
+    },
+    {
+      "name": "北京理工大学",
+      "province": "北京",
+      "yz_chsi_school_url": "https://yz.chsi.com.cn/sch/schoolInfo--schId-367811.dhtml",
+      "yz_chsi_search_url": "https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E5%8C%97%E4%BA%AC%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6",
+      "yz_chsi_zsjz_url": "https://yz.chsi.com.cn/sch/listZszc--schId-367811.dhtml",
+      "yz_chsi_zsml_url": "https://yz.chsi.com.cn/zsml/queryAction.do",
+      "official_site": "https://www.bit.edu.cn/",
+      "graduate_site": "https://grd.bit.edu.cn/",
+      "admission_site": "https://grd.bit.edu.cn/zsgz/ssyjs/index.htm",
+      "departments": [
+        {
+          "name": "计算机学院",
+          "specialty": "计算机408",
+          "url": "https://cs.bit.edu.cn/"
+        },
+        {
+          "name": "信息与电子学院",
+          "specialty": "通信工程",
+          "url": "https://sie.bit.edu.cn/"
+        },
+        {
+          "name": "法学院",
+          "specialty": "法学",
+          "url": "https://law.bit.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name": "上海交通大学",
+      "province": "上海",
+      "yz_chsi_school_url": "https://yz.chsi.com.cn/sch/schoolInfo--schId-368012.dhtml",
+      "yz_chsi_search_url": "https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6",
+      "yz_chsi_zsjz_url": "https://yz.chsi.com.cn/sch/listZszc--schId-368012.dhtml",
+      "yz_chsi_zsml_url": "https://yz.chsi.com.cn/zsml/queryAction.do",
+      "official_site": "https://www.sjtu.edu.cn/",
+      "graduate_site": "https://www.gs.sjtu.edu.cn/",
+      "admission_site": "https://yzb.sjtu.edu.cn/"
+    },
+    {
+      "name": "清华大学",
+      "province": "北京",
+      "yz_chsi_school_url": "https://yz.chsi.com.cn/sch/schoolInfo--schId-367824.dhtml",
+      "yz_chsi_search_url": "https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6",
+      "yz_chsi_zsjz_url": "https://yz.chsi.com.cn/sch/listZszc--schId-367824.dhtml",
+      "yz_chsi_zsml_url": "https://yz.chsi.com.cn/zsml/queryAction.do",
+      "official_site": "https://www.tsinghua.edu.cn/",
+      "graduate_site": "https://yz.tsinghua.edu.cn/",
+      "admission_site": "https://yz.tsinghua.edu.cn/",
+      "departments": [
+        {
+          "name": "计算机科学与技术系",
+          "specialty": "计算机408",
+          "url": "https://www.cs.tsinghua.edu.cn/"
+        },
+        {
+          "name": "电子工程系",
+          "specialty": "通信工程",
+          "url": "https://www.ee.tsinghua.edu.cn/"
+        },
+        {
+          "name": "法学院",
+          "specialty": "法学",
+          "url": "https://www.law.tsinghua.edu.cn/"
+        }
+      ]
+    }
+  ]
+}
