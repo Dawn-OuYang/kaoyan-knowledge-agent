@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>考研各专业知识库问答智能体</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">KA</div>
+          <div>
+            <h1>考研知识库智能体</h1>
+            <p>RAG + Agent + 引用溯源</p>
+          </div>
+        </div>
+
+        <section class="panel">
+          <label for="specialty">专业方向</label>
+          <select id="specialty"></select>
+
+          <label for="mode">工作模式</label>
+          <div class="segmented" role="tablist" aria-label="工作模式">
+            <button class="active" data-mode="qa" title="知识问答">问答</button>
+            <button data-mode="exam" title="真题解析">真题</button>
+            <button data-mode="school" title="院校咨询">院校</button>
+            <button data-mode="plan" title="复习规划">规划</button>
+          </div>
+        </section>
+
+        <section class="panel compact">
+          <div class="metric">
+            <span>知识库条目</span>
+            <strong id="knowledgeCount">加载中</strong>
+          </div>
+          <div class="metric">
+            <span>引用策略</span>
+            <strong>强制溯源</strong>
+          </div>
+          <div class="metric">
+            <span>模型运行时</span>
+            <strong id="modelStatus">检测中</strong>
+          </div>
+        </section>
+      </aside>
+
+      <section class="workspace">
+        <header class="topbar">
+          <div>
+            <h2>专业课问答工作台</h2>
+            <p>输入考研问题，系统会检索知识库并给出带引用的回答。</p>
+          </div>
+          <button id="demoBtn" class="icon-button" title="填入示例问题" aria-label="填入示例问题">例</button>
+        </header>
+
+        <section id="conversation" class="conversation" aria-live="polite">
+          <div class="empty-state">
+            <h3>先从一个具体问题开始</h3>
+            <p>例如：顺序表和链表的区别是什么？或者：距离考试 120 天，计算机专业课怎么安排？</p>
+          </div>
+        </section>
+
+        <form id="askForm" class="composer">
+          <textarea id="question" rows="3" placeholder="输入你的问题，例如：TCP 三次握手为什么需要三次？"></textarea>
+          <div class="composer-actions">
+            <div class="plan-fields">
+              <input id="target" placeholder="目标院校" />
+              <input id="days" type="number" min="1" placeholder="剩余天数" />
+              <input id="level" placeholder="当前基础" />
+            </div>
+            <button type="submit" class="primary-button">发送</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
