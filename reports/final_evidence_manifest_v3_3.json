@@ -1,0 +1,189 @@
+{
+  "generated_at": "2026-08-28T05:17:41+00:00",
+  "release_candidate": "Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80-quality-v3.3",
+  "deployment_status": "isolated-validation-only",
+  "production_service_restarted": false,
+  "checks": {
+    "required_files_present": true,
+    "model_directory_present": true,
+    "model_files_present": true,
+    "final_eval_50_of_50": true,
+    "external_calls_50": true,
+    "fallback_count_0": true,
+    "citation_hits_50": true,
+    "final_audit_pass": true,
+    "negative_grounding_2_of_2": true,
+    "experimental_rag_healthy": true
+  },
+  "missing_files": [],
+  "files": [
+    {
+      "path": "/workspace/kaoyan-lab/qwen35-0p8b-rag-sft-v2.yaml",
+      "size_bytes": 4157,
+      "sha256": "3bb356c2364100fe8920bf2cb109877cd93b16fd38ca1b1a3b4a8a3952a1cd1b"
+    },
+    {
+      "path": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/ascend/annotations_rag_v2_train.json",
+      "size_bytes": 487481,
+      "sha256": "398101bf3670f6093f98b33e497047ee34e8ba6fe5f09152e5984ee3e61e6ade"
+    },
+    {
+      "path": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/ascend/annotations_rag_v2_val.json",
+      "size_bytes": 112313,
+      "sha256": "26791122d3d8db30c647ea2dcf3686826dbbe379bb9f64221f18e96224a2e6a7"
+    },
+    {
+      "path": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/data/knowledge_base.json",
+      "size_bytes": 14472,
+      "sha256": "ed9c222a87b1c70f399eaed53c15838273532d719076d2c517a054432147c6c4"
+    },
+    {
+      "path": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/data/knowledge_expansion.json",
+      "size_bytes": 20235,
+      "sha256": "d2378b5f5b2282b629642ceb506c438600ef6758bbef50bbcef5d74cc8ee34e8"
+    },
+    {
+      "path": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/data/eval_questions.json",
+      "size_bytes": 6313,
+      "sha256": "f7842def459978259203ea6f439dd90f2e083b6cc7fa3c979dcd9195d136e090"
+    },
+    {
+      "path": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/data/eval_questions_extended.json",
+      "size_bytes": 9292,
+      "sha256": "58e5f301bb0d7ffd2f321efea6f75565ea8c30ce2eaa2249ffb85c71777db997"
+    },
+    {
+      "path": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/src/rag_engine.py",
+      "size_bytes": 19028,
+      "sha256": "2435a0587f617a657d119a1e29c18babc5674e36fb2cd99c47760cccae9561c1"
+    },
+    {
+      "path": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/src/model_gateway.py",
+      "size_bytes": 20869,
+      "sha256": "92caa4bc4a01da3f14ee4ddbdd5445883327e1c083bf34144316e19ca9f8e941"
+    },
+    {
+      "path": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/src/server.py",
+      "size_bytes": 4589,
+      "sha256": "1fb7111ee62c97bc9524f2bfd61028922b867eb30e82f2fb108b18424f2f4f2a"
+    },
+    {
+      "path": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/reports/npu_raw/qwen35-rag-sft-v2-quality-v3-3-final-50.json",
+      "size_bytes": 76238,
+      "sha256": "005c8bbcdf8c37d696fbf509528573dd6ec9a1c0a2d0e378ae50e1c014126d48"
+    },
+    {
+      "path": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/reports/quality_v3_3_final_50_audit.json",
+      "size_bytes": 547,
+      "sha256": "2b11485be4c0346d7f9880954df9e8c460e741638bebb04fdde467c028d62f79"
+    },
+    {
+      "path": "/workspace/kaoyan-lab/logs/qwen35-rag-sft-v2-quality-v3-3-negative-grounding.json",
+      "size_bytes": 2611,
+      "sha256": "360a7103f50b215eba17dcd87b6819802ad290835922e0e9fd326dbc27d048e7"
+    }
+  ],
+  "model_directory": {
+    "path": "/workspace/kaoyan-lab/models/Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+    "file_count": 7,
+    "total_bytes": 3472962572,
+    "tree_sha256": "dc2645497d8f05f4571e1af64d46af3640f9f58b034b66db63075716071931ac",
+    "files": [
+      {
+        "path": "/workspace/kaoyan-lab/models/Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80/chat_template.jinja",
+        "size_bytes": 7755,
+        "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+        "relative_path": "chat_template.jinja"
+      },
+      {
+        "path": "/workspace/kaoyan-lab/models/Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80/config.json",
+        "size_bytes": 2567,
+        "sha256": "06b42f3c46bf7d7f8d435dedab292d79d534848c1077e7c6627c35099aed891f",
+        "relative_path": "config.json"
+      },
+      {
+        "path": "/workspace/kaoyan-lab/models/Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80/model.safetensors-00001-of-00001.safetensors",
+        "size_bytes": 3452909568,
+        "sha256": "bc802bc80f30c58d311cfd75e0591de30210ab1905b926fd3aa3f9dfe93009e6",
+        "relative_path": "model.safetensors-00001-of-00001.safetensors"
+      },
+      {
+        "path": "/workspace/kaoyan-lab/models/Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80/model.safetensors.index.json",
+        "size_bytes": 50900,
+        "sha256": "d8a08838a613b025eb7952ed9db11696213e57e76a375661ef5c12f9dd5dcf4e",
+        "relative_path": "model.safetensors.index.json"
+      },
+      {
+        "path": "/workspace/kaoyan-lab/models/Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80/processor_config.json",
+        "size_bytes": 1300,
+        "sha256": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b",
+        "relative_path": "processor_config.json"
+      },
+      {
+        "path": "/workspace/kaoyan-lab/models/Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80/tokenizer.json",
+        "size_bytes": 19989343,
+        "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+        "relative_path": "tokenizer.json"
+      },
+      {
+        "path": "/workspace/kaoyan-lab/models/Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80/tokenizer_config.json",
+        "size_bytes": 1139,
+        "sha256": "e98f1901ac6f0adff67b1d540bfa0c36ac1a0cf59eb72ed78146ef89aafa1182",
+        "relative_path": "tokenizer_config.json"
+      }
+    ]
+  },
+  "evaluation_summary": {
+    "label": "qwen35-rag-sft-v2-quality-v3-3-final-50",
+    "generated_at": "2026-08-28T05:12:47+00:00",
+    "endpoint": "http://127.0.0.1:7863/api/ask",
+    "case_count": 50,
+    "passed": 50,
+    "external_model_calls": 50,
+    "fallback_count": 0,
+    "citation_hit_count": 50,
+    "wall_seconds": 121.651,
+    "latency_ms": {
+      "mean": 2432.96,
+      "p50": 2205.46,
+      "p95": 4103.72,
+      "max": 6677.18
+    },
+    "completion_tokens_per_second_mean": 24.7,
+    "peak_npu_memory_mb_max": 1772.05
+  },
+  "negative_grounding_summary": {
+    "generated_at": "2026-08-28T05:15:26+00:00",
+    "endpoint": "http://127.0.0.1:7863/api/ask",
+    "case_count": 2,
+    "passed": 2,
+    "all_pass": true
+  },
+  "runtime_health": {
+    "experimental_model": {
+      "status": "ok",
+      "model": "Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "device": "Ascend NPU"
+    },
+    "experimental_rag": {
+      "status": "ok",
+      "project": "kaoyan-knowledge-agent",
+      "model_gateway": {
+        "enabled": true,
+        "protocol": "qwen",
+        "model": "Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80"
+      }
+    },
+    "production_rag": {
+      "status": "ok",
+      "project": "kaoyan-knowledge-agent",
+      "model_gateway": {
+        "enabled": true,
+        "protocol": "qwen",
+        "model": "Qwen3.5-0.8B"
+      }
+    }
+  },
+  "passed": true,
+  "accuracy_note": "工程规则回归通过不等同于正式事实精度100%。"
+}

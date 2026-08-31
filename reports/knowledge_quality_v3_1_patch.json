@@ -1,0 +1,22 @@
+{
+  "changed_id": "planning-004",
+  "backup": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/data/knowledge_expansion.json.before-quality-v3-1-20260828-045623",
+  "question": "法学错题本应该怎样分类和回炉？",
+  "top3_ids": [
+    "planning-004",
+    "planning-001",
+    "planning-comm-90"
+  ],
+  "top3_titles": [
+    "错题标签与回炉",
+    "三阶段复习框架",
+    "通信专业课90天复习安排"
+  ],
+  "checks": {
+    "subject_compatible": true,
+    "specialty_law": true,
+    "planning_004_in_top3": true,
+    "expected_title_in_top3": true,
+    "no_computation_content": true
+  }
+}

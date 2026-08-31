@@ -1,0 +1,27 @@
+{
+  "action": "added",
+  "backup": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/data/knowledge_expansion.json.before-quality-v3-3-20260828-050841",
+  "question": "通信专业课知识点应该怎样安排间隔复习？",
+  "top3_ids": [
+    "planning-comm-spaced-review",
+    "planning-001",
+    "planning-003"
+  ],
+  "top3_titles": [
+    "通信专业课间隔复习安排",
+    "三阶段复习框架",
+    "间隔复习安排"
+  ],
+  "top3_specialties": [
+    "通信工程",
+    "通用",
+    "通用"
+  ],
+  "checks": {
+    "document_unique": true,
+    "target_ranked_first": true,
+    "target_present_in_top3": true,
+    "specialties_compatible": true,
+    "intervals_present": true
+  }
+}

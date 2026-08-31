@@ -1,0 +1,68 @@
+{
+  "label": "qwen35-rag-sft-v2-quality-v3-3-plan005",
+  "generated_at": "2026-08-28T05:09:41+00:00",
+  "endpoint": "http://127.0.0.1:7863/api/ask",
+  "case_count": 1,
+  "passed": 1,
+  "external_model_calls": 1,
+  "fallback_count": 0,
+  "citation_hit_count": 1,
+  "wall_seconds": 2.878,
+  "latency_ms": {
+    "mean": 2878.28,
+    "p50": 2878.28,
+    "p95": 2878.28,
+    "max": 2878.28
+  },
+  "completion_tokens_per_second_mean": 25.933,
+  "peak_npu_memory_mb_max": 1768.85,
+  "records": [
+    {
+      "case_id": "PLAN-005",
+      "question": "通信专业课知识点应该怎样安排间隔复习？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "通信专业课间隔复习安排",
+        "三阶段复习框架",
+        "间隔复习安排"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "1 天",
+        "3 天",
+        "7 天",
+        "自测"
+      ],
+      "expected_keywords": [
+        "1 天",
+        "3 天",
+        "7 天",
+        "自测"
+      ],
+      "passed": true,
+      "latency_ms": 2878.28,
+      "timings": {
+        "retrieval_ms": 3.48,
+        "generation_ms": 2871.16,
+        "total_ms": 2874.66
+      },
+      "model_usage": {
+        "prompt_tokens": 460,
+        "completion_tokens": 74,
+        "total_tokens": 534,
+        "preparation_ms": 8.34,
+        "queue_wait_ms": 0.04,
+        "generation_ms": 2853.51,
+        "total_inference_ms": 2862.52,
+        "completion_tokens_per_second": 25.933,
+        "peak_npu_memory_mb": 1768.85,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "通信专业课知识点可采用 1 天、3 天、7 天、14 天的间隔节奏[1]。每次复习先闭卷回忆公式、系统框图和适用条件，再通过口述、默写或小题自测检查；根据自测正确率调整间隔，遗忘快的内容缩短间隔，稳定掌握的内容延长间隔。"
+    }
+  ]
+}

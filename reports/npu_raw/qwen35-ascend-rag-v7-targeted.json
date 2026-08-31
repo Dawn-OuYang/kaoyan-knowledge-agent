@@ -1,0 +1,115 @@
+{
+  "label": "qwen35-ascend-rag-v7-targeted",
+  "generated_at": "2026-08-27T02:51:13+00:00",
+  "endpoint": "http://127.0.0.1:7860/api/ask",
+  "case_count": 2,
+  "passed": 2,
+  "external_model_calls": 2,
+  "fallback_count": 0,
+  "citation_hit_count": 2,
+  "wall_seconds": 5.56,
+  "latency_ms": {
+    "mean": 2780.15,
+    "p50": 2216.46,
+    "p95": 3343.84,
+    "max": 3343.84
+  },
+  "completion_tokens_per_second_mean": 21.154,
+  "peak_npu_memory_mb_max": 1764.12,
+  "records": [
+    {
+      "case_id": "EXAM-LAW-006",
+      "question": "合同效力案例题应该按什么顺序分析？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "合同效力分析"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "主体能力",
+        "意思表示",
+        "无效",
+        "可撤销"
+      ],
+      "expected_keywords": [
+        "主体能力",
+        "意思表示",
+        "无效",
+        "可撤销"
+      ],
+      "passed": true,
+      "latency_ms": 2216.46,
+      "timings": {
+        "retrieval_ms": 2.55,
+        "generation_ms": 2210.13,
+        "total_ms": 2212.72
+      },
+      "model_usage": {
+        "prompt_tokens": 295,
+        "completion_tokens": 40,
+        "total_tokens": 335,
+        "preparation_ms": 44.07,
+        "queue_wait_ms": 0.05,
+        "generation_ms": 2159.16,
+        "total_inference_ms": 2203.8,
+        "completion_tokens_per_second": 18.526,
+        "peak_npu_memory_mb": 1748.48,
+        "grounding_repair": true,
+        "grounding_repair_count": 1,
+        "grounding_repair_source": "top_citation",
+        "grounding_repair_mode": "exam"
+      },
+      "answer": "合同效力分析应遵循“主体能力—意思表示—内容合法性—特别事由”的顺序，依次审查主体资格、真实意愿、内容合规性及特殊效力状态。[1]\n证据补充：无效、可撤销、效力待定。"
+    },
+    {
+      "case_id": "PLAN-004",
+      "question": "我总是看懂却记不住，怎样用主动回忆改进408复习？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "主动回忆学习法",
+        "三阶段复习框架",
+        "间隔复习安排"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "问题",
+        "口述",
+        "默写",
+        "自测"
+      ],
+      "expected_keywords": [
+        "问题",
+        "口述",
+        "默写",
+        "自测"
+      ],
+      "passed": true,
+      "latency_ms": 3343.84,
+      "timings": {
+        "retrieval_ms": 6.85,
+        "generation_ms": 3335.24,
+        "total_ms": 3342.11
+      },
+      "model_usage": {
+        "prompt_tokens": 411,
+        "completion_tokens": 79,
+        "total_tokens": 490,
+        "preparation_ms": 7.33,
+        "queue_wait_ms": 0.04,
+        "generation_ms": 3321.77,
+        "total_inference_ms": 3329.58,
+        "completion_tokens_per_second": 23.783,
+        "peak_npu_memory_mb": 1764.12,
+        "grounding_repair": true,
+        "grounding_repair_count": 1,
+        "grounding_repair_source": "top_citation",
+        "grounding_repair_mode": "plan"
+      },
+      "answer": "建议采用主动回忆法，将每章内容转化为问题清单，每日复述并重复自测，以暴露记忆缺口[1]。结合三阶段框架，基础阶段建立框架，强化阶段进行真题训练，冲刺阶段回炉错题[2]。根据遗忘规律调整间隔节奏，遗忘快内容缩短间隔，稳定内容延长间隔[3]。\n证据补充：口述、默写。"
+    }
+  ]
+}

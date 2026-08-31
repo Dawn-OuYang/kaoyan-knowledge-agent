@@ -1,0 +1,122 @@
+{
+  "source_report": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/reports/npu_raw/qwen35-rag-sft-v2-quality-v3-2-targeted-5.json",
+  "summary_checks": {
+    "case_count_5": true,
+    "passed_5": true,
+    "external_model_calls_5": true,
+    "fallback_count_0": true,
+    "citation_hit_count_5": true,
+    "semantic_cases_5": true
+  },
+  "cases": [
+    {
+      "case_id": "PLAN-001",
+      "checks": {
+        "record_present": true,
+        "evaluator_pass": true,
+        "external_model": true,
+        "model_error_free": true,
+        "citation_hit": true,
+        "required_content": true,
+        "no_cross_specialty": true,
+        "no_prompt_leak": true,
+        "complete_sentence": true
+      },
+      "required_hits": [
+        "40",
+        "50",
+        "30"
+      ],
+      "forbidden_hits": []
+    },
+    {
+      "case_id": "PLAN-002",
+      "checks": {
+        "record_present": true,
+        "evaluator_pass": true,
+        "external_model": true,
+        "model_error_free": true,
+        "citation_hit": true,
+        "required_content": true,
+        "no_cross_specialty": true,
+        "no_prompt_leak": true,
+        "complete_sentence": true
+      },
+      "required_hits": [
+        "30",
+        "40",
+        "20"
+      ],
+      "forbidden_hits": []
+    },
+    {
+      "case_id": "PLAN-003",
+      "checks": {
+        "record_present": true,
+        "evaluator_pass": true,
+        "external_model": true,
+        "model_error_free": true,
+        "citation_hit": true,
+        "required_content": true,
+        "no_cross_specialty": true,
+        "no_prompt_leak": true,
+        "complete_sentence": true
+      },
+      "required_hits": [
+        "构成要件",
+        "争点",
+        "限时",
+        "评分点",
+        "复盘"
+      ],
+      "forbidden_hits": []
+    },
+    {
+      "case_id": "QA-LAW-005",
+      "checks": {
+        "record_present": true,
+        "evaluator_pass": true,
+        "external_model": true,
+        "model_error_free": true,
+        "citation_hit": true,
+        "required_content": true,
+        "no_cross_specialty": true,
+        "no_prompt_leak": true,
+        "complete_sentence": true
+      },
+      "required_hits": [
+        "有权代理",
+        "无权代理",
+        "表见代理",
+        "权限",
+        "追认",
+        "合理信赖",
+        "有效"
+      ],
+      "forbidden_hits": []
+    },
+    {
+      "case_id": "PLAN-006",
+      "checks": {
+        "record_present": true,
+        "evaluator_pass": true,
+        "external_model": true,
+        "model_error_free": true,
+        "citation_hit": true,
+        "required_content": true,
+        "no_cross_specialty": true,
+        "no_prompt_leak": true,
+        "complete_sentence": true
+      },
+      "required_hits": [
+        "法条定位",
+        "构成要件",
+        "论证",
+        "独立重做",
+        "错误原因"
+      ],
+      "forbidden_hits": []
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,66 @@
+{
+  "label": "qwen35-ascend-rag-final-school008",
+  "generated_at": "2026-08-27T03:35:30+00:00",
+  "endpoint": "http://127.0.0.1:7860/api/ask",
+  "case_count": 1,
+  "passed": 1,
+  "external_model_calls": 1,
+  "fallback_count": 0,
+  "citation_hit_count": 1,
+  "wall_seconds": 4.277,
+  "latency_ms": {
+    "mean": 4276.43,
+    "p50": 4276.43,
+    "p95": 4276.43,
+    "max": 4276.43
+  },
+  "completion_tokens_per_second_mean": 22.303,
+  "peak_npu_memory_mb_max": 1769.95,
+  "records": [
+    {
+      "case_id": "SCHOOL-008",
+      "question": "今年清华大学计算机专业招生人数是多少？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "清华大学计算机科学与技术系官方入口",
+        "清华大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "年份",
+        "官方通知",
+        "招生人数"
+      ],
+      "expected_keywords": [
+        "年份",
+        "官方通知",
+        "招生人数"
+      ],
+      "passed": true,
+      "latency_ms": 4276.43,
+      "timings": {
+        "retrieval_ms": 9.29,
+        "generation_ms": 4263.54,
+        "total_ms": 4272.85
+      },
+      "model_usage": {
+        "prompt_tokens": 478,
+        "completion_tokens": 94,
+        "total_tokens": 572,
+        "preparation_ms": 44.19,
+        "queue_wait_ms": 0.04,
+        "generation_ms": 4214.71,
+        "total_inference_ms": 4259.55,
+        "completion_tokens_per_second": 22.303,
+        "peak_npu_memory_mb": 1769.95,
+        "grounding_repair": true,
+        "grounding_repair_count": 1,
+        "grounding_repair_source": "top_citation",
+        "grounding_repair_mode": "school"
+      },
+      "answer": "清华大学计算机专业招生人数需以当年官方通知为准，因未提供具体年份数据。[1] 校官网提供系级信息入口，[2] 研招网及研究生招生网提供院校库及招生简章列表，交叉核验是核心依据。\n证据补充：清华大学计算机科学与技术系官方入口：清华大学计算机科学与技术系；https://www.cs.tsinghua.edu.cn/；并与研招网院校库交叉核验。"
+    }
+  ]
+}

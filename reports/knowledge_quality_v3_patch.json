@@ -1,0 +1,19 @@
+{
+  "changed_id": "planning-004",
+  "backup": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/data/knowledge_expansion.json.before-quality-v3-20260828-044927",
+  "checks": {
+    "single_planning_004": true,
+    "law_specialty": true,
+    "law_methods_present": true,
+    "no_computation_content": true
+  },
+  "document": {
+    "id": "planning-004",
+    "specialty": "法学",
+    "subject": "法学复习规划",
+    "title": "错题标签与回炉",
+    "source": "备考学习方法整理",
+    "content": "法学错题应按概念混淆、法条定位错误、构成要件遗漏、论证层次不完整和审题偏差分类。回炉时先遮住答案，依据法条和构成要件独立重做，再补写错误原因、正确触发条件、评分点和同类题识别线索；可在次日和七日后再次复测。",
+    "source_type": "curated_reference"
+  }
+}

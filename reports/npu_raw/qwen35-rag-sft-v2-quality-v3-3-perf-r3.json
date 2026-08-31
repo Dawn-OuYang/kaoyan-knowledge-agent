@@ -1,0 +1,920 @@
+{
+  "label": "qwen35-rag-sft-v2-quality-v3-3-perf-r3",
+  "generated_at": "2026-08-28T05:28:12+00:00",
+  "endpoint": "http://127.0.0.1:7863/api/ask",
+  "case_count": 20,
+  "passed": 20,
+  "external_model_calls": 20,
+  "fallback_count": 0,
+  "citation_hit_count": 20,
+  "wall_seconds": 53.589,
+  "latency_ms": {
+    "mean": 2679.39,
+    "p50": 2442.46,
+    "p95": 4137.57,
+    "max": 6310.99
+  },
+  "completion_tokens_per_second_mean": 24.323,
+  "peak_npu_memory_mb_max": 1771.94,
+  "records": [
+    {
+      "case_id": "QA-CS-001",
+      "question": "顺序表和链表的区别是什么？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "链表与顺序表对比",
+        "线性表与顺序表"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "顺序表",
+        "链表",
+        "随机访问",
+        "插入删除"
+      ],
+      "expected_keywords": [
+        "顺序表",
+        "链表",
+        "随机访问",
+        "插入删除"
+      ],
+      "passed": true,
+      "latency_ms": 2847.93,
+      "timings": {
+        "retrieval_ms": 2.45,
+        "generation_ms": 2842.28,
+        "total_ms": 2844.75
+      },
+      "model_usage": {
+        "prompt_tokens": 364,
+        "completion_tokens": 62,
+        "total_tokens": 426,
+        "preparation_ms": 6.52,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2831.16,
+        "total_inference_ms": 2838.52,
+        "completion_tokens_per_second": 21.899,
+        "peak_npu_memory_mb": 1755.06,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "链表通过指针表示元素之间的逻辑关系，不要求存储空间连续[1]。链表插入和删除在已知结点位置时可以达到 O(1)，但查找第 i 个元素需要从头遍历，时间复杂度为 O(n)。顺序表适合频繁随机访问，链表适合频繁插入删除。"
+    },
+    {
+      "case_id": "EXAM-CS-003",
+      "question": "真题解析：为什么 TCP 建立连接需要三次握手？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "TCP 三次握手"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "SYN",
+        "ACK",
+        "序列号",
+        "历史连接"
+      ],
+      "expected_keywords": [
+        "SYN",
+        "ACK",
+        "序列号",
+        "历史连接"
+      ],
+      "passed": true,
+      "latency_ms": 2234.38,
+      "timings": {
+        "retrieval_ms": 2.55,
+        "generation_ms": 2230.25,
+        "total_ms": 2232.83
+      },
+      "model_usage": {
+        "prompt_tokens": 298,
+        "completion_tokens": 48,
+        "total_tokens": 346,
+        "preparation_ms": 10.33,
+        "queue_wait_ms": 0.04,
+        "generation_ms": 2215.01,
+        "total_inference_ms": 2225.88,
+        "completion_tokens_per_second": 21.67,
+        "peak_npu_memory_mb": 1748.54,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "TCP 建立连接需要三次握手：客户端发送 SYN，服务器回复 SYN+ACK，客户端再发送 ACK[1]。三次握手用于确认双方收发能力并同步初始序列号，减少历史连接请求造成的错误连接。"
+    },
+    {
+      "case_id": "QA-CS-011",
+      "question": "TCP 拥塞控制包含哪些典型机制？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "TCP 拥塞控制"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "慢开始",
+        "拥塞避免",
+        "快重传",
+        "快恢复"
+      ],
+      "expected_keywords": [
+        "慢开始",
+        "拥塞避免",
+        "快重传",
+        "快恢复"
+      ],
+      "passed": true,
+      "latency_ms": 2299.66,
+      "timings": {
+        "retrieval_ms": 2.88,
+        "generation_ms": 2295.05,
+        "total_ms": 2297.96
+      },
+      "model_usage": {
+        "prompt_tokens": 282,
+        "completion_tokens": 59,
+        "total_tokens": 341,
+        "preparation_ms": 6.48,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2269.78,
+        "total_inference_ms": 2276.82,
+        "completion_tokens_per_second": 25.994,
+        "peak_npu_memory_mb": 1747.66,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "TCP 拥塞控制常包括慢开始、拥塞避免、快重传和快恢复[1]。慢开始阶段拥塞窗口按确认轮次近似指数增长，达到慢开始门限后转为线性增长；检测到拥塞后调整门限和窗口。"
+    },
+    {
+      "case_id": "EXAM-CS-012",
+      "question": "IPv4 前缀长度为 p 时子网地址数量如何计算？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "IPv4 子网划分"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "2^(32-p)",
+        "网络地址",
+        "广播地址"
+      ],
+      "expected_keywords": [
+        "2^(32-p)",
+        "网络地址",
+        "广播地址"
+      ],
+      "passed": true,
+      "latency_ms": 1772.34,
+      "timings": {
+        "retrieval_ms": 3.2,
+        "generation_ms": 1767.86,
+        "total_ms": 1771.08
+      },
+      "model_usage": {
+        "prompt_tokens": 312,
+        "completion_tokens": 44,
+        "total_tokens": 356,
+        "preparation_ms": 7.0,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 1738.55,
+        "total_inference_ms": 1745.95,
+        "completion_tokens_per_second": 25.309,
+        "peak_npu_memory_mb": 1749.55,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "一个前缀长度为 p 的 IPv4 子网共有 2^(32-p) 个地址[1]，传统题目中通常扣除网络地址和广播地址后计算可用主机地址。"
+    },
+    {
+      "case_id": "QA-COMM-001",
+      "question": "通信原理中香农公式表达了什么含义？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "香农公式"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "信道容量",
+        "带宽",
+        "信噪比"
+      ],
+      "expected_keywords": [
+        "信道容量",
+        "带宽",
+        "信噪比"
+      ],
+      "passed": true,
+      "latency_ms": 2497.93,
+      "timings": {
+        "retrieval_ms": 2.57,
+        "generation_ms": 2494.26,
+        "total_ms": 2496.85
+      },
+      "model_usage": {
+        "prompt_tokens": 288,
+        "completion_tokens": 66,
+        "total_tokens": 354,
+        "preparation_ms": 6.43,
+        "queue_wait_ms": 0.04,
+        "generation_ms": 2465.36,
+        "total_inference_ms": 2472.33,
+        "completion_tokens_per_second": 26.771,
+        "peak_npu_memory_mb": 1747.78,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "香农公式给出了带宽受限且存在高斯白噪声信道的理论信道容量：C = B log2(1 + S/N)[1]。其中 B 为信道带宽，S/N 为信噪比。它说明在给定带宽和信噪比条件下，可靠通信速率存在理论上限。"
+    },
+    {
+      "case_id": "EXAM-COMM-002",
+      "question": "真题解析：采样定理为什么要求采样频率至少为最高频率的两倍？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "采样定理"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "fs",
+        "2fm",
+        "带限",
+        "混叠"
+      ],
+      "expected_keywords": [
+        "fs",
+        "2fm",
+        "带限",
+        "混叠"
+      ],
+      "passed": true,
+      "latency_ms": 2100.08,
+      "timings": {
+        "retrieval_ms": 2.47,
+        "generation_ms": 2096.41,
+        "total_ms": 2098.89
+      },
+      "model_usage": {
+        "prompt_tokens": 307,
+        "completion_tokens": 54,
+        "total_tokens": 361,
+        "preparation_ms": 6.89,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 2059.64,
+        "total_inference_ms": 2066.94,
+        "completion_tokens_per_second": 26.218,
+        "peak_npu_memory_mb": 1749.57,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "采样定理指出，对最高频率为 fm 的带限连续信号，采样频率 fs 应满足 fs >= 2fm，才能在理想条件下由采样值无失真重构原信号[1]。若采样频率不足，会产生频谱混叠。"
+    },
+    {
+      "case_id": "QA-COMM-011",
+      "question": "PCM 编码通常包含哪三个步骤？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "PCM 编码步骤"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "抽样",
+        "量化",
+        "编码"
+      ],
+      "expected_keywords": [
+        "抽样",
+        "量化",
+        "编码"
+      ],
+      "passed": true,
+      "latency_ms": 913.47,
+      "timings": {
+        "retrieval_ms": 2.49,
+        "generation_ms": 909.41,
+        "total_ms": 911.92
+      },
+      "model_usage": {
+        "prompt_tokens": 267,
+        "completion_tokens": 15,
+        "total_tokens": 282,
+        "preparation_ms": 6.43,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 899.4,
+        "total_inference_ms": 906.28,
+        "completion_tokens_per_second": 16.678,
+        "peak_npu_memory_mb": 1746.81,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "PCM 编码步骤包括抽样、量化和编码[1]。"
+    },
+    {
+      "case_id": "QA-COMM-012",
+      "question": "OFDM 如何应对多径并提高频谱利用率？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "OFDM 基本原理"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "正交",
+        "子载波",
+        "循环前缀",
+        "多径"
+      ],
+      "expected_keywords": [
+        "正交",
+        "子载波",
+        "循环前缀",
+        "多径"
+      ],
+      "passed": true,
+      "latency_ms": 2268.32,
+      "timings": {
+        "retrieval_ms": 2.47,
+        "generation_ms": 2264.38,
+        "total_ms": 2266.87
+      },
+      "model_usage": {
+        "prompt_tokens": 276,
+        "completion_tokens": 55,
+        "total_tokens": 331,
+        "preparation_ms": 6.88,
+        "queue_wait_ms": 0.04,
+        "generation_ms": 2248.3,
+        "total_inference_ms": 2255.77,
+        "completion_tokens_per_second": 24.463,
+        "peak_npu_memory_mb": 1747.55,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "OFDM 把高速数据流分配到多个相互正交的低速子载波并行传输，可提高频谱利用率并降低多径造成的码间串扰[1]。循环前缀可对抗一定范围内的多径时延扩展，但会产生额外开销。"
+    },
+    {
+      "case_id": "QA-LAW-001",
+      "question": "法律规则和法律原则有什么区别？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "法律规则与法律原则"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "行为模式",
+        "法律后果",
+        "价值导向"
+      ],
+      "expected_keywords": [
+        "行为模式",
+        "法律后果",
+        "价值导向"
+      ],
+      "passed": true,
+      "latency_ms": 2154.15,
+      "timings": {
+        "retrieval_ms": 2.65,
+        "generation_ms": 2150.16,
+        "total_ms": 2152.83
+      },
+      "model_usage": {
+        "prompt_tokens": 274,
+        "completion_tokens": 55,
+        "total_tokens": 329,
+        "preparation_ms": 7.17,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2116.62,
+        "total_inference_ms": 2124.2,
+        "completion_tokens_per_second": 25.985,
+        "peak_npu_memory_mb": 1747.51,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "法律规则通常具有明确的行为模式和法律后果，适用方式较为确定[1]；法律原则具有概括性、价值导向性和弹性，常用于解释法律、填补漏洞和处理规则冲突。主观题作答时应先界定概念，再比较特征和适用场景。"
+    },
+    {
+      "case_id": "EXAM-LAW-002",
+      "question": "案例分析题中犯罪构成应该从哪些方面展开？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "犯罪构成"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "犯罪客体",
+        "客观方面",
+        "主体",
+        "主观方面"
+      ],
+      "expected_keywords": [
+        "犯罪客体",
+        "客观方面",
+        "主体",
+        "主观方面"
+      ],
+      "passed": true,
+      "latency_ms": 2229.12,
+      "timings": {
+        "retrieval_ms": 2.69,
+        "generation_ms": 2225.27,
+        "total_ms": 2227.97
+      },
+      "model_usage": {
+        "prompt_tokens": 294,
+        "completion_tokens": 49,
+        "total_tokens": 343,
+        "preparation_ms": 6.37,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 2202.87,
+        "total_inference_ms": 2209.82,
+        "completion_tokens_per_second": 22.244,
+        "peak_npu_memory_mb": 1748.46,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "犯罪构成是刑法规定的决定某一行为构成犯罪所必须具备的一切主客观要件的有机统一，通常包括犯罪客体、犯罪客观方面、犯罪主体和犯罪主观方面[1]。分析案例时应依次判断各构成要件。"
+    },
+    {
+      "case_id": "QA-LAW-005",
+      "question": "有权代理、无权代理和表见代理应如何区分？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "代理制度"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "代理权限",
+        "追认",
+        "有理由相信",
+        "行为有效"
+      ],
+      "expected_keywords": [
+        "代理权限",
+        "追认",
+        "有理由相信",
+        "行为有效"
+      ],
+      "passed": true,
+      "latency_ms": 4137.57,
+      "timings": {
+        "retrieval_ms": 2.34,
+        "generation_ms": 4134.06,
+        "total_ms": 4136.41
+      },
+      "model_usage": {
+        "prompt_tokens": 331,
+        "completion_tokens": 110,
+        "total_tokens": 441,
+        "preparation_ms": 6.56,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 4094.7,
+        "total_inference_ms": 4101.88,
+        "completion_tokens_per_second": 26.864,
+        "peak_npu_memory_mb": 1753.42,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "有权代理是代理人在有效代理权限内实施行为，法律后果直接归属于被代理人[1]。无权代理包括没有代理权、超越代理权或代理权终止后实施代理行为；未经被代理人追认，原则上对被代理人不发生效力。表见代理虽然欠缺实际代理权，但相对人有理由相信行为人具有代理权，符合条件时代理行为有效，法律后果由被代理人承担。答题时应围绕是否存在代理权、相对人是否善意且有合理信赖、是否追认以及法律后果进行区分。"
+    },
+    {
+      "case_id": "QA-LAW-007",
+      "question": "一般过错侵权责任有哪些构成要素？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "侵权责任构成"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "行为",
+        "损害",
+        "因果关系",
+        "过错"
+      ],
+      "expected_keywords": [
+        "行为",
+        "损害",
+        "因果关系",
+        "过错"
+      ],
+      "passed": true,
+      "latency_ms": 1873.11,
+      "timings": {
+        "retrieval_ms": 2.33,
+        "generation_ms": 1869.13,
+        "total_ms": 1871.48
+      },
+      "model_usage": {
+        "prompt_tokens": 256,
+        "completion_tokens": 41,
+        "total_tokens": 297,
+        "preparation_ms": 7.59,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 1857.39,
+        "total_inference_ms": 1865.42,
+        "completion_tokens_per_second": 22.074,
+        "peak_npu_memory_mb": 1745.15,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "一般过错侵权通常从行为、损害、因果关系和过错等要素展开[1]。具体案件还要判断是否适用无过错责任、过错推定、免责事由以及多数人侵权规则。"
+    },
+    {
+      "case_id": "SCHOOL-001",
+      "question": "清华大学通信工程相关方向应该看哪个学院官网？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "清华大学电子工程系官方入口",
+        "清华大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "电子工程系",
+        "ee.tsinghua.edu.cn",
+        "研究生招生网"
+      ],
+      "expected_keywords": [
+        "电子工程系",
+        "ee.tsinghua.edu.cn",
+        "研究生招生网"
+      ],
+      "passed": true,
+      "latency_ms": 2442.46,
+      "timings": {
+        "retrieval_ms": 10.96,
+        "generation_ms": 2430.22,
+        "total_ms": 2441.2
+      },
+      "model_usage": {
+        "prompt_tokens": 477,
+        "completion_tokens": 64,
+        "total_tokens": 541,
+        "preparation_ms": 7.36,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2404.87,
+        "total_inference_ms": 2412.78,
+        "completion_tokens_per_second": 26.613,
+        "peak_npu_memory_mb": 1769.93,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "清华大学通信工程相关方向学院级信息应优先核验清华大学电子工程系官网 https://www.ee.tsinghua.edu.cn/，并与清华大学研究生招生网和研招网硕士目录交叉核验[1]。涉及招生方向、考试科目、复试安排、导师方向时必须以对应年份官方通知为准。"
+    },
+    {
+      "case_id": "SCHOOL-005",
+      "question": "沈阳工业大学考研信息应该看哪些官方来源？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "沈阳工业大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "研招网",
+        "sut.edu.cn",
+        "yjsxy.sut.edu.cn"
+      ],
+      "expected_keywords": [
+        "研招网",
+        "sut.edu.cn",
+        "yjsxy.sut.edu.cn"
+      ],
+      "passed": true,
+      "latency_ms": 6310.99,
+      "timings": {
+        "retrieval_ms": 10.61,
+        "generation_ms": 6299.32,
+        "total_ms": 6309.95
+      },
+      "model_usage": {
+        "prompt_tokens": 405,
+        "completion_tokens": 172,
+        "total_tokens": 577,
+        "preparation_ms": 6.64,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 6277.46,
+        "total_inference_ms": 6284.74,
+        "completion_tokens_per_second": 27.4,
+        "peak_npu_memory_mb": 1763.91,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "沈阳工业大学院校信息优先核验研招网院校库、研招网招生简章、研招网硕士目录、学校官网和研究生院官网[1]。用户提供的入口包括研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-368034.dhtml，招生简章 https://yz.chsi.com.cn/sch/viewZszc--infoId-3430305238,categoryId-10461044,schId-368034,mindex-12.dhtml，硕士目录查询结果，学校官网 https://www.sut.edu.cn/，研究生院官网 https://yjsxy.sut.edu.cn/。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。"
+    },
+    {
+      "case_id": "SCHOOL-009",
+      "question": "上海交通大学计算机方向应该优先核验哪个学院官网？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "上海交通大学计算机学院官方入口",
+        "上海交通大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "计算机学院",
+        "cs.sjtu.edu.cn",
+        "研究生招生网"
+      ],
+      "expected_keywords": [
+        "计算机学院",
+        "cs.sjtu.edu.cn",
+        "研究生招生网"
+      ],
+      "passed": true,
+      "latency_ms": 2909.66,
+      "timings": {
+        "retrieval_ms": 11.2,
+        "generation_ms": 2897.32,
+        "total_ms": 2908.53
+      },
+      "model_usage": {
+        "prompt_tokens": 503,
+        "completion_tokens": 68,
+        "total_tokens": 571,
+        "preparation_ms": 8.05,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2886.84,
+        "total_inference_ms": 2895.4,
+        "completion_tokens_per_second": 23.555,
+        "peak_npu_memory_mb": 1771.94,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "上海交通大学计算机相关方向的学院级信息可优先核验上海交通大学计算机学院（网络空间安全学院、密码学院）官网 https://www.cs.sjtu.edu.cn/，并与上海交通大学研究生招生网和研招网院校库交叉核验[1]。涉及招生人数、考试科目和复试安排时必须以对应年份官方通知为准。"
+    },
+    {
+      "case_id": "PLAN-001",
+      "question": "距离考试 120 天，计算机408应该怎么复习？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "408 120天复习安排",
+        "三阶段复习框架",
+        "间隔复习安排"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "40天",
+        "50天",
+        "30天",
+        "整套"
+      ],
+      "expected_keywords": [
+        "40天",
+        "50天",
+        "30天",
+        "整套"
+      ],
+      "passed": true,
+      "latency_ms": 3003.93,
+      "timings": {
+        "retrieval_ms": 3.47,
+        "generation_ms": 2999.32,
+        "total_ms": 3002.8
+      },
+      "model_usage": {
+        "prompt_tokens": 476,
+        "completion_tokens": 78,
+        "total_tokens": 554,
+        "preparation_ms": 7.96,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 2978.5,
+        "total_inference_ms": 2986.87,
+        "completion_tokens_per_second": 26.188,
+        "peak_npu_memory_mb": 1769.91,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "408 120天复习安排可安排40天基础、50天强化、30天冲刺[1]。基础阶段按数据结构、计算机组成原理、操作系统和计算机网络建立框架并完成首轮；强化阶段按专题刷真题、整理错题并回测薄弱章节；冲刺阶段进行整套计时模拟、错题回炉和计算步骤纠错。"
+    },
+    {
+      "case_id": "PLAN-002",
+      "question": "通信工程专业课剩 90 天怎么安排？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "通信专业课90天复习安排",
+        "三阶段复习框架",
+        "间隔复习安排"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "30天",
+        "40天",
+        "20天",
+        "计算纠错"
+      ],
+      "expected_keywords": [
+        "30天",
+        "40天",
+        "20天",
+        "计算纠错"
+      ],
+      "passed": true,
+      "latency_ms": 3064.81,
+      "timings": {
+        "retrieval_ms": 3.72,
+        "generation_ms": 3059.83,
+        "total_ms": 3063.57
+      },
+      "model_usage": {
+        "prompt_tokens": 464,
+        "completion_tokens": 73,
+        "total_tokens": 537,
+        "preparation_ms": 6.84,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 3048.59,
+        "total_inference_ms": 3055.97,
+        "completion_tokens_per_second": 23.946,
+        "peak_npu_memory_mb": 1768.93,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "通信工程专业课剩余90天时，可安排30天基础、40天强化、20天冲刺[1]。基础阶段梳理通信原理、信号与系统等核心公式和知识框架；强化阶段进行真题训练、典型计算题归纳和计算纠错；冲刺阶段完成整套限时模拟、错题回炉和公式快速回忆。"
+    },
+    {
+      "case_id": "PLAN-003",
+      "question": "法学专业课冲刺阶段怎么复习主观题？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "三阶段复习框架",
+        "法学主观题冲刺方法",
+        "间隔复习安排"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "构成要件",
+        "限时作答",
+        "评分点",
+        "复盘"
+      ],
+      "expected_keywords": [
+        "构成要件",
+        "限时作答",
+        "评分点",
+        "复盘"
+      ],
+      "passed": true,
+      "latency_ms": 2801.67,
+      "timings": {
+        "retrieval_ms": 3.45,
+        "generation_ms": 2796.93,
+        "total_ms": 2800.4
+      },
+      "model_usage": {
+        "prompt_tokens": 446,
+        "completion_tokens": 60,
+        "total_tokens": 506,
+        "preparation_ms": 7.7,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2761.47,
+        "total_inference_ms": 2769.68,
+        "completion_tokens_per_second": 21.728,
+        "peak_npu_memory_mb": 1765.95,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "法学主观题冲刺应按构成要件或争点建立答题框架，每天选取案例题或论述题限时作答[2]。完成后对照评分点检查法条依据、构成要件、涵摄过程和结论，把遗漏项加入错题清单，并通过同类题复盘稳定答题层次。"
+    },
+    {
+      "case_id": "PLAN-005",
+      "question": "通信专业课知识点应该怎样安排间隔复习？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "通信专业课间隔复习安排",
+        "三阶段复习框架",
+        "间隔复习安排"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "1 天",
+        "3 天",
+        "7 天",
+        "自测"
+      ],
+      "expected_keywords": [
+        "1 天",
+        "3 天",
+        "7 天",
+        "自测"
+      ],
+      "passed": true,
+      "latency_ms": 3002.65,
+      "timings": {
+        "retrieval_ms": 3.64,
+        "generation_ms": 2997.65,
+        "total_ms": 3001.31
+      },
+      "model_usage": {
+        "prompt_tokens": 460,
+        "completion_tokens": 74,
+        "total_tokens": 534,
+        "preparation_ms": 6.92,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2980.23,
+        "total_inference_ms": 2987.72,
+        "completion_tokens_per_second": 24.83,
+        "peak_npu_memory_mb": 1768.85,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "通信专业课知识点可采用 1 天、3 天、7 天、14 天的间隔节奏[1]。每次复习先闭卷回忆公式、系统框图和适用条件，再通过口述、默写或小题自测检查；根据自测正确率调整间隔，遗忘快的内容缩短间隔，稳定掌握的内容延长间隔。"
+    },
+    {
+      "case_id": "PLAN-006",
+      "question": "法学错题本应该怎样分类和回炉？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "错题标签与回炉",
+        "三阶段复习框架",
+        "间隔复习安排"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "法条定位",
+        "构成要件",
+        "论证",
+        "独立重做"
+      ],
+      "expected_keywords": [
+        "法条定位",
+        "构成要件",
+        "论证",
+        "独立重做"
+      ],
+      "passed": true,
+      "latency_ms": 2723.61,
+      "timings": {
+        "retrieval_ms": 3.72,
+        "generation_ms": 2718.63,
+        "total_ms": 2722.36
+      },
+      "model_usage": {
+        "prompt_tokens": 457,
+        "completion_tokens": 70,
+        "total_tokens": 527,
+        "preparation_ms": 7.38,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2689.76,
+        "total_inference_ms": 2697.57,
+        "completion_tokens_per_second": 26.025,
+        "peak_npu_memory_mb": 1768.8,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "法学错题应按概念混淆、法条定位错误、构成要件遗漏、论证层次不完整和审题偏差分类[1]。回炉时先遮住答案，依据法条和构成要件独立重做，再补写错误原因、正确触发条件、评分点和同类题识别线索；可在次日和七日后再次复测。"
+    }
+  ]
+}

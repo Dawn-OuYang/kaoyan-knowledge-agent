@@ -1,0 +1,2195 @@
+{
+  "label": "qwen35-ascend-rag-v6-50",
+  "generated_at": "2026-08-27T02:37:18+00:00",
+  "endpoint": "http://127.0.0.1:7860/api/ask",
+  "case_count": 50,
+  "passed": 48,
+  "external_model_calls": 50,
+  "fallback_count": 0,
+  "citation_hit_count": 50,
+  "wall_seconds": 141.379,
+  "latency_ms": {
+    "mean": 2827.53,
+    "p50": 2465.37,
+    "p95": 5185.72,
+    "max": 6845.11
+  },
+  "completion_tokens_per_second_mean": 22.12,
+  "peak_npu_memory_mb_max": 1784.26,
+  "records": [
+    {
+      "case_id": "QA-CS-001",
+      "question": "顺序表和链表的区别是什么？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "链表与顺序表对比",
+        "线性表与顺序表"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "顺序表",
+        "链表",
+        "随机访问",
+        "插入删除"
+      ],
+      "expected_keywords": [
+        "顺序表",
+        "链表",
+        "随机访问",
+        "插入删除"
+      ],
+      "passed": true,
+      "latency_ms": 5765.85,
+      "timings": {
+        "retrieval_ms": 2.52,
+        "generation_ms": 5759.78,
+        "total_ms": 5762.32
+      },
+      "model_usage": {
+        "prompt_tokens": 368,
+        "completion_tokens": 137,
+        "total_tokens": 505,
+        "preparation_ms": 8.69,
+        "queue_wait_ms": 0.06,
+        "generation_ms": 5745.82,
+        "total_inference_ms": 5755.15,
+        "completion_tokens_per_second": 23.843,
+        "peak_npu_memory_mb": 1755.14,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "链表与顺序表的核心区别在于存储结构：顺序表采用地址连续存储，支持随机访问，插入删除需移动元素；链表采用指针表示逻辑关系，不要求连续，插入删除在已知位置可达 O(1)，但查找需遍历。[1] 链表通过指针表示元素之间的逻辑关系，不要求存储空间连续。[2] 线性表是具有相同数据类型的 n 个数据元素的有限序列。顺序表用一组地址连续的存储单元依次存储线性表中的数据元素，支持随机访问。顺序表插入和删除通常需要移动元素，平均时间复杂度为 O(n)，按位查找时间复杂度为 O(1)。"
+    },
+    {
+      "case_id": "QA-CS-002",
+      "question": "进程和线程在操作系统里怎么区分？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "进程与线程"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "资源分配",
+        "CPU 调度",
+        "共享"
+      ],
+      "expected_keywords": [
+        "资源分配",
+        "CPU 调度",
+        "共享"
+      ],
+      "passed": true,
+      "latency_ms": 2261.54,
+      "timings": {
+        "retrieval_ms": 2.28,
+        "generation_ms": 2257.75,
+        "total_ms": 2260.05
+      },
+      "model_usage": {
+        "prompt_tokens": 274,
+        "completion_tokens": 50,
+        "total_tokens": 324,
+        "preparation_ms": 10.81,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2243.18,
+        "total_inference_ms": 2254.4,
+        "completion_tokens_per_second": 22.29,
+        "peak_npu_memory_mb": 1747.51,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "进程是资源分配的基本单位，线程是 CPU 调度的基本单位。同一进程中的线程共享进程地址空间和资源，但拥有各自的程序计数器、寄存器和栈。线程切换开销通常小于进程切换。[1]"
+    },
+    {
+      "case_id": "EXAM-CS-003",
+      "question": "真题解析：为什么 TCP 建立连接需要三次握手？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "TCP 三次握手"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "SYN",
+        "ACK",
+        "序列号",
+        "历史连接"
+      ],
+      "expected_keywords": [
+        "SYN",
+        "ACK",
+        "序列号",
+        "历史连接"
+      ],
+      "passed": true,
+      "latency_ms": 2497.86,
+      "timings": {
+        "retrieval_ms": 2.26,
+        "generation_ms": 2494.4,
+        "total_ms": 2496.67
+      },
+      "model_usage": {
+        "prompt_tokens": 302,
+        "completion_tokens": 55,
+        "total_tokens": 357,
+        "preparation_ms": 6.01,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 2454.6,
+        "total_inference_ms": 2461.01,
+        "completion_tokens_per_second": 22.407,
+        "peak_npu_memory_mb": 1749.03,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "TCP 三次握手用于确认双方收发能力并同步初始序列号，减少历史连接请求造成的错误连接。[1] 客户端发送 SYN 报文，服务器回复 SYN+ACK 报文，客户端再发送 ACK 报文，完成三次握手。"
+    },
+    {
+      "case_id": "QA-COMM-001",
+      "question": "通信原理中香农公式表达了什么含义？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "香农公式"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "带宽",
+        "信噪比"
+      ],
+      "expected_keywords": [
+        "信道容量",
+        "带宽",
+        "信噪比"
+      ],
+      "passed": true,
+      "latency_ms": 2159.18,
+      "timings": {
+        "retrieval_ms": 2.24,
+        "generation_ms": 2155.6,
+        "total_ms": 2157.86
+      },
+      "model_usage": {
+        "prompt_tokens": 292,
+        "completion_tokens": 48,
+        "total_tokens": 340,
+        "preparation_ms": 6.38,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 2126.72,
+        "total_inference_ms": 2133.58,
+        "completion_tokens_per_second": 22.57,
+        "peak_npu_memory_mb": 1748.42,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "香农公式[1]表达了给定带宽和信噪比条件下，信道理论上的最大可靠通信速率上限。该公式揭示了通信速率与信噪比之间的正相关关系，是通信工程中的核心理论。"
+    },
+    {
+      "case_id": "EXAM-COMM-002",
+      "question": "真题解析：采样定理为什么要求采样频率至少为最高频率的两倍？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "采样定理"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "fs",
+        "2fm",
+        "混叠"
+      ],
+      "expected_keywords": [
+        "fs",
+        "2fm",
+        "带限",
+        "混叠"
+      ],
+      "passed": true,
+      "latency_ms": 3457.25,
+      "timings": {
+        "retrieval_ms": 3.43,
+        "generation_ms": 3452.44,
+        "total_ms": 3455.89
+      },
+      "model_usage": {
+        "prompt_tokens": 311,
+        "completion_tokens": 77,
+        "total_tokens": 388,
+        "preparation_ms": 6.79,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 3417.82,
+        "total_inference_ms": 3425.15,
+        "completion_tokens_per_second": 22.529,
+        "peak_npu_memory_mb": 1749.55,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "根据证据[1]，采样定理要求采样频率 fs 至少为最高频率 fm 的两倍，即 fs >= 2fm，这是由采样值无失真重构原信号的频谱特性决定的。若采样频率不足，会导致频谱混叠，造成信号失真。因此，采样频率必须满足 fs >= 2fm 才能满足该定理条件。"
+    },
+    {
+      "case_id": "QA-COMM-003",
+      "question": "信号与系统中卷积的物理意义是什么？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "卷积的物理意义"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "线性时不变",
+        "冲激响应",
+        "输出"
+      ],
+      "expected_keywords": [
+        "线性时不变",
+        "冲激响应",
+        "输出"
+      ],
+      "passed": true,
+      "latency_ms": 1662.76,
+      "timings": {
+        "retrieval_ms": 2.73,
+        "generation_ms": 1658.54,
+        "total_ms": 1661.29
+      },
+      "model_usage": {
+        "prompt_tokens": 290,
+        "completion_tokens": 34,
+        "total_tokens": 324,
+        "preparation_ms": 6.74,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 1625.03,
+        "total_inference_ms": 1632.28,
+        "completion_tokens_per_second": 20.923,
+        "peak_npu_memory_mb": 1748.38,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "卷积描述线性时不变系统输入与冲激响应共同决定输出过程，连续系统为卷积积分，离散系统为卷积和。[1]"
+    },
+    {
+      "case_id": "QA-LAW-001",
+      "question": "法律规则和法律原则有什么区别？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "法律规则与法律原则"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "行为模式",
+        "法律后果",
+        "价值导向"
+      ],
+      "expected_keywords": [
+        "行为模式",
+        "法律后果",
+        "价值导向"
+      ],
+      "passed": true,
+      "latency_ms": 2016.16,
+      "timings": {
+        "retrieval_ms": 2.23,
+        "generation_ms": 2012.52,
+        "total_ms": 2014.76
+      },
+      "model_usage": {
+        "prompt_tokens": 278,
+        "completion_tokens": 43,
+        "total_tokens": 321,
+        "preparation_ms": 6.65,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 1969.16,
+        "total_inference_ms": 1976.2,
+        "completion_tokens_per_second": 21.837,
+        "peak_npu_memory_mb": 1747.59,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "法律规则与法律原则的区别在于：前者具有明确的行为模式和法律后果，适用方式确定；后者具有概括性、价值导向性和弹性，常用于解释法律、填补漏洞[1]。"
+    },
+    {
+      "case_id": "EXAM-LAW-002",
+      "question": "案例分析题中犯罪构成应该从哪些方面展开？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "犯罪构成"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "客观方面",
+        "主体",
+        "主观方面"
+      ],
+      "expected_keywords": [
+        "犯罪客体",
+        "客观方面",
+        "主体",
+        "主观方面"
+      ],
+      "passed": true,
+      "latency_ms": 1550.72,
+      "timings": {
+        "retrieval_ms": 2.81,
+        "generation_ms": 1546.68,
+        "total_ms": 1549.5
+      },
+      "model_usage": {
+        "prompt_tokens": 298,
+        "completion_tokens": 32,
+        "total_tokens": 330,
+        "preparation_ms": 5.89,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 1518.8,
+        "total_inference_ms": 1525.06,
+        "completion_tokens_per_second": 21.069,
+        "peak_npu_memory_mb": 1748.54,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "案例分析题中犯罪构成应从客体、客观方面、主体、主观方面四个维度展开，依次判断各要件是否具备。[1]"
+    },
+    {
+      "case_id": "QA-LAW-003",
+      "question": "宪法基本原则通常包括哪些？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "宪法基本原则"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "人民主权",
+        "基本人权",
+        "法治",
+        "权力制约"
+      ],
+      "expected_keywords": [
+        "人民主权",
+        "基本人权",
+        "法治",
+        "权力制约"
+      ],
+      "passed": true,
+      "latency_ms": 1279.5,
+      "timings": {
+        "retrieval_ms": 2.38,
+        "generation_ms": 1275.27,
+        "total_ms": 1277.67
+      },
+      "model_usage": {
+        "prompt_tokens": 265,
+        "completion_tokens": 25,
+        "total_tokens": 290,
+        "preparation_ms": 7.73,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 1244.53,
+        "total_inference_ms": 1252.68,
+        "completion_tokens_per_second": 20.088,
+        "peak_npu_memory_mb": 1745.27,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "宪法基本原则通常包括人民主权原则、基本人权原则、法治原则和权力制约原则[1]。"
+    },
+    {
+      "case_id": "SCHOOL-001",
+      "question": "清华大学通信工程相关方向应该看哪个学院官网？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "清华大学电子工程系官方入口",
+        "清华大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "电子工程系",
+        "ee.tsinghua.edu.cn",
+        "研究生招生网"
+      ],
+      "expected_keywords": [
+        "电子工程系",
+        "ee.tsinghua.edu.cn",
+        "研究生招生网"
+      ],
+      "passed": true,
+      "latency_ms": 4313.74,
+      "timings": {
+        "retrieval_ms": 9.35,
+        "generation_ms": 4303.08,
+        "total_ms": 4312.44
+      },
+      "model_usage": {
+        "prompt_tokens": 481,
+        "completion_tokens": 104,
+        "total_tokens": 585,
+        "preparation_ms": 6.62,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 4275.86,
+        "total_inference_ms": 4283.12,
+        "completion_tokens_per_second": 24.323,
+        "peak_npu_memory_mb": 1771.04,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "清华大学通信工程相关方向应优先核验清华大学电子工程系官网 https://www.ee.tsinghua.edu.cn/，并交叉核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367824.dhtml 及研究生招生网 https://yz.tsinghua.edu.cn/。该学院级信息包含学院、专业和年份边界，招生人数、分数线、考试科目、复试安排及导师方向均以对应年份官方通知为准。"
+    },
+    {
+      "case_id": "SCHOOL-002",
+      "question": "北京理工大学法学方向要核验哪个学院官网？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "北京理工大学法学院官方入口",
+        "北京理工大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "法学院",
+        "law.bit.edu.cn"
+      ],
+      "expected_keywords": [
+        "法学院",
+        "law.bit.edu.cn",
+        "研究生院"
+      ],
+      "passed": true,
+      "latency_ms": 3591.15,
+      "timings": {
+        "retrieval_ms": 8.99,
+        "generation_ms": 3580.95,
+        "total_ms": 3589.96
+      },
+      "model_usage": {
+        "prompt_tokens": 504,
+        "completion_tokens": 83,
+        "total_tokens": 587,
+        "preparation_ms": 7.54,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 3539.67,
+        "total_inference_ms": 3547.72,
+        "completion_tokens_per_second": 23.448,
+        "peak_npu_memory_mb": 1771.96,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "北京理工大学法学方向应优先核验北京理工大学法学院官网 https://law.bit.edu.cn/，该页面包含学院级信息、招生计划及复试安排等关键数据。[1] 同时，需结合研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367811.dhtml 交叉核验，确保信息完整准确。"
+    },
+    {
+      "case_id": "SCHOOL-003",
+      "question": "清华大学计算机方向应该优先看哪个学院官网？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "清华大学计算机科学与技术系官方入口",
+        "清华大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "计算机科学与技术系",
+        "cs.tsinghua.edu.cn"
+      ],
+      "expected_keywords": [
+        "计算机科学与技术系",
+        "cs.tsinghua.edu.cn"
+      ],
+      "passed": true,
+      "latency_ms": 4646.58,
+      "timings": {
+        "retrieval_ms": 11.16,
+        "generation_ms": 4634.14,
+        "total_ms": 4645.32
+      },
+      "model_usage": {
+        "prompt_tokens": 480,
+        "completion_tokens": 109,
+        "total_tokens": 589,
+        "preparation_ms": 6.38,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 4605.66,
+        "total_inference_ms": 4612.68,
+        "completion_tokens_per_second": 23.667,
+        "peak_npu_memory_mb": 1769.99,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "清华大学计算机方向应优先核验清华大学计算机科学与技术系官网 https://www.cs.tsinghua.edu.cn/，该系官网包含学院级信息、招生人数、考试科目及复试安排等关键数据，且与研招网交叉核验。[1] 建议以研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367824.dhtml 及研究生招生网 https://yz.tsinghua.edu.cn/ 交叉核验，确保信息准确。"
+    },
+    {
+      "case_id": "SCHOOL-004",
+      "question": "北京理工大学通信工程相关方向应该核验哪个学院官网？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "北京理工大学信息与电子学院官方入口",
+        "北京理工大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "信息与电子学院",
+        "sie.bit.edu.cn"
+      ],
+      "expected_keywords": [
+        "信息与电子学院",
+        "sie.bit.edu.cn"
+      ],
+      "passed": true,
+      "latency_ms": 3008.53,
+      "timings": {
+        "retrieval_ms": 10.08,
+        "generation_ms": 2995.13,
+        "total_ms": 3005.24
+      },
+      "model_usage": {
+        "prompt_tokens": 513,
+        "completion_tokens": 68,
+        "total_tokens": 581,
+        "preparation_ms": 7.64,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 2960.96,
+        "total_inference_ms": 2969.12,
+        "completion_tokens_per_second": 22.966,
+        "peak_npu_memory_mb": 1784.26,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "北京理工大学通信工程相关方向应优先核验北京理工大学信息与电子学院官网 https://sie.bit.edu.cn/，该学院官网包含学院级信息、招生方向及考试科目等关键数据，且与研究生院、研究生招生页面及研招网交叉核验。[1] 建议以对应年份官方通知为准。"
+    },
+    {
+      "case_id": "SCHOOL-005",
+      "question": "沈阳工业大学考研信息应该看哪些官方来源？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "沈阳工业大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "研招网",
+        "sut.edu.cn",
+        "yjsxy.sut.edu.cn"
+      ],
+      "expected_keywords": [
+        "研招网",
+        "sut.edu.cn",
+        "yjsxy.sut.edu.cn"
+      ],
+      "passed": true,
+      "latency_ms": 1985.04,
+      "timings": {
+        "retrieval_ms": 9.62,
+        "generation_ms": 1974.16,
+        "total_ms": 1983.8
+      },
+      "model_usage": {
+        "prompt_tokens": 409,
+        "completion_tokens": 43,
+        "total_tokens": 452,
+        "preparation_ms": 7.69,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 1964.39,
+        "total_inference_ms": 1972.48,
+        "completion_tokens_per_second": 21.89,
+        "peak_npu_memory_mb": 1763.99,
+        "grounding_repair": true,
+        "grounding_repair_count": 1,
+        "grounding_repair_source": "top_citation",
+        "grounding_repair_mode": "school"
+      },
+      "answer": "沈阳工业大学考研信息应优先核验研招网院校库、招生简章及硕士目录等官方渠道，并交叉验证学校官网及研究生院官网。[1] 建议以官方通知为准。\n证据补充：沈阳工业大学考研官方信息源：https://yz.chsi.com.cn/sch/schoolInfo--schId-368034.dhtml、https://www.sut.edu.cn/、https://yjsxy.sut.edu.cn/。"
+    },
+    {
+      "case_id": "SCHOOL-006",
+      "question": "上海交通大学考研信息应该看哪些官方来源？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "上海交通大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "研招网",
+        "sjtu.edu.cn",
+        "yzb.sjtu.edu.cn"
+      ],
+      "expected_keywords": [
+        "研招网",
+        "sjtu.edu.cn",
+        "yzb.sjtu.edu.cn"
+      ],
+      "passed": true,
+      "latency_ms": 2006.63,
+      "timings": {
+        "retrieval_ms": 9.79,
+        "generation_ms": 1995.0,
+        "total_ms": 2004.82
+      },
+      "model_usage": {
+        "prompt_tokens": 424,
+        "completion_tokens": 42,
+        "total_tokens": 466,
+        "preparation_ms": 6.19,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 1967.81,
+        "total_inference_ms": 1974.56,
+        "completion_tokens_per_second": 21.344,
+        "peak_npu_memory_mb": 1765.35,
+        "grounding_repair": true,
+        "grounding_repair_count": 1,
+        "grounding_repair_source": "top_citation",
+        "grounding_repair_mode": "school"
+      },
+      "answer": "上海交通大学考研信息应优先核验研招网院校库及官网，具体包括院校信息核验、招生简章列表及招生人数等关键数据。[1] 建议以官方通知为准。\n证据补充：上海交通大学考研官方信息源：https://yz.chsi.com.cn/sch/schoolInfo--schId-368012.dhtml、https://www.sjtu.edu.cn/、https://yzb.sjtu.edu.cn/；并与研究生招生网、研究生院官网交叉核验。"
+    },
+    {
+      "case_id": "SCHOOL-007",
+      "question": "研招网硕士目录数据使用时要注意什么？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "研招网硕士专业目录使用原则"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "查询条件",
+        "查询日期",
+        "年份"
+      ],
+      "expected_keywords": [
+        "查询条件",
+        "查询日期",
+        "年份"
+      ],
+      "passed": true,
+      "latency_ms": 2406.24,
+      "timings": {
+        "retrieval_ms": 4.82,
+        "generation_ms": 2399.59,
+        "total_ms": 2404.43
+      },
+      "model_usage": {
+        "prompt_tokens": 287,
+        "completion_tokens": 53,
+        "total_tokens": 340,
+        "preparation_ms": 7.33,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2363.15,
+        "total_inference_ms": 2371.04,
+        "completion_tokens_per_second": 22.428,
+        "peak_npu_memory_mb": 1747.76,
+        "grounding_repair": true,
+        "grounding_repair_count": 1,
+        "grounding_repair_source": "top_citation",
+        "grounding_repair_mode": "school"
+      },
+      "answer": "研招网硕士专业目录查询时，必须严格区分不同年份数据，避免混用[1]。查询条件需包含地区、院校、专业、学习方式等要素，并保留查询日期与对应年份，确保数据时效性。\n证据补充：研招网硕士专业目录使用原则：研招网硕士专业目录使用原则；https://yz.chsi.com.cn/zsml/。"
+    },
+    {
+      "case_id": "SCHOOL-008",
+      "question": "今年清华大学计算机专业招生人数是多少？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "清华大学计算机科学与技术系官方入口",
+        "清华大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "年份",
+        "官方通知",
+        "招生人数"
+      ],
+      "expected_keywords": [
+        "年份",
+        "官方通知",
+        "招生人数"
+      ],
+      "passed": true,
+      "latency_ms": 4326.68,
+      "timings": {
+        "retrieval_ms": 10.42,
+        "generation_ms": 4314.86,
+        "total_ms": 4325.31
+      },
+      "model_usage": {
+        "prompt_tokens": 478,
+        "completion_tokens": 94,
+        "total_tokens": 572,
+        "preparation_ms": 7.21,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 4288.19,
+        "total_inference_ms": 4296.0,
+        "completion_tokens_per_second": 21.921,
+        "peak_npu_memory_mb": 1769.95,
+        "grounding_repair": true,
+        "grounding_repair_count": 1,
+        "grounding_repair_source": "top_citation",
+        "grounding_repair_mode": "school"
+      },
+      "answer": "清华大学计算机专业招生人数需以当年官方通知为准，因未提供具体年份数据。[1] 校官网提供系级信息入口，[2] 研招网及研究生招生网提供院校库及招生简章列表，交叉核验是核心依据。[1] 校官网提供系级信息入口，[2] 研招网及研究生招生网提供院校库及招生简章列表，交叉核验是核心依据。\n证据补充：清华大学计算机科学与技术系官方入口：清华大学计算机科学与技术系；https://www.cs.tsinghua.edu.cn/；并与研招网院校库交叉核验。"
+    },
+    {
+      "case_id": "PLAN-001",
+      "question": "距离考试 120 天，计算机408应该怎么复习？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "三阶段复习框架",
+        "间隔复习安排",
+        "主动回忆学习法"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "基础",
+        "强化",
+        "冲刺"
+      ],
+      "expected_keywords": [
+        "基础",
+        "强化",
+        "冲刺"
+      ],
+      "passed": true,
+      "latency_ms": 4962.27,
+      "timings": {
+        "retrieval_ms": 6.99,
+        "generation_ms": 4953.71,
+        "total_ms": 4960.72
+      },
+      "model_usage": {
+        "prompt_tokens": 411,
+        "completion_tokens": 118,
+        "total_tokens": 529,
+        "preparation_ms": 7.39,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 4927.94,
+        "total_inference_ms": 4938.23,
+        "completion_tokens_per_second": 23.945,
+        "peak_npu_memory_mb": 1764.03,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "120 天跨度，建议分三阶段推进。基础阶段（第 1-30 天）建立框架与教材通读；强化阶段（第 31-60 天）进行真题训练与专题归纳；冲刺阶段（第 61-120 天）回炉错题、模拟训练并稳定答题模板。依据：三阶段复习框架 [1]；间隔复习节奏依据自测正确率调整 [2]；主动回忆法通过问题清单复测暴露记忆缺口 [3]。"
+    },
+    {
+      "case_id": "PLAN-002",
+      "question": "通信工程专业课剩 90 天怎么安排？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "三阶段复习框架",
+        "间隔复习安排",
+        "主动回忆学习法"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "基础",
+        "真题",
+        "模拟"
+      ],
+      "expected_keywords": [
+        "基础",
+        "真题",
+        "模拟"
+      ],
+      "passed": true,
+      "latency_ms": 4431.6,
+      "timings": {
+        "retrieval_ms": 6.65,
+        "generation_ms": 4423.25,
+        "total_ms": 4429.92
+      },
+      "model_usage": {
+        "prompt_tokens": 407,
+        "completion_tokens": 105,
+        "total_tokens": 512,
+        "preparation_ms": 8.59,
+        "queue_wait_ms": 0.04,
+        "generation_ms": 4409.72,
+        "total_inference_ms": 4418.81,
+        "completion_tokens_per_second": 23.811,
+        "peak_npu_memory_mb": 1763.95,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "通信工程专业课剩余 90 天，建议按基础、强化、冲刺三阶段规划。基础阶段（第 1-30 天）建立知识框架，强化阶段（第 31-60 天）进行真题训练和专题归纳，冲刺阶段（第 61-90 天）回炉错题、模拟训练并稳定答题模板。依据三阶段框架、间隔复习节奏及主动回忆法，确保知识体系完整且记忆牢固。"
+    },
+    {
+      "case_id": "PLAN-003",
+      "question": "法学专业课冲刺阶段怎么复习主观题？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "三阶段复习框架",
+        "间隔复习安排",
+        "主动回忆学习法"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "错题",
+        "模拟",
+        "答题模板"
+      ],
+      "expected_keywords": [
+        "错题",
+        "模拟",
+        "答题模板"
+      ],
+      "passed": true,
+      "latency_ms": 6845.11,
+      "timings": {
+        "retrieval_ms": 7.82,
+        "generation_ms": 6835.89,
+        "total_ms": 6843.73
+      },
+      "model_usage": {
+        "prompt_tokens": 404,
+        "completion_tokens": 153,
+        "total_tokens": 557,
+        "preparation_ms": 6.52,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 6805.74,
+        "total_inference_ms": 6813.2,
+        "completion_tokens_per_second": 22.481,
+        "peak_npu_memory_mb": 1763.89,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "冲刺阶段核心为错题回炉与模板稳定。依据证据[1]，需将基础框架与教材通读转化为错题回炉，强化阶段侧重专题归纳，冲刺阶段重点在于模拟训练与答题模板稳定。依据证据[2]，建议采用 1 天、3 天、7 天、14 天初始节奏，依据自测正确率调整间隔，遗忘快的内容缩短间隔，稳定掌握的内容延长间隔。依据证据[3]，复习时可将每章转成问题清单，并在当天、次日和周末重复自测，以暴露记忆缺口。综合以上，冲刺阶段应聚焦错题回炉、模拟训练及答题模板稳定，并严格执行间隔复习策略。"
+    },
+    {
+      "case_id": "QA-CS-004",
+      "question": "栈和队列分别遵循什么访问顺序？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "栈与队列的区别"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "后进先出",
+        "先进先出",
+        "栈",
+        "队列"
+      ],
+      "expected_keywords": [
+        "后进先出",
+        "先进先出",
+        "栈",
+        "队列"
+      ],
+      "passed": true,
+      "latency_ms": 1278.17,
+      "timings": {
+        "retrieval_ms": 2.52,
+        "generation_ms": 1274.15,
+        "total_ms": 1276.68
+      },
+      "model_usage": {
+        "prompt_tokens": 289,
+        "completion_tokens": 24,
+        "total_tokens": 313,
+        "preparation_ms": 13.77,
+        "queue_wait_ms": 0.04,
+        "generation_ms": 1255.82,
+        "total_inference_ms": 1270.02,
+        "completion_tokens_per_second": 19.111,
+        "peak_npu_memory_mb": 1748.36,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "栈遵循后进先出（LIFO），队列遵循先进先出（FIFO）。[1]"
+    },
+    {
+      "case_id": "EXAM-CS-005",
+      "question": "二叉树先序、中序和后序遍历的顺序分别是什么？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "二叉树遍历"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "先序",
+        "中序",
+        "后序",
+        "根"
+      ],
+      "expected_keywords": [
+        "先序",
+        "中序",
+        "后序",
+        "根"
+      ],
+      "passed": true,
+      "latency_ms": 2118.7,
+      "timings": {
+        "retrieval_ms": 2.72,
+        "generation_ms": 2114.55,
+        "total_ms": 2117.29
+      },
+      "model_usage": {
+        "prompt_tokens": 322,
+        "completion_tokens": 45,
+        "total_tokens": 367,
+        "preparation_ms": 7.49,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 2096.75,
+        "total_inference_ms": 2104.67,
+        "completion_tokens_per_second": 21.462,
+        "peak_npu_memory_mb": 1752.35,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "二叉树遍历顺序：先序为根左右，中序为左根右，后序为左右根。[1] 依据：二叉树遍历定义及层序遍历说明。"
+    },
+    {
+      "case_id": "QA-CS-006",
+      "question": "散列表发生冲突时有哪些常见解决方法？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "散列表冲突处理"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "开放定址",
+        "拉链"
+      ],
+      "expected_keywords": [
+        "开放定址",
+        "拉链",
+        "装填因子"
+      ],
+      "passed": true,
+      "latency_ms": 1034.69,
+      "timings": {
+        "retrieval_ms": 2.38,
+        "generation_ms": 1030.96,
+        "total_ms": 1033.35
+      },
+      "model_usage": {
+        "prompt_tokens": 278,
+        "completion_tokens": 19,
+        "total_tokens": 297,
+        "preparation_ms": 6.27,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 987.11,
+        "total_inference_ms": 993.77,
+        "completion_tokens_per_second": 19.248,
+        "peak_npu_memory_mb": 1747.59,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "散列表冲突常见解决方法包括开放定址法和拉链法[1]。"
+    },
+    {
+      "case_id": "QA-CS-007",
+      "question": "哪些常见排序算法是稳定的？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "稳定排序与复杂度"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "插入排序",
+        "冒泡排序",
+        "归并排序",
+        "稳定"
+      ],
+      "expected_keywords": [
+        "插入排序",
+        "冒泡排序",
+        "归并排序",
+        "稳定"
+      ],
+      "passed": true,
+      "latency_ms": 1205.64,
+      "timings": {
+        "retrieval_ms": 2.24,
+        "generation_ms": 1202.21,
+        "total_ms": 1204.47
+      },
+      "model_usage": {
+        "prompt_tokens": 288,
+        "completion_tokens": 22,
+        "total_tokens": 310,
+        "preparation_ms": 6.1,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 1182.5,
+        "total_inference_ms": 1189.03,
+        "completion_tokens_per_second": 18.605,
+        "peak_npu_memory_mb": 1747.78,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "直接插入排序、冒泡排序、归并排序是稳定排序算法。[1]"
+    },
+    {
+      "case_id": "EXAM-CS-008",
+      "question": "死锁产生的四个必要条件是什么？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "死锁必要条件"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "互斥",
+        "请求并保持",
+        "不可剥夺",
+        "循环等待"
+      ],
+      "expected_keywords": [
+        "互斥",
+        "请求并保持",
+        "不可剥夺",
+        "循环等待"
+      ],
+      "passed": true,
+      "latency_ms": 1683.33,
+      "timings": {
+        "retrieval_ms": 2.75,
+        "generation_ms": 1679.18,
+        "total_ms": 1681.96
+      },
+      "model_usage": {
+        "prompt_tokens": 291,
+        "completion_tokens": 34,
+        "total_tokens": 325,
+        "preparation_ms": 5.93,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 1650.39,
+        "total_inference_ms": 1656.71,
+        "completion_tokens_per_second": 20.601,
+        "peak_npu_memory_mb": 1748.4,
+        "grounding_repair": true,
+        "grounding_repair_count": 1,
+        "grounding_repair_source": "top_citation",
+        "grounding_repair_mode": "exam"
+      },
+      "answer": "死锁产生的四个必要条件为：互斥、请求保持、不可剥夺、循环等待。[1] 破坏任一必要条件可预防死锁。\n证据补充：请求并保持、循环等待四个必要条件。"
+    },
+    {
+      "case_id": "QA-CS-009",
+      "question": "虚拟内存发生缺页时操作系统会做什么？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "虚拟内存与缺页"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "缺页中断",
+        "调页",
+        "页面置换"
+      ],
+      "expected_keywords": [
+        "缺页中断",
+        "调页",
+        "页面置换"
+      ],
+      "passed": true,
+      "latency_ms": 1847.95,
+      "timings": {
+        "retrieval_ms": 2.79,
+        "generation_ms": 1843.81,
+        "total_ms": 1846.61
+      },
+      "model_usage": {
+        "prompt_tokens": 279,
+        "completion_tokens": 40,
+        "total_tokens": 319,
+        "preparation_ms": 6.14,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 1822.93,
+        "total_inference_ms": 1829.7,
+        "completion_tokens_per_second": 21.943,
+        "peak_npu_memory_mb": 1747.6,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "当虚拟内存发生缺页时，操作系统会执行缺页中断，由操作系统调页。若空闲页框不足，则依据页面置换算法淘汰页。[1]"
+    },
+    {
+      "case_id": "QA-CS-010",
+      "question": "先来先服务、短作业优先和时间片轮转各有什么特点？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "进程调度算法"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "先来先服务",
+        "短作业优先",
+        "时间片轮转"
+      ],
+      "expected_keywords": [
+        "先来先服务",
+        "短作业优先",
+        "时间片轮转"
+      ],
+      "passed": true,
+      "latency_ms": 2132.53,
+      "timings": {
+        "retrieval_ms": 2.55,
+        "generation_ms": 2128.62,
+        "total_ms": 2131.18
+      },
+      "model_usage": {
+        "prompt_tokens": 277,
+        "completion_tokens": 45,
+        "total_tokens": 322,
+        "preparation_ms": 7.13,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2094.63,
+        "total_inference_ms": 2102.17,
+        "completion_tokens_per_second": 21.484,
+        "peak_npu_memory_mb": 1747.57,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "先来先服务：简单但易产生护航效应，短作业优先降低平均等待时间但可能使长作业饥饿，时间片轮转适合分时系统，优先级调度可缓解饥饿。[1]"
+    },
+    {
+      "case_id": "QA-CS-011",
+      "question": "TCP 拥塞控制包含哪些典型机制？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "TCP 拥塞控制"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "慢开始",
+        "拥塞避免",
+        "快重传",
+        "快恢复"
+      ],
+      "expected_keywords": [
+        "慢开始",
+        "拥塞避免",
+        "快重传",
+        "快恢复"
+      ],
+      "passed": true,
+      "latency_ms": 2670.28,
+      "timings": {
+        "retrieval_ms": 2.5,
+        "generation_ms": 2666.55,
+        "total_ms": 2669.07
+      },
+      "model_usage": {
+        "prompt_tokens": 286,
+        "completion_tokens": 64,
+        "total_tokens": 350,
+        "preparation_ms": 6.26,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2651.59,
+        "total_inference_ms": 2658.46,
+        "completion_tokens_per_second": 24.136,
+        "peak_npu_memory_mb": 1747.74,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "TCP 拥塞控制包含慢开始、拥塞避免、快重传和快恢复四种典型机制。[1] 慢开始阶段拥塞窗口按确认轮次近似指数增长，达到慢开始门限后转为线性增长；检测到拥塞后调整门限和窗口。"
+    },
+    {
+      "case_id": "EXAM-CS-012",
+      "question": "IPv4 前缀长度为 p 时子网地址数量如何计算？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "IPv4 子网划分"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "2^(32-p)",
+        "网络地址",
+        "广播地址"
+      ],
+      "expected_keywords": [
+        "2^(32-p)",
+        "网络地址",
+        "广播地址"
+      ],
+      "passed": true,
+      "latency_ms": 2104.26,
+      "timings": {
+        "retrieval_ms": 2.34,
+        "generation_ms": 2100.48,
+        "total_ms": 2102.84
+      },
+      "model_usage": {
+        "prompt_tokens": 316,
+        "completion_tokens": 46,
+        "total_tokens": 362,
+        "preparation_ms": 7.67,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2081.1,
+        "total_inference_ms": 2089.24,
+        "completion_tokens_per_second": 22.104,
+        "peak_npu_memory_mb": 1749.53,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "IPv4 前缀长度 p 时，子网地址数量 = 2^(32-p) 个。[1] 传统题目扣除网络地址和广播地址后计算可用主机地址。"
+    },
+    {
+      "case_id": "QA-CS-013",
+      "question": "DNS 递归查询和迭代查询在解析中怎样配合？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "DNS 解析过程"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "本地 DNS",
+        "根",
+        "权威 DNS",
+        "缓存"
+      ],
+      "expected_keywords": [
+        "本地 DNS",
+        "根",
+        "权威 DNS",
+        "缓存"
+      ],
+      "passed": true,
+      "latency_ms": 3027.54,
+      "timings": {
+        "retrieval_ms": 3.48,
+        "generation_ms": 3022.71,
+        "total_ms": 3026.22
+      },
+      "model_usage": {
+        "prompt_tokens": 284,
+        "completion_tokens": 74,
+        "total_tokens": 358,
+        "preparation_ms": 6.49,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 3011.49,
+        "total_inference_ms": 3018.69,
+        "completion_tokens_per_second": 24.573,
+        "peak_npu_memory_mb": 1747.7,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "DNS 递归查询与迭代查询配合以递归查询获取根域名及顶级域信息，迭代查询则基于缓存结果进一步解析权威域名。[1] 解析过程：本地主机发起递归查询，本地 DNS 服务器依次向根、顶级域和权威 DNS 服务器进行迭代查询，并缓存结果以降低后续解析时延。"
+    },
+    {
+      "case_id": "QA-COMM-004",
+      "question": "傅里叶变换对通信系统分析有什么作用？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "傅里叶变换的意义",
+        "平稳随机过程"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "时域",
+        "频域",
+        "卷积"
+      ],
+      "expected_keywords": [
+        "时域",
+        "频域",
+        "频谱",
+        "卷积"
+      ],
+      "passed": true,
+      "latency_ms": 2960.49,
+      "timings": {
+        "retrieval_ms": 2.77,
+        "generation_ms": 2956.2,
+        "total_ms": 2958.99
+      },
+      "model_usage": {
+        "prompt_tokens": 341,
+        "completion_tokens": 72,
+        "total_tokens": 413,
+        "preparation_ms": 8.05,
+        "queue_wait_ms": 0.04,
+        "generation_ms": 2918.35,
+        "total_inference_ms": 2927.2,
+        "completion_tokens_per_second": 24.671,
+        "peak_npu_memory_mb": 1754.17,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "傅里叶变换将时域信号分解为不同频率复指数分量，便于分析系统频率响应、滤波、调制和带宽，时域卷积对应频域乘积。[1] 平稳随机过程的功率谱密度与自相关函数构成傅里叶变换对，这是分析随机信号频域功率分布的重要关系。"
+    },
+    {
+      "case_id": "EXAM-COMM-005",
+      "question": "怎样判断一个系统是线性时不变系统？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "线性时不变系统判定"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "齐次性",
+        "可加性",
+        "时不变",
+        "卷积"
+      ],
+      "expected_keywords": [
+        "齐次性",
+        "可加性",
+        "时不变",
+        "卷积"
+      ],
+      "passed": true,
+      "latency_ms": 2274.19,
+      "timings": {
+        "retrieval_ms": 2.46,
+        "generation_ms": 2270.14,
+        "total_ms": 2272.62
+      },
+      "model_usage": {
+        "prompt_tokens": 298,
+        "completion_tokens": 48,
+        "total_tokens": 346,
+        "preparation_ms": 14.58,
+        "queue_wait_ms": 0.06,
+        "generation_ms": 2250.85,
+        "total_inference_ms": 2265.91,
+        "completion_tokens_per_second": 21.325,
+        "peak_npu_memory_mb": 1748.54,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "判断线性时不变系统需满足齐次性和可加性，且输入延时后输出仅发生相同延时。系统可由冲激响应完整表征，输出等于输入与冲激响应的卷积。[1]"
+    },
+    {
+      "case_id": "QA-COMM-006",
+      "question": "ASK、FSK、PSK 和 QPSK 有什么基本区别？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "数字调制方式比较"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "幅度",
+        "频率",
+        "相位",
+        "2 bit"
+      ],
+      "expected_keywords": [
+        "幅度",
+        "频率",
+        "相位",
+        "2 bit"
+      ],
+      "passed": true,
+      "latency_ms": 3226.99,
+      "timings": {
+        "retrieval_ms": 1.97,
+        "generation_ms": 3223.85,
+        "total_ms": 3225.84
+      },
+      "model_usage": {
+        "prompt_tokens": 304,
+        "completion_tokens": 70,
+        "total_tokens": 374,
+        "preparation_ms": 6.71,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 3195.86,
+        "total_inference_ms": 3203.19,
+        "completion_tokens_per_second": 21.903,
+        "peak_npu_memory_mb": 1749.02,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "ASK 用幅度承载信息，抗幅度噪声能力弱；FSK 用频率承载信息，非相干检测方便；PSK 用相位承载信息，功率利用率高；QPSK 每个符号携带 2 bit，在相同码元速率下比 BPSK 比特率高。[1]"
+    },
+    {
+      "case_id": "QA-COMM-007",
+      "question": "匹配滤波器为什么用于最佳接收？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "匹配滤波器"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "白噪声",
+        "抽样时刻",
+        "信噪比最大"
+      ],
+      "expected_keywords": [
+        "白噪声",
+        "抽样时刻",
+        "信噪比最大"
+      ],
+      "passed": true,
+      "latency_ms": 2601.35,
+      "timings": {
+        "retrieval_ms": 2.0,
+        "generation_ms": 2598.07,
+        "total_ms": 2600.09
+      },
+      "model_usage": {
+        "prompt_tokens": 264,
+        "completion_tokens": 52,
+        "total_tokens": 316,
+        "preparation_ms": 8.0,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2579.69,
+        "total_inference_ms": 2588.27,
+        "completion_tokens_per_second": 20.157,
+        "peak_npu_memory_mb": 1745.25,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "匹配滤波器用于最佳接收，因为其在白噪声背景下使指定抽样时刻的输出信噪比最大，其冲激响应与已知信号的时间反转共轭形式相关，是数字通信最佳接收机分析中的重要组成。[1]"
+    },
+    {
+      "case_id": "QA-COMM-008",
+      "question": "信道编码为什么能提高通信可靠性？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "信道编码作用"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "冗余",
+        "检测",
+        "纠正",
+        "可靠性"
+      ],
+      "expected_keywords": [
+        "冗余",
+        "检测",
+        "纠正",
+        "可靠性"
+      ],
+      "passed": true,
+      "latency_ms": 1426.45,
+      "timings": {
+        "retrieval_ms": 2.24,
+        "generation_ms": 1422.71,
+        "total_ms": 1424.97
+      },
+      "model_usage": {
+        "prompt_tokens": 264,
+        "completion_tokens": 28,
+        "total_tokens": 292,
+        "preparation_ms": 6.65,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 1399.17,
+        "total_inference_ms": 1408.22,
+        "completion_tokens_per_second": 20.012,
+        "peak_npu_memory_mb": 1745.25,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "信道编码通过加入受控冗余，使接收端能够检测或纠正传输错误，从而提高通信可靠性。[1]"
+    },
+    {
+      "case_id": "EXAM-COMM-009",
+      "question": "DFT 和 FFT 是什么关系，计算复杂度怎样变化？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "DFT 与 FFT"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "DFT",
+        "FFT",
+        "O(N^2)",
+        "O(N log N)"
+      ],
+      "expected_keywords": [
+        "DFT",
+        "FFT",
+        "O(N^2)",
+        "O(N log N)"
+      ],
+      "passed": true,
+      "latency_ms": 2465.37,
+      "timings": {
+        "retrieval_ms": 2.03,
+        "generation_ms": 2462.09,
+        "total_ms": 2464.13
+      },
+      "model_usage": {
+        "prompt_tokens": 310,
+        "completion_tokens": 55,
+        "total_tokens": 365,
+        "preparation_ms": 11.99,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2445.89,
+        "total_inference_ms": 2458.34,
+        "completion_tokens_per_second": 22.487,
+        "peak_npu_memory_mb": 1749.56,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "DFT 将有限长序列变换到离散频域，直接计算复杂度约为 O(N^2)；FFT 利用旋转因子周期性和对称性快速计算 DFT，典型复杂度为 O(N log N)，结果定义不变。[1]"
+    },
+    {
+      "case_id": "QA-COMM-010",
+      "question": "FIR 与 IIR 滤波器在稳定性和线性相位方面有什么区别？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "FIR 与 IIR 滤波器"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "FIR",
+        "IIR",
+        "线性相位",
+        "稳定"
+      ],
+      "expected_keywords": [
+        "FIR",
+        "IIR",
+        "线性相位",
+        "稳定"
+      ],
+      "passed": true,
+      "latency_ms": 2784.26,
+      "timings": {
+        "retrieval_ms": 2.57,
+        "generation_ms": 2779.92,
+        "total_ms": 2782.51
+      },
+      "model_usage": {
+        "prompt_tokens": 289,
+        "completion_tokens": 59,
+        "total_tokens": 348,
+        "preparation_ms": 8.34,
+        "queue_wait_ms": 0.04,
+        "generation_ms": 2740.45,
+        "total_inference_ms": 2749.58,
+        "completion_tokens_per_second": 21.529,
+        "peak_npu_memory_mb": 1748.36,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "FIR 滤波器单位冲激响应有限，可实现严格线性相位且通常稳定，但达到同等选择性可能需要较高阶数；IIR 单位冲激响应无限，较低阶数即可获得较陡过渡带，但相位和稳定性设计更复杂。[1]"
+    },
+    {
+      "case_id": "QA-COMM-011",
+      "question": "PCM 编码通常包含哪三个步骤？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "PCM 编码步骤"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "抽样",
+        "量化",
+        "编码"
+      ],
+      "expected_keywords": [
+        "抽样",
+        "量化",
+        "编码"
+      ],
+      "passed": true,
+      "latency_ms": 2284.25,
+      "timings": {
+        "retrieval_ms": 2.4,
+        "generation_ms": 2280.39,
+        "total_ms": 2282.81
+      },
+      "model_usage": {
+        "prompt_tokens": 271,
+        "completion_tokens": 49,
+        "total_tokens": 320,
+        "preparation_ms": 7.85,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2243.5,
+        "total_inference_ms": 2251.77,
+        "completion_tokens_per_second": 21.841,
+        "peak_npu_memory_mb": 1746.89,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "PCM 编码包含抽样、量化、编码三个步骤。抽样将连续时间信号离散化，量化将幅值映射到有限电平并产生量化误差，编码将量化电平表示为二进制码组。[1]"
+    },
+    {
+      "case_id": "QA-COMM-012",
+      "question": "OFDM 如何应对多径并提高频谱利用率？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "OFDM 基本原理"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "正交",
+        "子载波",
+        "循环前缀",
+        "多径"
+      ],
+      "expected_keywords": [
+        "正交",
+        "子载波",
+        "循环前缀",
+        "多径"
+      ],
+      "passed": true,
+      "latency_ms": 2661.77,
+      "timings": {
+        "retrieval_ms": 2.21,
+        "generation_ms": 2658.35,
+        "total_ms": 2660.57
+      },
+      "model_usage": {
+        "prompt_tokens": 280,
+        "completion_tokens": 58,
+        "total_tokens": 338,
+        "preparation_ms": 6.08,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 2624.61,
+        "total_inference_ms": 2631.26,
+        "completion_tokens_per_second": 22.099,
+        "peak_npu_memory_mb": 1747.62,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "OFDM 通过多载波并行传输将高速数据流分解为多个正交子载波，显著降低多径造成的码间串扰，同时利用循环前缀对抗时延扩展，从而在保持低开销的前提下提升频谱利用率。[1]"
+    },
+    {
+      "case_id": "EXAM-LAW-004",
+      "question": "分析自然人的民事行为能力需要考虑哪些因素？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "民事行为能力"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "年龄",
+        "辨认能力",
+        "行为性质",
+        "法定代理人"
+      ],
+      "expected_keywords": [
+        "年龄",
+        "辨认能力",
+        "行为性质",
+        "法定代理人"
+      ],
+      "passed": true,
+      "latency_ms": 1912.67,
+      "timings": {
+        "retrieval_ms": 2.15,
+        "generation_ms": 1909.31,
+        "total_ms": 1911.47
+      },
+      "model_usage": {
+        "prompt_tokens": 287,
+        "completion_tokens": 41,
+        "total_tokens": 328,
+        "preparation_ms": 9.81,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 1889.33,
+        "total_inference_ms": 1899.53,
+        "completion_tokens_per_second": 21.701,
+        "peak_npu_memory_mb": 1747.76,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "自然人民事行为能力需结合年龄、辨认能力、行为性质及法定代理人同意或追认。[1] 易错点在于忽略法定代理人同意或追认这一关键要素。"
+    },
+    {
+      "case_id": "QA-LAW-005",
+      "question": "有权代理、无权代理和表见代理应如何区分？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "代理制度"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "有权代理",
+        "无权代理",
+        "表见代理",
+        "被代理人"
+      ],
+      "expected_keywords": [
+        "有权代理",
+        "无权代理",
+        "表见代理",
+        "被代理人"
+      ],
+      "passed": true,
+      "latency_ms": 3771.54,
+      "timings": {
+        "retrieval_ms": 2.31,
+        "generation_ms": 3768.04,
+        "total_ms": 3770.37
+      },
+      "model_usage": {
+        "prompt_tokens": 269,
+        "completion_tokens": 87,
+        "total_tokens": 356,
+        "preparation_ms": 6.47,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 3751.3,
+        "total_inference_ms": 3758.44,
+        "completion_tokens_per_second": 23.192,
+        "peak_npu_memory_mb": 1746.85,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "代理制度核心在于代理权归属。[1] 有权代理指代理人以被代理人名义实施行为，后果直接归属于被代理人；无权代理指代理人超越权限实施，后果由行为人承担；表见代理指相对人善意无过失且权利外观使相对人相信代理人有权限，后果由被代理人承担。代理权滥用指代理人越权或滥用职权，后果由代理人承担。"
+    },
+    {
+      "case_id": "EXAM-LAW-006",
+      "question": "合同效力案例题应该按什么顺序分析？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "合同效力分析"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "主体能力",
+        "意思表示"
+      ],
+      "expected_keywords": [
+        "主体能力",
+        "意思表示",
+        "无效",
+        "可撤销"
+      ],
+      "passed": false,
+      "latency_ms": 1921.41,
+      "timings": {
+        "retrieval_ms": 2.1,
+        "generation_ms": 1918.1,
+        "total_ms": 1920.22
+      },
+      "model_usage": {
+        "prompt_tokens": 295,
+        "completion_tokens": 40,
+        "total_tokens": 335,
+        "preparation_ms": 13.25,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 1901.06,
+        "total_inference_ms": 1914.72,
+        "completion_tokens_per_second": 21.041,
+        "peak_npu_memory_mb": 1748.48,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "合同效力分析应遵循“主体能力—意思表示—内容合法性—特别事由”的顺序，依次审查主体资格、真实意愿、内容合规性及特殊效力状态。[1]"
+    },
+    {
+      "case_id": "QA-LAW-007",
+      "question": "一般过错侵权责任有哪些构成要素？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "侵权责任构成"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "行为",
+        "损害",
+        "因果关系",
+        "过错"
+      ],
+      "expected_keywords": [
+        "行为",
+        "损害",
+        "因果关系",
+        "过错"
+      ],
+      "passed": true,
+      "latency_ms": 1024.1,
+      "timings": {
+        "retrieval_ms": 2.13,
+        "generation_ms": 1020.86,
+        "total_ms": 1023.0
+      },
+      "model_usage": {
+        "prompt_tokens": 260,
+        "completion_tokens": 20,
+        "total_tokens": 280,
+        "preparation_ms": 5.88,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 1005.15,
+        "total_inference_ms": 1011.39,
+        "completion_tokens_per_second": 19.898,
+        "peak_npu_memory_mb": 1746.68,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "一般过错侵权责任包含行为、损害、因果关系及过错四个要素[1]。"
+    },
+    {
+      "case_id": "EXAM-LAW-008",
+      "question": "直接故意、间接故意、疏忽大意和过于自信怎样区分？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "犯罪故意与过失"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "直接故意",
+        "间接故意",
+        "疏忽大意",
+        "过于自信"
+      ],
+      "expected_keywords": [
+        "直接故意",
+        "间接故意",
+        "疏忽大意",
+        "过于自信"
+      ],
+      "passed": true,
+      "latency_ms": 4091.9,
+      "timings": {
+        "retrieval_ms": 2.41,
+        "generation_ms": 4088.36,
+        "total_ms": 4090.78
+      },
+      "model_usage": {
+        "prompt_tokens": 301,
+        "completion_tokens": 98,
+        "total_tokens": 399,
+        "preparation_ms": 5.87,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 4054.59,
+        "total_inference_ms": 4061.11,
+        "completion_tokens_per_second": 24.17,
+        "peak_npu_memory_mb": 1749.03,
+        "grounding_repair": true,
+        "grounding_repair_count": 2,
+        "grounding_repair_source": "top_citation",
+        "grounding_repair_mode": "exam"
+      },
+      "answer": "直接故意指行为人明知危害结果发生而希望其发生；间接故意指行为人明知危害结果可能发生而放任其发生。二者核心区别在于对结果的态度：前者希望发生，后者放任发生。疏忽大意指行为人应当预见而未预见；过于自信指行为人已经预见但轻信能够避免。[1] 易错点在于混淆“希望”与“放任”的心理状态，以及将过失中的“轻信能够避免”误认为直接故意。\n证据补充：核心在于行为人明知危害结果并希望或放任其发生；分别表现为应当预见而未预见或已经预见但轻信能够避免。"
+    },
+    {
+      "case_id": "EXAM-LAW-009",
+      "question": "正当防卫案例题要从哪些方面展开？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "正当防卫"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "不法侵害",
+        "正在进行",
+        "防卫意图",
+        "必要限度"
+      ],
+      "expected_keywords": [
+        "不法侵害",
+        "正在进行",
+        "防卫意图",
+        "必要限度"
+      ],
+      "passed": true,
+      "latency_ms": 4346.73,
+      "timings": {
+        "retrieval_ms": 2.09,
+        "generation_ms": 4343.42,
+        "total_ms": 4345.53
+      },
+      "model_usage": {
+        "prompt_tokens": 296,
+        "completion_tokens": 101,
+        "total_tokens": 397,
+        "preparation_ms": 19.29,
+        "queue_wait_ms": 0.06,
+        "generation_ms": 4319.39,
+        "total_inference_ms": 4339.36,
+        "completion_tokens_per_second": 23.383,
+        "peak_npu_memory_mb": 1748.5,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "正当防卫需围绕起因、时间、对象、意图、限度五个维度展开，缺一不可。[1] 起因指是否存在现实不法侵害；[1] 时间指侵害是否处于正在进行状态；[1] 对象指防卫人是否针对不法侵害人；[1] 意图指是否具有防卫意图；[1] 限度指是否明显超过必要限度造成重大损害。易错点在于混淆防卫与反击，或误判侵害是否正在进行。"
+    },
+    {
+      "case_id": "QA-LAW-010",
+      "question": "行政行为合法性审查通常关注哪些方面？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "行政行为合法性审查"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "主体权限",
+        "事实依据",
+        "法律适用",
+        "法定程序"
+      ],
+      "expected_keywords": [
+        "主体权限",
+        "事实依据",
+        "法律适用",
+        "法定程序"
+      ],
+      "passed": true,
+      "latency_ms": 1349.76,
+      "timings": {
+        "retrieval_ms": 2.19,
+        "generation_ms": 1346.19,
+        "total_ms": 1348.4
+      },
+      "model_usage": {
+        "prompt_tokens": 264,
+        "completion_tokens": 27,
+        "total_tokens": 291,
+        "preparation_ms": 16.36,
+        "queue_wait_ms": 0.04,
+        "generation_ms": 1325.51,
+        "total_inference_ms": 1342.28,
+        "completion_tokens_per_second": 20.37,
+        "peak_npu_memory_mb": 1745.25,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "行政行为合法性审查通常关注主体权限、事实依据、法律适用、法定程序和裁量是否适当。[1]"
+    },
+    {
+      "case_id": "PLAN-004",
+      "question": "我总是看懂却记不住，怎样用主动回忆改进408复习？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "主动回忆学习法",
+        "三阶段复习框架",
+        "间隔复习安排"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "问题",
+        "自测"
+      ],
+      "expected_keywords": [
+        "问题",
+        "口述",
+        "默写",
+        "自测"
+      ],
+      "passed": false,
+      "latency_ms": 3453.12,
+      "timings": {
+        "retrieval_ms": 6.76,
+        "generation_ms": 3445.08,
+        "total_ms": 3451.86
+      },
+      "model_usage": {
+        "prompt_tokens": 411,
+        "completion_tokens": 79,
+        "total_tokens": 490,
+        "preparation_ms": 6.21,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 3418.51,
+        "total_inference_ms": 3425.22,
+        "completion_tokens_per_second": 23.109,
+        "peak_npu_memory_mb": 1764.03,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "建议采用主动回忆法，将每章内容转化为问题清单，每日复述并重复自测，以暴露记忆缺口[1]。结合三阶段框架，基础阶段建立框架，强化阶段进行真题训练，冲刺阶段回炉错题[2]。根据遗忘规律调整间隔节奏，遗忘快内容缩短间隔，稳定内容延长间隔[3]。"
+    },
+    {
+      "case_id": "PLAN-005",
+      "question": "通信专业课知识点应该怎样安排间隔复习？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "间隔复习安排",
+        "三阶段复习框架",
+        "主动回忆学习法"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "1 天",
+        "3 天",
+        "7 天",
+        "自测"
+      ],
+      "expected_keywords": [
+        "1 天",
+        "3 天",
+        "7 天",
+        "自测"
+      ],
+      "passed": true,
+      "latency_ms": 5185.72,
+      "timings": {
+        "retrieval_ms": 6.88,
+        "generation_ms": 5177.28,
+        "total_ms": 5184.18
+      },
+      "model_usage": {
+        "prompt_tokens": 404,
+        "completion_tokens": 120,
+        "total_tokens": 524,
+        "preparation_ms": 6.89,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 5141.05,
+        "total_inference_ms": 5148.6,
+        "completion_tokens_per_second": 23.342,
+        "peak_npu_memory_mb": 1763.89,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "通信专业课间隔复习应遵循“基础巩固 + 强化突破 + 冲刺冲刺”三阶段框架，按 1 天/3 天/7 天/14 天节奏分散知识点，遗忘快的内容缩短间隔，稳定掌握内容延长间隔。基础阶段建立框架，强化阶段通过真题训练和专题归纳巩固，冲刺阶段回炉错题、模拟训练并稳定答题模板。建议每章转成问题清单，每日、次日、周末重复自测，依据自测正确率动态调整节奏。[1][2][3]"
+    },
+    {
+      "case_id": "PLAN-006",
+      "question": "法学错题本应该怎样分类和回炉？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "错题标签与回炉",
+        "三阶段复习框架",
+        "间隔复习安排"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "概念不清",
+        "审题偏差",
+        "独立重做",
+        "错误原因"
+      ],
+      "expected_keywords": [
+        "概念不清",
+        "审题偏差",
+        "独立重做",
+        "错误原因"
+      ],
+      "passed": true,
+      "latency_ms": 3816.15,
+      "timings": {
+        "retrieval_ms": 7.1,
+        "generation_ms": 3807.77,
+        "total_ms": 3814.89
+      },
+      "model_usage": {
+        "prompt_tokens": 403,
+        "completion_tokens": 89,
+        "total_tokens": 492,
+        "preparation_ms": 7.26,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 3772.85,
+        "total_inference_ms": 3780.65,
+        "completion_tokens_per_second": 23.59,
+        "peak_npu_memory_mb": 1763.87,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "法学错题本应分类为概念不清、方法不会、计算失误、审题偏差和记忆遗漏。回炉时先遮住答案独立重做，再补写错误原因、正确触发条件和同类题识别线索。基础阶段重在建立知识框架和教材通读，强化阶段重在真题训练和专题归纳，冲刺阶段重在错题回炉、模拟训练和答题模板稳定。[1][2][3]"
+    },
+    {
+      "case_id": "SCHOOL-009",
+      "question": "上海交通大学计算机方向应该优先核验哪个学院官网？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "上海交通大学计算机学院官方入口",
+        "上海交通大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "计算机学院",
+        "cs.sjtu.edu.cn",
+        "研究生招生网"
+      ],
+      "expected_keywords": [
+        "计算机学院",
+        "cs.sjtu.edu.cn",
+        "研究生招生网"
+      ],
+      "passed": true,
+      "latency_ms": 3540.97,
+      "timings": {
+        "retrieval_ms": 10.17,
+        "generation_ms": 3529.59,
+        "total_ms": 3539.77
+      },
+      "model_usage": {
+        "prompt_tokens": 507,
+        "completion_tokens": 81,
+        "total_tokens": 588,
+        "preparation_ms": 6.93,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 3498.33,
+        "total_inference_ms": 3505.72,
+        "completion_tokens_per_second": 23.154,
+        "peak_npu_memory_mb": 1771.89,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "上海交通大学计算机学院（网络空间安全学院、密码学院）官网为优先核验对象，网址为 https://www.cs.sjtu.edu.cn/。该学院官网包含网络空间安全学院、密码学院等学院级信息，可交叉核验研究生招生网和研招网院校库。[1] 建议优先核验该学院官网，以获取准确学院级信息。"
+    }
+  ]
+}

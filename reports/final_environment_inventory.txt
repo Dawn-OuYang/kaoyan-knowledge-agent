@@ -1,0 +1,166 @@
+========================================================================
+SYSTEM
+========================================================================
+generated_at = 2026-08-28T05:36:40.125257+00:00
+hostname = 8ea63341c833
+platform = Linux-5.10.0-216.0.0.115.oe2203sp4.aarch64-aarch64-with-glibc2.35
+machine = aarch64
+python = 3.11.15 (main, May  6 2026, 06:19:00) [GCC 11.4.0]
+python_executable = /workspace/kaoyan-venv/bin/python
+
+========================================================================
+ASCEND ENVIRONMENT VARIABLES
+========================================================================
+ASCEND_HOME_PATH = /usr/local/Ascend/cann-9.0.0
+ASCEND_TOOLKIT_HOME = /usr/local/Ascend/cann-9.0.0
+ASCEND_OPP_PATH = /usr/local/Ascend/cann-9.0.0/opp
+ASCEND_AICPU_PATH = /usr/local/Ascend/cann-9.0.0
+LD_LIBRARY_PATH = /usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/lib:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/examples:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/tests/atbopstest:/usr/local/Ascend/cann-9.0.0/lib64:/usr/local/Ascend/cann-9.0.0/lib64/plugin/opskernel:/usr/local/Ascend/cann-9.0.0/lib64/plugin/nnengine:/usr/local/Ascend/cann-9.0.0/opp/built-in/op_impl/ai_core/tbe/op_tiling/lib/linux/aarch64:/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/driver/lib64/common:/usr/local/dcmi:/usr/local/Ascend/add-ons:/usr/lib64
+
+========================================================================
+PYTHON PACKAGES
+========================================================================
+torch = 2.10.0+cpu
+torch-npu = 2.10.0
+transformers = 5.2.0
+accelerate = 1.2.0
+pydantic = 2.10.4
+numpy = 2.4.4
+safetensors = 0.8.0
+tokenizers = 0.22.2
+
+========================================================================
+PYTORCH AND NPU
+========================================================================
+torch.__version__ = 2.10.0+cpu
+torch.version.cuda = None
+torch_npu_available = True
+torch_npu.__version__ = 2.10.0
+
+========================================================================
+NPU-SMI
+========================================================================
+EXIT_CODE=0
++------------------------------------------------------------------------------------------------+
+| npu-smi 25.5.0                   Version: 25.5.0                                               |
++---------------------------+---------------+----------------------------------------------------+
+| NPU   Name                | Health        | Power(W)    Temp(C)           Hugepages-Usage(page)|
+| Chip  Phy-ID              | Bus-Id        | AICore(%)   Memory-Usage(MB)  HBM-Usage(MB)        |
++===========================+===============+====================================================+
+| 6     Ascend910           | OK            | 168.3       47                0    / 0             |
+| 0     12                  | 0000:85:00.0  | 0           0    / 0          5281 / 65536         |
++------------------------------------------------------------------------------------------------+
+| 6     Ascend910           | OK            | -           47                0    / 0             |
+| 1     13                  | 0000:87:00.0  | 0           0    / 0          5037 / 65536         |
++===========================+===============+====================================================+
++---------------------------+---------------+----------------------------------------------------+
+| NPU     Chip              | Process id    | Process name             | Process memory(MB)      |
++===========================+===============+====================================================+
+| 6       0                 | 560280        | python                   | 2197                    |
+| 6       1                 | 1361515       | python                   | 2216                    |
++===========================+===============+====================================================+
+
+========================================================================
+CANN VERSION FILES
+========================================================================
+--- /etc/ascend_install.info ---
+UserName=HwHiAiUser
+UserGroup=HwHiAiUser
+Driver_Install_Type=full
+Driver_Install_Path_Param=/usr/local/Ascend
+Driver_Install_For_All=no
+Driver_Install_Mode=normal
+Driver_Install_Status=complete
+--- /usr/local/Ascend/driver/version.info ---
+Version=25.5.0
+ascendhal_version=7.35.23
+aicpu_version=1.0
+tdt_version=1.0
+log_version=1.0
+prof_version=2.0
+dvppkernels_version=1.1
+tsfw_version=1.0
+Innerversion=V100R001C23SPC005B219
+compatible_version=[V100R001C19],[V100R001C20],[V100R001C21],[V100R001C22],[V100R001C23]
+compatible_version_fw=[7.0.0,8.9.9]
+package_version=25.5.0
+
+========================================================================
+OPERATING SYSTEM
+========================================================================
+EXIT_CODE=0
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+
+========================================================================
+GIT REPOSITORIES
+========================================================================
+
+--- /workspace/kaoyan-lab/kaoyan-knowledge-agent ---
+HEAD:
+EXIT_CODE=128
+fatal: not a git repository (or any of the parent directories): .git
+BRANCH:
+EXIT_CODE=128
+fatal: not a git repository (or any of the parent directories): .git
+REMOTES:
+EXIT_CODE=128
+fatal: not a git repository (or any of the parent directories): .git
+STATUS:
+EXIT_CODE=128
+fatal: not a git repository (or any of the parent directories): .git
+
+--- /workspace/kaoyan-lab/MindSpeed-MM-torch210 ---
+HEAD:
+EXIT_CODE=0
+fe67dc4b690087a8def4c05e61cf3804ec57f959
+BRANCH:
+EXIT_CODE=0
+master
+REMOTES:
+EXIT_CODE=0
+origin	https://gitcode.com/Ascend/MindSpeed-MM.git (fetch)
+origin	https://gitcode.com/Ascend/MindSpeed-MM.git (push)
+STATUS:
+EXIT_CODE=0
+M mindspeed_mm/fsdp/train/trainer.py
+
+--- /workspace/kaoyan-lab/third_party/MindSpeed-master ---
+HEAD:
+EXIT_CODE=0
+a15490cd75453201ec02fdb18787ba33ae773ce3
+BRANCH:
+EXIT_CODE=0
+master
+REMOTES:
+EXIT_CODE=0
+origin	https://gitcode.com/Ascend/MindSpeed.git (fetch)
+origin	https://gitcode.com/Ascend/MindSpeed.git (push)
+STATUS:
+EXIT_CODE=0
+NO_OUTPUT
+
+--- /workspace/kaoyan-lab/third_party/Megatron-LM ---
+HEAD:
+EXIT_CODE=0
+a845aa7e12b3a117e24c2352b9e3e60bad2e3a17
+BRANCH:
+EXIT_CODE=0
+NO_OUTPUT
+REMOTES:
+EXIT_CODE=0
+origin	https://gitee.com/mirrors/Megatron-LM.git (fetch)
+origin	https://gitee.com/mirrors/Megatron-LM.git (push)
+STATUS:
+EXIT_CODE=0
+NO_OUTPUT

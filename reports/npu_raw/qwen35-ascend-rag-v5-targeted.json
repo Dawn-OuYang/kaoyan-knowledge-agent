@@ -1,0 +1,285 @@
+{
+  "label": "qwen35-ascend-rag-v5-targeted",
+  "generated_at": "2026-08-27T01:43:09+00:00",
+  "endpoint": "http://127.0.0.1:7860/api/ask",
+  "case_count": 6,
+  "passed": 6,
+  "external_model_calls": 6,
+  "fallback_count": 0,
+  "citation_hit_count": 6,
+  "wall_seconds": 20.62,
+  "latency_ms": {
+    "mean": 3436.53,
+    "p50": 2886.07,
+    "p95": 6377.19,
+    "max": 6377.19
+  },
+  "completion_tokens_per_second_mean": 25.466,
+  "peak_npu_memory_mb_max": 1771.26,
+  "records": [
+    {
+      "case_id": "SCHOOL-003",
+      "question": "清华大学计算机方向应该优先看哪个学院官网？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "清华大学计算机科学与技术系官方入口",
+        "清华大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "计算机科学与技术系",
+        "cs.tsinghua.edu.cn"
+      ],
+      "expected_keywords": [
+        "计算机科学与技术系",
+        "cs.tsinghua.edu.cn"
+      ],
+      "passed": true,
+      "latency_ms": 4188.88,
+      "timings": {
+        "retrieval_ms": 9.67,
+        "generation_ms": 4175.35,
+        "total_ms": 4185.05
+      },
+      "model_usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 92,
+        "total_tokens": 558,
+        "preparation_ms": 46.53,
+        "queue_wait_ms": 0.06,
+        "generation_ms": 4124.23,
+        "total_inference_ms": 4171.53,
+        "completion_tokens_per_second": 22.307,
+        "peak_npu_memory_mb": 1769.72,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "清华大学计算机方向应优先核验清华大学计算机科学与技术系官网 https://www.cs.tsinghua.edu.cn/，该入口与研究生招生网交叉核验。[1] 建议以研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367824.dhtml 及官网 https://www.tsinghua.edu.cn/ 交叉核验，明确学院、专业和年份边界。"
+    },
+    {
+      "case_id": "SCHOOL-005",
+      "question": "沈阳工业大学考研信息应该看哪些官方来源？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "沈阳工业大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "研招网",
+        "sut.edu.cn",
+        "yjsxy.sut.edu.cn"
+      ],
+      "expected_keywords": [
+        "研招网",
+        "sut.edu.cn",
+        "yjsxy.sut.edu.cn"
+      ],
+      "passed": true,
+      "latency_ms": 1683.77,
+      "timings": {
+        "retrieval_ms": 9.69,
+        "generation_ms": 1672.4,
+        "total_ms": 1682.12
+      },
+      "model_usage": {
+        "prompt_tokens": 395,
+        "completion_tokens": 40,
+        "total_tokens": 435,
+        "preparation_ms": 12.96,
+        "queue_wait_ms": 0.04,
+        "generation_ms": 1656.59,
+        "total_inference_ms": 1670.34,
+        "completion_tokens_per_second": 24.146,
+        "peak_npu_memory_mb": 1762.34,
+        "grounding_repair": true,
+        "grounding_repair_count": 1,
+        "grounding_repair_source": "top_citation",
+        "grounding_repair_mode": "school"
+      },
+      "answer": "沈阳工业大学考研信息应优先核验研招网院校库及官网。[1] 具体路径包括院校库、招生简章、硕士目录及研究生院官网，确保信息准确。\n证据补充：沈阳工业大学考研官方信息源：https://yz.chsi.com.cn/sch/schoolInfo--schId-368034.dhtml、https://www.sut.edu.cn/、https://yjsxy.sut.edu.cn/。"
+    },
+    {
+      "case_id": "SCHOOL-006",
+      "question": "上海交通大学考研信息应该看哪些官方来源？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "上海交通大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "研招网",
+        "sjtu.edu.cn",
+        "yzb.sjtu.edu.cn"
+      ],
+      "expected_keywords": [
+        "研招网",
+        "sjtu.edu.cn",
+        "yzb.sjtu.edu.cn"
+      ],
+      "passed": true,
+      "latency_ms": 6377.19,
+      "timings": {
+        "retrieval_ms": 10.43,
+        "generation_ms": 6365.15,
+        "total_ms": 6375.6
+      },
+      "model_usage": {
+        "prompt_tokens": 410,
+        "completion_tokens": 174,
+        "total_tokens": 584,
+        "preparation_ms": 6.48,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 6340.96,
+        "total_inference_ms": 6348.14,
+        "completion_tokens_per_second": 27.441,
+        "peak_npu_memory_mb": 1764.01,
+        "grounding_repair": true,
+        "grounding_repair_count": 1,
+        "grounding_repair_source": "top_citation",
+        "grounding_repair_mode": "school"
+      },
+      "answer": "上海交通大学考研信息应优先核验研招网院校库及官网，具体路径包括：研招网院校搜索（https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6）及招生简章列表（https://yz.chsi.com.cn/sch/listZszc--schId-368012.dhtml）。学校官网为 https://www.sjtu.edu.cn/，研究生院官网为 https://www.gs.sjtu.edu.cn/，研究生招生网为 https://yzb.sjtu.edu.cn/。以上路径可交叉核验院校信息、考试科目及招生政策，确保数据准确可靠。\n证据补充：上海交通大学考研官方信息源：https://yz.chsi.com.cn/sch/schoolInfo--schId-368012.dhtml。"
+    },
+    {
+      "case_id": "SCHOOL-009",
+      "question": "上海交通大学计算机方向应该优先核验哪个学院官网？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "上海交通大学计算机学院官方入口",
+        "上海交通大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "计算机学院",
+        "cs.sjtu.edu.cn",
+        "研究生招生网"
+      ],
+      "expected_keywords": [
+        "计算机学院",
+        "cs.sjtu.edu.cn",
+        "研究生招生网"
+      ],
+      "passed": true,
+      "latency_ms": 2520.92,
+      "timings": {
+        "retrieval_ms": 10.58,
+        "generation_ms": 2508.71,
+        "total_ms": 2519.31
+      },
+      "model_usage": {
+        "prompt_tokens": 493,
+        "completion_tokens": 65,
+        "total_tokens": 558,
+        "preparation_ms": 11.75,
+        "queue_wait_ms": 0.05,
+        "generation_ms": 2493.1,
+        "total_inference_ms": 2505.39,
+        "completion_tokens_per_second": 26.072,
+        "peak_npu_memory_mb": 1771.26,
+        "grounding_repair": true,
+        "grounding_repair_count": 1,
+        "grounding_repair_source": "top_citation",
+        "grounding_repair_mode": "school"
+      },
+      "answer": "上海交通大学计算机学院（网络空间安全学院、密码学院）官网为优先核验对象，其官方入口为 https://www.cs.sjtu.edu.cn/，该入口与研究生招生网及研招网交叉核验，可获取招生人数、考试科目及复试安排等关键信息[1]。\n证据补充：上海交通大学计算机学院官方入口：并与研招网院校库交叉核验。"
+    },
+    {
+      "case_id": "QA-CS-013",
+      "question": "DNS 递归查询和迭代查询在解析中怎样配合？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "DNS 解析过程"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "本地 DNS",
+        "根",
+        "权威 DNS",
+        "缓存"
+      ],
+      "expected_keywords": [
+        "本地 DNS",
+        "根",
+        "权威 DNS",
+        "缓存"
+      ],
+      "passed": true,
+      "latency_ms": 2962.38,
+      "timings": {
+        "retrieval_ms": 2.44,
+        "generation_ms": 2958.35,
+        "total_ms": 2960.81
+      },
+      "model_usage": {
+        "prompt_tokens": 270,
+        "completion_tokens": 78,
+        "total_tokens": 348,
+        "preparation_ms": 6.42,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2924.39,
+        "total_inference_ms": 2931.24,
+        "completion_tokens_per_second": 26.672,
+        "peak_npu_memory_mb": 1746.87,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "DNS 递归查询与迭代查询配合以递归查询获取根域名及顶级域信息，迭代查询进一步细化至权威 DNS 服务器获取具体 IP 地址。[1] 解析过程：本地主机发起递归查询，本地 DNS 服务器依次向根、顶级域和权威 DNS 服务器进行迭代查询，并缓存结果以降低后续解析时延。"
+    },
+    {
+      "case_id": "PLAN-006",
+      "question": "法学错题本应该怎样分类和回炉？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "错题标签与回炉",
+        "三阶段复习框架",
+        "间隔复习安排"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "概念不清",
+        "审题偏差",
+        "独立重做",
+        "错误原因"
+      ],
+      "expected_keywords": [
+        "概念不清",
+        "审题偏差",
+        "独立重做",
+        "错误原因"
+      ],
+      "passed": true,
+      "latency_ms": 2886.07,
+      "timings": {
+        "retrieval_ms": 7.87,
+        "generation_ms": 2876.62,
+        "total_ms": 2884.51
+      },
+      "model_usage": {
+        "prompt_tokens": 389,
+        "completion_tokens": 75,
+        "total_tokens": 464,
+        "preparation_ms": 6.66,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2866.96,
+        "total_inference_ms": 2874.24,
+        "completion_tokens_per_second": 26.16,
+        "peak_npu_memory_mb": 1762.3,
+        "grounding_repair": false,
+        "grounding_repair_count": 0
+      },
+      "answer": "法学错题本应分类为概念不清、方法不会、计算失误、审题偏差及记忆遗漏。回炉时先遮住答案独立重做，再补写错误原因、正确触发条件及同类题识别线索。基础阶段建立框架，强化阶段进行真题训练，冲刺阶段重点回炉。[1] [2] [3]"
+    }
+  ]
+}

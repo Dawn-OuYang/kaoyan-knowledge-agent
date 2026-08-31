@@ -1,0 +1,525 @@
+{
+  "label": "local-rag-baseline",
+  "generated_at": "2026-07-21T13:56:15+08:00",
+  "case_count": 50,
+  "unique_cases": 50,
+  "repeat": 1,
+  "providers": [
+    "local-template"
+  ],
+  "fallback_count": 50,
+  "wall_seconds": 0.175,
+  "requests_per_second": 285.27,
+  "latency_ms": {
+    "mean": 3.49,
+    "p50": 2.14,
+    "p95": 8.76,
+    "max": 9.45
+  },
+  "retrieval_ms_mean": 3.48,
+  "generation_ms_mean": 0.0,
+  "completion_tokens": 0,
+  "completion_tokens_per_second": null,
+  "records": [
+    {
+      "case_id": "QA-CS-001",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 1.92,
+      "generation_ms": 0.0,
+      "total_ms": 1.92,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-CS-002",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 2.0,
+      "generation_ms": 0.0,
+      "total_ms": 2.0,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "EXAM-CS-003",
+      "mode": "exam",
+      "provider": "local-template",
+      "retrieval_ms": 1.83,
+      "generation_ms": 0.0,
+      "total_ms": 1.83,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-COMM-001",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 1.61,
+      "generation_ms": 0.0,
+      "total_ms": 1.61,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "EXAM-COMM-002",
+      "mode": "exam",
+      "provider": "local-template",
+      "retrieval_ms": 2.03,
+      "generation_ms": 0.0,
+      "total_ms": 2.04,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-COMM-003",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 1.37,
+      "generation_ms": 0.0,
+      "total_ms": 1.38,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-LAW-001",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 1.88,
+      "generation_ms": 0.0,
+      "total_ms": 1.88,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "EXAM-LAW-002",
+      "mode": "exam",
+      "provider": "local-template",
+      "retrieval_ms": 1.44,
+      "generation_ms": 0.0,
+      "total_ms": 1.44,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-LAW-003",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 1.41,
+      "generation_ms": 0.0,
+      "total_ms": 1.41,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "SCHOOL-001",
+      "mode": "school",
+      "provider": "local-template",
+      "retrieval_ms": 9.3,
+      "generation_ms": 0.0,
+      "total_ms": 9.3,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "SCHOOL-002",
+      "mode": "school",
+      "provider": "local-template",
+      "retrieval_ms": 7.74,
+      "generation_ms": 0.0,
+      "total_ms": 7.74,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "SCHOOL-003",
+      "mode": "school",
+      "provider": "local-template",
+      "retrieval_ms": 6.86,
+      "generation_ms": 0.0,
+      "total_ms": 6.86,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "SCHOOL-004",
+      "mode": "school",
+      "provider": "local-template",
+      "retrieval_ms": 8.01,
+      "generation_ms": 0.0,
+      "total_ms": 8.01,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "SCHOOL-005",
+      "mode": "school",
+      "provider": "local-template",
+      "retrieval_ms": 8.75,
+      "generation_ms": 0.0,
+      "total_ms": 8.76,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "SCHOOL-006",
+      "mode": "school",
+      "provider": "local-template",
+      "retrieval_ms": 7.68,
+      "generation_ms": 0.0,
+      "total_ms": 7.68,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "SCHOOL-007",
+      "mode": "school",
+      "provider": "local-template",
+      "retrieval_ms": 3.75,
+      "generation_ms": 0.0,
+      "total_ms": 3.75,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "SCHOOL-008",
+      "mode": "school",
+      "provider": "local-template",
+      "retrieval_ms": 7.29,
+      "generation_ms": 0.0,
+      "total_ms": 7.29,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "PLAN-001",
+      "mode": "plan",
+      "provider": "local-template",
+      "retrieval_ms": 8.11,
+      "generation_ms": 0.0,
+      "total_ms": 8.11,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "PLAN-002",
+      "mode": "plan",
+      "provider": "local-template",
+      "retrieval_ms": 4.67,
+      "generation_ms": 0.0,
+      "total_ms": 4.67,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "PLAN-003",
+      "mode": "plan",
+      "provider": "local-template",
+      "retrieval_ms": 5.17,
+      "generation_ms": 0.0,
+      "total_ms": 5.17,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-CS-004",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 2.23,
+      "generation_ms": 0.0,
+      "total_ms": 2.24,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "EXAM-CS-005",
+      "mode": "exam",
+      "provider": "local-template",
+      "retrieval_ms": 1.7,
+      "generation_ms": 0.0,
+      "total_ms": 1.7,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-CS-006",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 2.54,
+      "generation_ms": 0.0,
+      "total_ms": 2.55,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-CS-007",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 1.89,
+      "generation_ms": 0.0,
+      "total_ms": 1.9,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "EXAM-CS-008",
+      "mode": "exam",
+      "provider": "local-template",
+      "retrieval_ms": 2.36,
+      "generation_ms": 0.0,
+      "total_ms": 2.37,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-CS-009",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 2.23,
+      "generation_ms": 0.0,
+      "total_ms": 2.24,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-CS-010",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 2.18,
+      "generation_ms": 0.0,
+      "total_ms": 2.19,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-CS-011",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 2.37,
+      "generation_ms": 0.0,
+      "total_ms": 2.37,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "EXAM-CS-012",
+      "mode": "exam",
+      "provider": "local-template",
+      "retrieval_ms": 2.58,
+      "generation_ms": 0.0,
+      "total_ms": 2.58,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-CS-013",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 1.53,
+      "generation_ms": 0.0,
+      "total_ms": 1.53,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-COMM-004",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 2.13,
+      "generation_ms": 0.0,
+      "total_ms": 2.14,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "EXAM-COMM-005",
+      "mode": "exam",
+      "provider": "local-template",
+      "retrieval_ms": 2.15,
+      "generation_ms": 0.0,
+      "total_ms": 2.16,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-COMM-006",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 1.99,
+      "generation_ms": 0.0,
+      "total_ms": 1.99,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-COMM-007",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 1.41,
+      "generation_ms": 0.0,
+      "total_ms": 1.42,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-COMM-008",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 1.94,
+      "generation_ms": 0.0,
+      "total_ms": 1.94,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "EXAM-COMM-009",
+      "mode": "exam",
+      "provider": "local-template",
+      "retrieval_ms": 1.63,
+      "generation_ms": 0.0,
+      "total_ms": 1.63,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-COMM-010",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 1.38,
+      "generation_ms": 0.0,
+      "total_ms": 1.39,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-COMM-011",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 1.75,
+      "generation_ms": 0.0,
+      "total_ms": 1.75,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-COMM-012",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 2.13,
+      "generation_ms": 0.0,
+      "total_ms": 2.14,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "EXAM-LAW-004",
+      "mode": "exam",
+      "provider": "local-template",
+      "retrieval_ms": 2.29,
+      "generation_ms": 0.0,
+      "total_ms": 2.29,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-LAW-005",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 1.98,
+      "generation_ms": 0.0,
+      "total_ms": 1.98,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "EXAM-LAW-006",
+      "mode": "exam",
+      "provider": "local-template",
+      "retrieval_ms": 1.77,
+      "generation_ms": 0.0,
+      "total_ms": 1.77,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-LAW-007",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 1.84,
+      "generation_ms": 0.0,
+      "total_ms": 1.84,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "EXAM-LAW-008",
+      "mode": "exam",
+      "provider": "local-template",
+      "retrieval_ms": 2.1,
+      "generation_ms": 0.0,
+      "total_ms": 2.11,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "EXAM-LAW-009",
+      "mode": "exam",
+      "provider": "local-template",
+      "retrieval_ms": 1.64,
+      "generation_ms": 0.0,
+      "total_ms": 1.65,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "QA-LAW-010",
+      "mode": "qa",
+      "provider": "local-template",
+      "retrieval_ms": 1.52,
+      "generation_ms": 0.0,
+      "total_ms": 1.53,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "PLAN-004",
+      "mode": "plan",
+      "provider": "local-template",
+      "retrieval_ms": 7.08,
+      "generation_ms": 0.0,
+      "total_ms": 7.08,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "PLAN-005",
+      "mode": "plan",
+      "provider": "local-template",
+      "retrieval_ms": 5.97,
+      "generation_ms": 0.0,
+      "total_ms": 5.98,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "PLAN-006",
+      "mode": "plan",
+      "provider": "local-template",
+      "retrieval_ms": 7.65,
+      "generation_ms": 0.0,
+      "total_ms": 7.65,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "case_id": "SCHOOL-009",
+      "mode": "school",
+      "provider": "local-template",
+      "retrieval_ms": 9.45,
+      "generation_ms": 0.0,
+      "total_ms": 9.45,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "source_report": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/reports/npu_raw/qwen35-rag-sft-v2-quality-v3-2-final-50.json",
+  "summary_checks": {
+    "case_count_50": true,
+    "passed_50": false,
+    "external_model_calls_50": true,
+    "fallback_count_0": true,
+    "citation_hit_count_50": true,
+    "record_failure_count_0": false,
+    "safety_issue_count_0": true
+  },
+  "failures": [
+    {
+      "case_id": "PLAN-005",
+      "question": "通信专业课知识点应该怎样安排间隔复习？",
+      "checks": {
+        "evaluator_pass": false,
+        "external_model": true,
+        "model_error_free": true,
+        "answer_present": true,
+        "citation_hit": true
+      },
+      "answer": "通信工程专业课剩余90天时，可安排30天基础、40天强化、20天冲刺[1]。基础阶段梳理通信原理、信号与系统等核心公式和知识框架；强化阶段进行真题训练、典型计算题归纳和计算纠错；冲刺阶段完成整套限时模拟、错题回炉和公式快速回忆。"
+    }
+  ],
+  "safety_issues": [],
+  "passed": false,
+  "note": "工程规则回归通过不等同于正式事实精度100%。"
+}

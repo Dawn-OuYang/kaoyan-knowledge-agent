@@ -1,0 +1,102 @@
+{
+  "backup": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/src/rag_engine.py.before-planning-retrieval-fix-20260828-050103",
+  "results": [
+    {
+      "specialty": "计算机",
+      "question": "距离考试 120 天，计算机408应该怎么复习？",
+      "top3_ids": [
+        "planning-cs-408-120",
+        "planning-001",
+        "planning-003"
+      ],
+      "top3_titles": [
+        "408 120天复习安排",
+        "三阶段复习框架",
+        "间隔复习安排"
+      ],
+      "top3_specialties": [
+        "计算机",
+        "通用",
+        "通用"
+      ],
+      "checks": {
+        "expected_document_present": true,
+        "specialties_compatible": true
+      },
+      "case_pass": true
+    },
+    {
+      "specialty": "通信工程",
+      "question": "通信工程专业课剩 90 天怎么安排？",
+      "top3_ids": [
+        "planning-comm-90",
+        "planning-001",
+        "planning-003"
+      ],
+      "top3_titles": [
+        "通信专业课90天复习安排",
+        "三阶段复习框架",
+        "间隔复习安排"
+      ],
+      "top3_specialties": [
+        "通信工程",
+        "通用",
+        "通用"
+      ],
+      "checks": {
+        "expected_document_present": true,
+        "specialties_compatible": true
+      },
+      "case_pass": true
+    },
+    {
+      "specialty": "法学",
+      "question": "法学专业课冲刺阶段怎么复习主观题？",
+      "top3_ids": [
+        "planning-001",
+        "planning-law-subjective-sprint",
+        "planning-003"
+      ],
+      "top3_titles": [
+        "三阶段复习框架",
+        "法学主观题冲刺方法",
+        "间隔复习安排"
+      ],
+      "top3_specialties": [
+        "通用",
+        "法学",
+        "通用"
+      ],
+      "checks": {
+        "expected_document_present": true,
+        "specialties_compatible": true
+      },
+      "case_pass": true
+    },
+    {
+      "specialty": "法学",
+      "question": "法学错题本应该怎样分类和回炉？",
+      "top3_ids": [
+        "planning-004",
+        "planning-001",
+        "planning-003"
+      ],
+      "top3_titles": [
+        "错题标签与回炉",
+        "三阶段复习框架",
+        "间隔复习安排"
+      ],
+      "top3_specialties": [
+        "法学",
+        "通用",
+        "通用"
+      ],
+      "checks": {
+        "expected_document_present": true,
+        "specialties_compatible": true
+      },
+      "case_pass": true
+    }
+  ],
+  "all_pass": true
+}

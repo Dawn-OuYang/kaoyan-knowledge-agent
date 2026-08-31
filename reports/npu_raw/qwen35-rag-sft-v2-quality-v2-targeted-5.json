@@ -1,0 +1,254 @@
+{
+  "label": "qwen35-rag-sft-v2-quality-v2-targeted-5",
+  "generated_at": "2026-08-28T04:47:38+00:00",
+  "endpoint": "http://127.0.0.1:7863/api/ask",
+  "case_count": 5,
+  "passed": 5,
+  "external_model_calls": 5,
+  "fallback_count": 0,
+  "citation_hit_count": 5,
+  "wall_seconds": 16.465,
+  "latency_ms": {
+    "mean": 3292.87,
+    "p50": 3085.84,
+    "p95": 4203.24,
+    "max": 4203.24
+  },
+  "completion_tokens_per_second_mean": 25.375,
+  "peak_npu_memory_mb_max": 1771.86,
+  "records": [
+    {
+      "case_id": "PLAN-001",
+      "question": "距离考试 120 天，计算机408应该怎么复习？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "408 120天复习安排",
+        "三阶段复习框架",
+        "通信专业课90天复习安排"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "40天",
+        "50天",
+        "30天",
+        "整套"
+      ],
+      "expected_keywords": [
+        "40天",
+        "50天",
+        "30天",
+        "整套"
+      ],
+      "passed": true,
+      "latency_ms": 3085.84,
+      "timings": {
+        "retrieval_ms": 7.33,
+        "generation_ms": 3075.17,
+        "total_ms": 3082.52
+      },
+      "model_usage": {
+        "prompt_tokens": 497,
+        "completion_tokens": 78,
+        "total_tokens": 575,
+        "preparation_ms": 8.85,
+        "queue_wait_ms": 0.05,
+        "generation_ms": 3057.23,
+        "total_inference_ms": 3066.67,
+        "completion_tokens_per_second": 25.513,
+        "peak_npu_memory_mb": 1771.82,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "408 120天复习安排可安排40天基础、50天强化、30天冲刺[1]。基础阶段按数据结构、计算机组成原理、操作系统和计算机网络建立框架并完成首轮；强化阶段按专题刷真题、整理错题并回测薄弱章节；冲刺阶段进行整套计时模拟、错题回炉和计算步骤纠错。"
+    },
+    {
+      "case_id": "PLAN-002",
+      "question": "通信工程专业课剩 90 天怎么安排？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "通信专业课90天复习安排",
+        "三阶段复习框架",
+        "408 120天复习安排"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "30天",
+        "40天",
+        "20天",
+        "计算纠错"
+      ],
+      "expected_keywords": [
+        "30天",
+        "40天",
+        "20天",
+        "计算纠错"
+      ],
+      "passed": true,
+      "latency_ms": 2777.89,
+      "timings": {
+        "retrieval_ms": 6.97,
+        "generation_ms": 2769.54,
+        "total_ms": 2776.53
+      },
+      "model_usage": {
+        "prompt_tokens": 493,
+        "completion_tokens": 73,
+        "total_tokens": 566,
+        "preparation_ms": 6.95,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2751.26,
+        "total_inference_ms": 2758.63,
+        "completion_tokens_per_second": 26.533,
+        "peak_npu_memory_mb": 1771.26,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "通信工程专业课剩余90天时，可安排30天基础、40天强化、20天冲刺[1]。基础阶段梳理通信原理、信号与系统等核心公式和知识框架；强化阶段进行真题训练、典型计算题归纳和计算纠错；冲刺阶段完成整套限时模拟、错题回炉和公式快速回忆。"
+    },
+    {
+      "case_id": "PLAN-003",
+      "question": "法学专业课冲刺阶段怎么复习主观题？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "三阶段复习框架",
+        "法学主观题冲刺方法",
+        "通信专业课90天复习安排"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "构成要件",
+        "限时作答",
+        "评分点",
+        "复盘"
+      ],
+      "expected_keywords": [
+        "构成要件",
+        "限时作答",
+        "评分点",
+        "复盘"
+      ],
+      "passed": true,
+      "latency_ms": 2383.57,
+      "timings": {
+        "retrieval_ms": 7.17,
+        "generation_ms": 2375.12,
+        "total_ms": 2382.32
+      },
+      "model_usage": {
+        "prompt_tokens": 467,
+        "completion_tokens": 60,
+        "total_tokens": 527,
+        "preparation_ms": 6.54,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 2349.9,
+        "total_inference_ms": 2356.96,
+        "completion_tokens_per_second": 25.533,
+        "peak_npu_memory_mb": 1769.74,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "法学主观题冲刺应按构成要件或争点建立答题框架，每天选取案例题或论述题限时作答[2]。完成后对照评分点检查法条依据、构成要件、涵摄过程和结论，把遗漏项加入错题清单，并通过同类题复盘稳定答题层次。"
+    },
+    {
+      "case_id": "QA-LAW-005",
+      "question": "有权代理、无权代理和表见代理应如何区分？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "代理制度"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "代理权限",
+        "追认",
+        "有理由相信",
+        "行为有效"
+      ],
+      "expected_keywords": [
+        "代理权限",
+        "追认",
+        "有理由相信",
+        "行为有效"
+      ],
+      "passed": true,
+      "latency_ms": 4203.24,
+      "timings": {
+        "retrieval_ms": 2.71,
+        "generation_ms": 4198.54,
+        "total_ms": 4201.28
+      },
+      "model_usage": {
+        "prompt_tokens": 331,
+        "completion_tokens": 110,
+        "total_tokens": 441,
+        "preparation_ms": 6.78,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 4163.76,
+        "total_inference_ms": 4171.05,
+        "completion_tokens_per_second": 26.418,
+        "peak_npu_memory_mb": 1753.42,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "有权代理是代理人在有效代理权限内实施行为，法律后果直接归属于被代理人[1]。无权代理包括没有代理权、超越代理权或代理权终止后实施代理行为；未经被代理人追认，原则上对被代理人不发生效力。表见代理虽然欠缺实际代理权，但相对人有理由相信行为人具有代理权，符合条件时代理行为有效，法律后果由被代理人承担。答题时应围绕是否存在代理权、相对人是否善意且有合理信赖、是否追认以及法律后果进行区分。"
+    },
+    {
+      "case_id": "PLAN-006",
+      "question": "法学错题本应该怎样分类和回炉？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B-kaoyan-rag-sft-v2-iter80",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "错题标签与回炉",
+        "三阶段复习框架",
+        "通信专业课90天复习安排"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "法条定位",
+        "构成要件",
+        "论证",
+        "独立重做"
+      ],
+      "expected_keywords": [
+        "法条定位",
+        "构成要件",
+        "论证",
+        "独立重做"
+      ],
+      "passed": true,
+      "latency_ms": 4013.83,
+      "timings": {
+        "retrieval_ms": 7.07,
+        "generation_ms": 4004.86,
+        "total_ms": 4011.95
+      },
+      "model_usage": {
+        "prompt_tokens": 499,
+        "completion_tokens": 91,
+        "total_tokens": 590,
+        "preparation_ms": 6.63,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 3977.39,
+        "total_inference_ms": 3984.96,
+        "completion_tokens_per_second": 22.879,
+        "peak_npu_memory_mb": 1771.86,
+        "grounding_repair": false,
+        "grounding_repair_count": 0,
+        "evidence_insufficiency_repair": false
+      },
+      "answer": "错题应先按概念不清、方法不会、审题偏差和记忆遗漏等原因分类[1]。计算类科目可另设计算失误标签；法学错题应改按概念混淆、法条定位错误、构成要件遗漏、论证层次不完整和审题偏差分类。回炉时先遮住答案独立重做，再补写错误原因、正确触发条件、评分点和同类题识别线索，并在次日、七日后再次检查。"
+    }
+  ]
+}

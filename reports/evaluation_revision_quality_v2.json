@@ -1,0 +1,108 @@
+{
+  "revision": "quality-v2",
+  "reason": "Replace generic keyword-only planning checks with question-specific evidence and stricter requirements.",
+  "knowledge_documents_added": [
+    "planning-cs-408-120",
+    "planning-comm-90",
+    "planning-law-subjective-sprint"
+  ],
+  "evaluation_changes": {
+    "PLAN-001": {
+      "before": {
+        "expected_citation": "三阶段复习框架",
+        "expected_keywords": [
+          "基础",
+          "强化",
+          "冲刺"
+        ]
+      },
+      "after": {
+        "expected_citation": "408 120天复习安排",
+        "expected_keywords": [
+          "40天",
+          "50天",
+          "30天",
+          "整套"
+        ]
+      }
+    },
+    "PLAN-002": {
+      "before": {
+        "expected_citation": "三阶段复习框架",
+        "expected_keywords": [
+          "基础",
+          "真题",
+          "模拟"
+        ]
+      },
+      "after": {
+        "expected_citation": "通信专业课90天复习安排",
+        "expected_keywords": [
+          "30天",
+          "40天",
+          "20天",
+          "计算纠错"
+        ]
+      }
+    },
+    "PLAN-003": {
+      "before": {
+        "expected_citation": "三阶段复习框架",
+        "expected_keywords": [
+          "错题",
+          "模拟",
+          "答题模板"
+        ]
+      },
+      "after": {
+        "expected_citation": "法学主观题冲刺方法",
+        "expected_keywords": [
+          "构成要件",
+          "限时作答",
+          "评分点",
+          "复盘"
+        ]
+      }
+    },
+    "PLAN-006": {
+      "before": {
+        "expected_citation": "错题标签与回炉",
+        "expected_keywords": [
+          "概念不清",
+          "审题偏差",
+          "独立重做",
+          "错误原因"
+        ]
+      },
+      "after": {
+        "expected_citation": "错题标签与回炉",
+        "expected_keywords": [
+          "法条定位",
+          "构成要件",
+          "论证",
+          "独立重做"
+        ]
+      }
+    },
+    "QA-LAW-005": {
+      "before": {
+        "expected_citation": "代理制度",
+        "expected_keywords": [
+          "有权代理",
+          "无权代理",
+          "表见代理",
+          "被代理人"
+        ]
+      },
+      "after": {
+        "expected_citation": "代理制度",
+        "expected_keywords": [
+          "代理权限",
+          "追认",
+          "有理由相信",
+          "行为有效"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "source_report": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/reports/npu_raw/qwen35-rag-sft-v2-quality-v3-3-final-50.json",
+  "summary_checks": {
+    "case_count_50": true,
+    "passed_50": true,
+    "external_model_calls_50": true,
+    "fallback_count_0": true,
+    "citation_hit_count_50": true,
+    "record_failure_count_0": true,
+    "safety_issue_count_0": true,
+    "plan005_quality_pass": true
+  },
+  "failures": [],
+  "safety_issues": [],
+  "passed": true,
+  "note": "工程规则回归通过不等同于正式事实精度100%。"
+}

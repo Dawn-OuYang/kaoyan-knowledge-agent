@@ -1,0 +1,427 @@
+{
+  "label": "qwen35-ascend-rag-v3",
+  "generated_at": "2026-08-13T12:24:47+00:00",
+  "endpoint": "http://127.0.0.1:7860/api/ask",
+  "case_count": 10,
+  "passed": 9,
+  "external_model_calls": 10,
+  "fallback_count": 0,
+  "citation_hit_count": 10,
+  "wall_seconds": 21.148,
+  "latency_ms": {
+    "mean": 2114.77,
+    "p50": 1727.66,
+    "p95": 3700.99,
+    "max": 3700.99
+  },
+  "completion_tokens_per_second_mean": 22.551,
+  "peak_npu_memory_mb_max": 1766.38,
+  "records": [
+    {
+      "case_id": "QA-CS-001",
+      "question": "顺序表和链表的区别是什么？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "链表与顺序表对比",
+        "线性表与顺序表"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "顺序表",
+        "链表",
+        "随机访问",
+        "插入删除"
+      ],
+      "expected_keywords": [
+        "顺序表",
+        "链表",
+        "随机访问",
+        "插入删除"
+      ],
+      "passed": true,
+      "latency_ms": 3360.76,
+      "timings": {
+        "retrieval_ms": 2.4,
+        "generation_ms": 3354.81,
+        "total_ms": 3357.24
+      },
+      "model_usage": {
+        "prompt_tokens": 329,
+        "completion_tokens": 68,
+        "total_tokens": 397,
+        "preparation_ms": 43.2,
+        "queue_wait_ms": 0.05,
+        "generation_ms": 3308.44,
+        "total_inference_ms": 3352.26,
+        "completion_tokens_per_second": 20.553,
+        "peak_npu_memory_mb": 1752.4
+      },
+      "answer": "顺序表与链表的核心区别在于存储结构：顺序表采用地址连续存储，支持随机访问，但插入删除需移动元素，时间复杂度为 O(n)；链表采用指针表示，不要求连续存储，插入删除 O(1)，但查找需遍历，时间复杂度为 O(n)[1]。"
+    },
+    {
+      "case_id": "QA-CS-002",
+      "question": "进程和线程在操作系统里怎么区分？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "进程与线程"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "资源分配",
+        "CPU 调度",
+        "共享"
+      ],
+      "expected_keywords": [
+        "资源分配",
+        "CPU 调度",
+        "共享"
+      ],
+      "passed": true,
+      "latency_ms": 2379.03,
+      "timings": {
+        "retrieval_ms": 2.43,
+        "generation_ms": 2375.05,
+        "total_ms": 2377.5
+      },
+      "model_usage": {
+        "prompt_tokens": 235,
+        "completion_tokens": 50,
+        "total_tokens": 285,
+        "preparation_ms": 6.74,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2347.48,
+        "total_inference_ms": 2354.79,
+        "completion_tokens_per_second": 21.299,
+        "peak_npu_memory_mb": 1742.0
+      },
+      "answer": "进程是资源分配的基本单位，线程是 CPU 调度的基本单位。同一进程中的线程共享进程地址空间和资源，但拥有各自的程序计数器、寄存器和栈。线程切换开销通常小于进程切换。[1]"
+    },
+    {
+      "case_id": "EXAM-CS-003",
+      "question": "真题解析：为什么 TCP 建立连接需要三次握手？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "TCP 三次握手"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "SYN",
+        "ACK"
+      ],
+      "expected_keywords": [
+        "SYN",
+        "ACK",
+        "序列号",
+        "历史连接"
+      ],
+      "passed": false,
+      "latency_ms": 1460.06,
+      "timings": {
+        "retrieval_ms": 2.59,
+        "generation_ms": 1455.55,
+        "total_ms": 1458.16
+      },
+      "model_usage": {
+        "prompt_tokens": 272,
+        "completion_tokens": 28,
+        "total_tokens": 300,
+        "preparation_ms": 7.23,
+        "queue_wait_ms": 0.04,
+        "generation_ms": 1434.7,
+        "total_inference_ms": 1442.48,
+        "completion_tokens_per_second": 19.516,
+        "peak_npu_memory_mb": 1746.91
+      },
+      "answer": "[1] 客户端发送 SYN 报文，服务器回复 SYN+ACK，客户端再发送 ACK，完成三次握手。"
+    },
+    {
+      "case_id": "QA-COMM-001",
+      "question": "通信原理中香农公式表达了什么含义？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "香农公式"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "信道容量",
+        "带宽"
+      ],
+      "expected_keywords": [
+        "信道容量",
+        "带宽",
+        "信噪比"
+      ],
+      "passed": true,
+      "latency_ms": 1511.89,
+      "timings": {
+        "retrieval_ms": 2.18,
+        "generation_ms": 1508.2,
+        "total_ms": 1510.41
+      },
+      "model_usage": {
+        "prompt_tokens": 253,
+        "completion_tokens": 37,
+        "total_tokens": 290,
+        "preparation_ms": 12.11,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 1493.57,
+        "total_inference_ms": 1506.11,
+        "completion_tokens_per_second": 24.773,
+        "peak_npu_memory_mb": 1742.94
+      },
+      "answer": "香农公式给出了带宽受限且存在高斯白噪声信道的理论信道容量上限，即 C = B log2(1 + S/N)[1]。"
+    },
+    {
+      "case_id": "EXAM-COMM-002",
+      "question": "真题解析：采样定理为什么要求采样频率至少为最高频率的两倍？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "采样定理"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "fs",
+        "2fm",
+        "混叠"
+      ],
+      "expected_keywords": [
+        "fs",
+        "2fm",
+        "带限",
+        "混叠"
+      ],
+      "passed": true,
+      "latency_ms": 2280.14,
+      "timings": {
+        "retrieval_ms": 2.48,
+        "generation_ms": 2275.86,
+        "total_ms": 2278.37
+      },
+      "model_usage": {
+        "prompt_tokens": 281,
+        "completion_tokens": 54,
+        "total_tokens": 335,
+        "preparation_ms": 6.35,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2244.0,
+        "total_inference_ms": 2250.91,
+        "completion_tokens_per_second": 24.064,
+        "peak_npu_memory_mb": 1747.64
+      },
+      "answer": "根据证据[1]，采样频率 fs 需满足 fs >= 2fm 以消除混叠。易错点在于误认为 fs=2fm 是必要条件而非充分条件，实际需满足 fs >= 2fm 即可。"
+    },
+    {
+      "case_id": "QA-COMM-003",
+      "question": "信号与系统中卷积的物理意义是什么？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "卷积的物理意义"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "线性时不变",
+        "冲激响应",
+        "输出"
+      ],
+      "expected_keywords": [
+        "线性时不变",
+        "冲激响应",
+        "输出"
+      ],
+      "passed": true,
+      "latency_ms": 1398.24,
+      "timings": {
+        "retrieval_ms": 2.16,
+        "generation_ms": 1394.56,
+        "total_ms": 1396.75
+      },
+      "model_usage": {
+        "prompt_tokens": 251,
+        "completion_tokens": 33,
+        "total_tokens": 284,
+        "preparation_ms": 9.64,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 1382.54,
+        "total_inference_ms": 1392.59,
+        "completion_tokens_per_second": 23.869,
+        "peak_npu_memory_mb": 1742.87
+      },
+      "answer": "卷积描述线性时不变系统输入与冲激响应共同决定输出，连续系统为卷积积分，离散系统为卷积和。[1]"
+    },
+    {
+      "case_id": "QA-LAW-001",
+      "question": "法律规则和法律原则有什么区别？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "法律规则与法律原则"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "行为模式",
+        "价值导向"
+      ],
+      "expected_keywords": [
+        "行为模式",
+        "法律后果",
+        "价值导向"
+      ],
+      "passed": true,
+      "latency_ms": 1727.66,
+      "timings": {
+        "retrieval_ms": 2.24,
+        "generation_ms": 1724.19,
+        "total_ms": 1726.45
+      },
+      "model_usage": {
+        "prompt_tokens": 239,
+        "completion_tokens": 42,
+        "total_tokens": 281,
+        "preparation_ms": 6.23,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 1708.89,
+        "total_inference_ms": 1715.53,
+        "completion_tokens_per_second": 24.577,
+        "peak_npu_memory_mb": 1742.12
+      },
+      "answer": "法律规则与法律原则的区别在于：规则具有明确的行为模式和后果，适用方式确定；原则具有概括性、价值导向和弹性，用于填补漏洞或解释冲突。[1]"
+    },
+    {
+      "case_id": "EXAM-LAW-002",
+      "question": "案例分析题中犯罪构成应该从哪些方面展开？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "犯罪构成"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "客观方面",
+        "主体",
+        "主观方面"
+      ],
+      "expected_keywords": [
+        "犯罪客体",
+        "客观方面",
+        "主体",
+        "主观方面"
+      ],
+      "passed": true,
+      "latency_ms": 2081.21,
+      "timings": {
+        "retrieval_ms": 2.25,
+        "generation_ms": 2077.68,
+        "total_ms": 2079.96
+      },
+      "model_usage": {
+        "prompt_tokens": 268,
+        "completion_tokens": 49,
+        "total_tokens": 317,
+        "preparation_ms": 6.31,
+        "queue_wait_ms": 0.03,
+        "generation_ms": 2060.67,
+        "total_inference_ms": 2067.53,
+        "completion_tokens_per_second": 23.779,
+        "peak_npu_memory_mb": 1746.83
+      },
+      "answer": "犯罪构成应从客体、客观方面、主体、主观方面四个维度展开，缺一不可。[1] 需逐一分析行为对法益侵害、行为方式、主体资格及心理状态，避免混淆主客观要素。"
+    },
+    {
+      "case_id": "QA-LAW-003",
+      "question": "宪法基本原则通常包括哪些？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "宪法基本原则"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "人民主权",
+        "基本人权",
+        "法治",
+        "权力制约"
+      ],
+      "expected_keywords": [
+        "人民主权",
+        "基本人权",
+        "法治",
+        "权力制约"
+      ],
+      "passed": true,
+      "latency_ms": 1247.74,
+      "timings": {
+        "retrieval_ms": 2.31,
+        "generation_ms": 1244.1,
+        "total_ms": 1246.43
+      },
+      "model_usage": {
+        "prompt_tokens": 226,
+        "completion_tokens": 25,
+        "total_tokens": 251,
+        "preparation_ms": 8.56,
+        "queue_wait_ms": 0.04,
+        "generation_ms": 1209.95,
+        "total_inference_ms": 1219.0,
+        "completion_tokens_per_second": 20.662,
+        "peak_npu_memory_mb": 1741.72
+      },
+      "answer": "宪法基本原则通常包括人民主权原则、基本人权原则、法治原则和权力制约原则[1]。"
+    },
+    {
+      "case_id": "SCHOOL-001",
+      "question": "清华大学通信工程相关方向应该看哪个学院官网？",
+      "provider": "qwen35-ascend:Qwen3.5-0.8B",
+      "external_model": true,
+      "model_error": null,
+      "citation_titles": [
+        "清华大学电子工程系官方入口",
+        "清华大学考研官方信息源"
+      ],
+      "citation_hit": true,
+      "keyword_hits": [
+        "电子工程系",
+        "ee.tsinghua.edu.cn",
+        "研究生招生网"
+      ],
+      "expected_keywords": [
+        "电子工程系",
+        "ee.tsinghua.edu.cn",
+        "研究生招生网"
+      ],
+      "passed": true,
+      "latency_ms": 3700.99,
+      "timings": {
+        "retrieval_ms": 10.23,
+        "generation_ms": 3689.47,
+        "total_ms": 3699.73
+      },
+      "model_usage": {
+        "prompt_tokens": 440,
+        "completion_tokens": 82,
+        "total_tokens": 522,
+        "preparation_ms": 7.0,
+        "queue_wait_ms": 0.02,
+        "generation_ms": 3657.47,
+        "total_inference_ms": 3665.19,
+        "completion_tokens_per_second": 22.42,
+        "peak_npu_memory_mb": 1766.38
+      },
+      "answer": "清华大学通信工程相关方向应优先核验清华大学电子工程系官网 https://www.ee.tsinghua.edu.cn/，并交叉核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367824.dhtml 及研究生招生网 https://yz.tsinghua.edu.cn/。建议以对应年份官方通知为准。"
+    }
+  ]
+}

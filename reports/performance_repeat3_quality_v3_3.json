@@ -1,0 +1,110 @@
+{
+  "generated_at": "2026-08-28T05:28:12+00:00",
+  "endpoint": "http://127.0.0.1:7863/api/ask",
+  "method": "3 warmups excluded; 20 fixed cases x 3 sequential rounds",
+  "round_count": 3,
+  "measured_call_count": 60,
+  "passed": 60,
+  "external_model_calls": 60,
+  "fallback_count": 0,
+  "citation_hit_count": 60,
+  "wall_seconds_sum": 161.073,
+  "sequential_requests_per_second": 0.3725,
+  "latency_ms": {
+    "mean": 2684.49,
+    "p50": 2497.93,
+    "p95": 4210.26,
+    "max": 6405.45
+  },
+  "completion_tokens_per_second": {
+    "mean": 24.372,
+    "p50": 25.023
+  },
+  "peak_npu_memory_mb_max": 1771.94,
+  "rounds": [
+    {
+      "label": "qwen35-rag-sft-v2-quality-v3-3-perf-r1",
+      "generated_at": "2026-08-28T05:26:25+00:00",
+      "endpoint": "http://127.0.0.1:7863/api/ask",
+      "case_count": 20,
+      "passed": 20,
+      "external_model_calls": 20,
+      "fallback_count": 0,
+      "citation_hit_count": 20,
+      "wall_seconds": 54.699,
+      "latency_ms": {
+        "mean": 2734.89,
+        "p50": 2480.36,
+        "p95": 4210.26,
+        "max": 6405.45
+      },
+      "completion_tokens_per_second_mean": 24.012,
+      "peak_npu_memory_mb_max": 1771.94
+    },
+    {
+      "label": "qwen35-rag-sft-v2-quality-v3-3-perf-r2",
+      "generated_at": "2026-08-28T05:27:18+00:00",
+      "endpoint": "http://127.0.0.1:7863/api/ask",
+      "case_count": 20,
+      "passed": 20,
+      "external_model_calls": 20,
+      "fallback_count": 0,
+      "citation_hit_count": 20,
+      "wall_seconds": 52.785,
+      "latency_ms": {
+        "mean": 2639.2,
+        "p50": 2550.62,
+        "p95": 4113.43,
+        "max": 6228.43
+      },
+      "completion_tokens_per_second_mean": 24.781,
+      "peak_npu_memory_mb_max": 1771.94
+    },
+    {
+      "label": "qwen35-rag-sft-v2-quality-v3-3-perf-r3",
+      "generated_at": "2026-08-28T05:28:12+00:00",
+      "endpoint": "http://127.0.0.1:7863/api/ask",
+      "case_count": 20,
+      "passed": 20,
+      "external_model_calls": 20,
+      "fallback_count": 0,
+      "citation_hit_count": 20,
+      "wall_seconds": 53.589,
+      "latency_ms": {
+        "mean": 2679.39,
+        "p50": 2442.46,
+        "p95": 4137.57,
+        "max": 6310.99
+      },
+      "completion_tokens_per_second_mean": 24.323,
+      "peak_npu_memory_mb_max": 1771.94
+    }
+  ],
+  "source_reports": [
+    {
+      "path": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/reports/npu_raw/qwen35-rag-sft-v2-quality-v3-3-perf-r1.json",
+      "sha256": "6985235806ab74f8e7768a0fde1330bb3475ca59a3d8c89a8150a43b2827280e"
+    },
+    {
+      "path": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/reports/npu_raw/qwen35-rag-sft-v2-quality-v3-3-perf-r2.json",
+      "sha256": "09893996b92991d855881a9a3408e251a278117c58ad6fdf15f88e8cca1d5b69"
+    },
+    {
+      "path": "/workspace/kaoyan-lab/kaoyan-knowledge-agent/reports/npu_raw/qwen35-rag-sft-v2-quality-v3-3-perf-r3.json",
+      "sha256": "1f00e6452c444e078c3ca046bb29cbf36f0b0eaffeb516a35ef6e5a58161f4a5"
+    }
+  ],
+  "checks": {
+    "reports_present_3": true,
+    "measured_calls_60": true,
+    "passed_60": true,
+    "external_model_calls_60": true,
+    "fallback_count_0": true,
+    "citation_hit_count_60": true,
+    "latency_metrics_present": true,
+    "throughput_metrics_present": true,
+    "memory_metric_present": true
+  },
+  "passed_gate": true,
+  "interpretation": "该结果是固定样例、单请求串行条件下的重复性能测试，不代表并发容量或正式事实精度。"
+}
