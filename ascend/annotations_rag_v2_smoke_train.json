@@ -1,0 +1,126 @@
+[
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是考研各专业知识库问答智能体。只能依据给定证据回答；证据不足时必须明确说明。涉及招生人数、分数线、考试科目、参考书、复试或年度政策时，必须提醒用户以对应年份官方通知为准。回答应清晰、可复核，并在关键结论后标注证据序号，如[1]。只使用能够直接支撑当前问题的证据，不得为了覆盖全部证据而讨论无关概念；没有使用的证据不要引用。先给完整结论，再补必要解释；控制在180字以内，不得在句子中途结束。真题解析必须保留证据中的关键步骤、术语、公式和因果解释。网址请直接使用纯文本，不要使用 Markdown 超链接格式。"
+      },
+      {
+        "role": "user",
+        "content": "场景：school\n作答要求：按院校信息核验作答，明确学校、学院、专业和年份边界；必须保留证据中的官方机构全称、完整官网 URL 和交叉核验入口。\n问题：查询北京理工大学考研官方信息源时应优先看哪些官方来源？\n\n检索证据：\n[1] 北京理工大学考研官方信息源\n来源：研招网+北京理工大学官网\n北京理工大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367811.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E5%8C%97%E4%BA%AC%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-367811.dhtml，学校官网 https://www.bit.edu.cn/，研究生院官网 https://grd.bit.edu.cn/，研究生招生页面 https://grd.bit.edu.cn/zsgz/ssyjs/index.htm。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。\n\n[2] 上海交通大学计算机学院官方入口\n来源：上海交通大学计算机学院官网\n上海交通大学计算机相关方向的学院级信息可优先核验上海交通大学计算机学院（网络空间安全学院、密码学院）官网 https://www.cs.sjtu.edu.cn/，并与上海交通大学研究生招生网和研招网院校库交叉核验。涉及招生人数、考试科目和复试安排时必须以对应年份官方通知为准。\n\n[3] 基本权利限制\n来源：法学稳定知识点整理\n基本权利并非绝对不受限制。分析限制是否正当时，通常需要考察法律依据、正当目的、手段与目的的关联、必要性以及利益衡量，并防止限制侵害权利核心。"
+      },
+      {
+        "role": "assistant",
+        "content": "北京理工大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367811.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E5%8C%97%E4%BA%AC%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-367811.dhtml，学校官网 https://www.bit.edu.cn/，研究生院官网 https://grd.bit.edu.cn/，研究生招生页面 https://grd.bit.edu.cn/zsgz/ssyjs/index.htm[1]。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-bit-official-sources",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference",
+      "mode": "school",
+      "evidence_ids": [
+        "school-bit-official-sources",
+        "dept-sjtu-cs",
+        "law-constitution-002"
+      ],
+      "grounded_sft_version": "v2",
+      "grounded_evidence_index": 1
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是考研各专业知识库问答智能体。只能依据给定证据回答；证据不足时必须明确说明。涉及招生人数、分数线、考试科目、参考书、复试或年度政策时，必须提醒用户以对应年份官方通知为准。回答应清晰、可复核，并在关键结论后标注证据序号，如[1]。只使用能够直接支撑当前问题的证据，不得为了覆盖全部证据而讨论无关概念；没有使用的证据不要引用。先给完整结论，再补必要解释；控制在180字以内，不得在句子中途结束。真题解析必须保留证据中的关键步骤、术语、公式和因果解释。网址请直接使用纯文本，不要使用 Markdown 超链接格式。"
+      },
+      {
+        "role": "user",
+        "content": "场景：school\n作答要求：按院校信息核验作答，明确学校、学院、专业和年份边界；必须保留证据中的官方机构全称、完整官网 URL 和交叉核验入口。\n问题：查询上海交通大学考研官方信息源时应优先看哪些官方来源？\n\n检索证据：\n[1] 上海交通大学考研官方信息源\n来源：研招网+上海交通大学官网\n上海交通大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-368012.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-368012.dhtml，学校官网 https://www.sjtu.edu.cn/，研究生院官网 https://www.gs.sjtu.edu.cn/，研究生招生网 https://yzb.sjtu.edu.cn/。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。\n\n[2] 散列表冲突处理\n来源：计算机408稳定知识点整理\n散列冲突是不同关键字映射到同一散列地址。常见处理方法包括开放定址法和拉链法。平均查找长度与装填因子、散列函数和冲突处理方法有关，装填因子过大通常会降低查找效率。\n\n[3] 清华大学法学院官方入口\n来源：清华大学法学院官网\n清华大学法学方向学院级信息应优先核验清华大学法学院官网 https://www.law.tsinghua.edu.cn/，并与清华大学研究生招生网和研招网院校库交叉核验。涉及法学专业方向、招生计划、复试安排时必须以对应年份官方通知为准。"
+      },
+      {
+        "role": "assistant",
+        "content": "上海交通大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-368012.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-368012.dhtml，学校官网 https://www.sjtu.edu.cn/，研究生院官网 https://www.gs.sjtu.edu.cn/，研究生招生网 https://yzb.sjtu.edu.cn/[1]。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-sjtu-official-sources",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference",
+      "mode": "school",
+      "evidence_ids": [
+        "school-sjtu-official-sources",
+        "cs-408-ds-005",
+        "dept-tsinghua-law"
+      ],
+      "grounded_sft_version": "v2",
+      "grounded_evidence_index": 1
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是考研各专业知识库问答智能体。只能依据给定证据回答；证据不足时必须明确说明。涉及招生人数、分数线、考试科目、参考书、复试或年度政策时，必须提醒用户以对应年份官方通知为准。回答应清晰、可复核，并在关键结论后标注证据序号，如[1]。只使用能够直接支撑当前问题的证据，不得为了覆盖全部证据而讨论无关概念；没有使用的证据不要引用。先给完整结论，再补必要解释；控制在180字以内，不得在句子中途结束。真题解析必须保留证据中的关键步骤、术语、公式和因果解释。网址请直接使用纯文本，不要使用 Markdown 超链接格式。"
+      },
+      {
+        "role": "user",
+        "content": "场景：school\n作答要求：按院校信息核验作答，明确学校、学院、专业和年份边界；必须保留证据中的官方机构全称、完整官网 URL 和交叉核验入口。\n问题：北京理工大学考研官方信息源应如何核验？\n\n检索证据：\n[1] 文件索引分配\n来源：计算机408稳定知识点整理\n索引分配为每个文件建立索引块，索引项记录文件数据块地址，支持直接访问且文件块可离散存放。多级索引可支持大文件，但访问深层索引会增加磁盘 I/O。\n\n[2] 栈与队列的区别\n来源：计算机408稳定知识点整理\n栈是只允许在同一端进行插入和删除的线性表，遵循后进先出；队列通常在队尾入队、队头出队，遵循先进先出。栈常用于函数调用、括号匹配和深度优先搜索，队列常用于层次遍历、缓冲和广度优先搜索。\n\n[3] 北京理工大学考研官方信息源\n来源：研招网+北京理工大学官网\n北京理工大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367811.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E5%8C%97%E4%BA%AC%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-367811.dhtml，学校官网 https://www.bit.edu.cn/，研究生院官网 https://grd.bit.edu.cn/，研究生招生页面 https://grd.bit.edu.cn/zsgz/ssyjs/index.htm。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。"
+      },
+      {
+        "role": "assistant",
+        "content": "北京理工大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367811.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E5%8C%97%E4%BA%AC%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-367811.dhtml，学校官网 https://www.bit.edu.cn/，研究生院官网 https://grd.bit.edu.cn/，研究生招生页面 https://grd.bit.edu.cn/zsgz/ssyjs/index.htm[3]。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-bit-official-sources",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference",
+      "mode": "school",
+      "evidence_ids": [
+        "cs-408-os-005",
+        "cs-408-ds-003",
+        "school-bit-official-sources"
+      ],
+      "grounded_sft_version": "v2",
+      "grounded_evidence_index": 3
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是考研各专业知识库问答智能体。只能依据给定证据回答；证据不足时必须明确说明。涉及招生人数、分数线、考试科目、参考书、复试或年度政策时，必须提醒用户以对应年份官方通知为准。回答应清晰、可复核，并在关键结论后标注证据序号，如[1]。只使用能够直接支撑当前问题的证据，不得为了覆盖全部证据而讨论无关概念；没有使用的证据不要引用。先给完整结论，再补必要解释；控制在180字以内，不得在句子中途结束。真题解析必须保留证据中的关键步骤、术语、公式和因果解释。网址请直接使用纯文本，不要使用 Markdown 超链接格式。"
+      },
+      {
+        "role": "user",
+        "content": "场景：school\n作答要求：按院校信息核验作答，明确学校、学院、专业和年份边界；必须保留证据中的官方机构全称、完整官网 URL 和交叉核验入口。\n问题：请说明北京理工大学考研官方信息源的使用边界和时效风险。\n\n检索证据：\n[1] 北京理工大学考研官方信息源\n来源：研招网+北京理工大学官网\n北京理工大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367811.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E5%8C%97%E4%BA%AC%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-367811.dhtml，学校官网 https://www.bit.edu.cn/，研究生院官网 https://grd.bit.edu.cn/，研究生招生页面 https://grd.bit.edu.cn/zsgz/ssyjs/index.htm。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。\n\n[2] OFDM 基本原理\n来源：通信工程稳定知识点整理\nOFDM 把高速数据流分配到多个相互正交的低速子载波并行传输，可提高频谱利用率并降低多径造成的码间串扰。循环前缀可对抗一定范围内的多径时延扩展，但会产生额外开销。\n\n[3] 证据审查判断\n来源：法学稳定知识点整理\n证据审查应围绕真实性、关联性和合法性展开，并结合证明责任、证明标准和全案证据形成判断。单一证据的证明力不能脱离取得方式、内容可靠性和其他证据印证。"
+      },
+      {
+        "role": "assistant",
+        "content": "北京理工大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367811.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E5%8C%97%E4%BA%AC%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-367811.dhtml，学校官网 https://www.bit.edu.cn/，研究生院官网 https://grd.bit.edu.cn/，研究生招生页面 https://grd.bit.edu.cn/zsgz/ssyjs/index.htm[1]。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-bit-official-sources",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference",
+      "mode": "school",
+      "evidence_ids": [
+        "school-bit-official-sources",
+        "comm-principle-006",
+        "law-evidence-001"
+      ],
+      "grounded_sft_version": "v2",
+      "grounded_evidence_index": 1
+    }
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-07-21",
+  "knowledge_items": 64,
+  "samples": 192,
+  "samples_per_item": 3,
+  "specialties": {
+    "计算机": 19,
+    "通信工程": 15,
+    "法学": 16,
+    "通用": 14
+  },
+  "source_types": {
+    "curated_reference": 63,
+    "official_website": 1
+  },
+  "claim": "curated and synthetic SFT data; not an official full admissions database"
+}

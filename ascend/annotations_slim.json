@@ -1,0 +1,3650 @@
+[
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：线性表与顺序表。"
+      },
+      {
+        "role": "assistant",
+        "content": "线性表是具有相同数据类型的 n 个数据元素的有限序列。顺序表用一组地址连续的存储单元依次存储线性表中的数据元素，支持随机访问。顺序表插入和删除通常需要移动元素，平均时间复杂度为 O(n)，按位查找时间复杂度为 O(1)。\n\n来源：样例知识库-计算机408数据结构。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-001",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "线性表与顺序表有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "线性表是具有相同数据类型的 n 个数据元素的有限序列。顺序表用一组地址连续的存储单元依次存储线性表中的数据元素，支持随机访问。顺序表插入和删除通常需要移动元素，平均时间复杂度为 O(n)，按位查找时间复杂度为 O(1)。\n\n来源：样例知识库-计算机408数据结构。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-001",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到线性表与顺序表，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "线性表是具有相同数据类型的 n 个数据元素的有限序列。顺序表用一组地址连续的存储单元依次存储线性表中的数据元素，支持随机访问。顺序表插入和删除通常需要移动元素，平均时间复杂度为 O(n)，按位查找时间复杂度为 O(1)。\n\n来源：样例知识库-计算机408数据结构。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-001",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：链表与顺序表对比。"
+      },
+      {
+        "role": "assistant",
+        "content": "链表通过指针表示元素之间的逻辑关系，不要求存储空间连续。链表插入和删除在已知结点位置时可以达到 O(1)，但查找第 i 个元素需要从头遍历，时间复杂度为 O(n)。顺序表适合频繁随机访问，链表适合频繁插入删除。\n\n来源：样例知识库-计算机408数据结构。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-002",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "链表与顺序表对比有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "链表通过指针表示元素之间的逻辑关系，不要求存储空间连续。链表插入和删除在已知结点位置时可以达到 O(1)，但查找第 i 个元素需要从头遍历，时间复杂度为 O(n)。顺序表适合频繁随机访问，链表适合频繁插入删除。\n\n来源：样例知识库-计算机408数据结构。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-002",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到链表与顺序表对比，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "链表通过指针表示元素之间的逻辑关系，不要求存储空间连续。链表插入和删除在已知结点位置时可以达到 O(1)，但查找第 i 个元素需要从头遍历，时间复杂度为 O(n)。顺序表适合频繁随机访问，链表适合频繁插入删除。\n\n来源：样例知识库-计算机408数据结构。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-002",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：进程与线程。"
+      },
+      {
+        "role": "assistant",
+        "content": "进程是资源分配的基本单位，线程是 CPU 调度的基本单位。同一进程中的线程共享进程地址空间和资源，但拥有各自的程序计数器、寄存器和栈。线程切换开销通常小于进程切换。\n\n来源：样例知识库-计算机408操作系统。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-os-001",
+      "specialty": "计算机",
+      "subject": "操作系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "进程与线程有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "进程是资源分配的基本单位，线程是 CPU 调度的基本单位。同一进程中的线程共享进程地址空间和资源，但拥有各自的程序计数器、寄存器和栈。线程切换开销通常小于进程切换。\n\n来源：样例知识库-计算机408操作系统。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-os-001",
+      "specialty": "计算机",
+      "subject": "操作系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到进程与线程，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "进程是资源分配的基本单位，线程是 CPU 调度的基本单位。同一进程中的线程共享进程地址空间和资源，但拥有各自的程序计数器、寄存器和栈。线程切换开销通常小于进程切换。\n\n来源：样例知识库-计算机408操作系统。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-os-001",
+      "specialty": "计算机",
+      "subject": "操作系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：TCP 三次握手。"
+      },
+      {
+        "role": "assistant",
+        "content": "TCP 建立连接需要三次握手：客户端发送 SYN，服务器回复 SYN+ACK，客户端再发送 ACK。三次握手用于确认双方收发能力并同步初始序列号，减少历史连接请求造成的错误连接。\n\n来源：样例知识库-计算机408计算机网络。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-net-001",
+      "specialty": "计算机",
+      "subject": "计算机网络",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "TCP 三次握手有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "TCP 建立连接需要三次握手：客户端发送 SYN，服务器回复 SYN+ACK，客户端再发送 ACK。三次握手用于确认双方收发能力并同步初始序列号，减少历史连接请求造成的错误连接。\n\n来源：样例知识库-计算机408计算机网络。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-net-001",
+      "specialty": "计算机",
+      "subject": "计算机网络",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到TCP 三次握手，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "TCP 建立连接需要三次握手：客户端发送 SYN，服务器回复 SYN+ACK，客户端再发送 ACK。三次握手用于确认双方收发能力并同步初始序列号，减少历史连接请求造成的错误连接。\n\n来源：样例知识库-计算机408计算机网络。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-net-001",
+      "specialty": "计算机",
+      "subject": "计算机网络",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：卷积的物理意义。"
+      },
+      {
+        "role": "assistant",
+        "content": "卷积描述线性时不变系统中输入信号与系统冲激响应共同决定输出的过程。连续系统输出可表示为输入与冲激响应的卷积积分，离散系统输出可表示为卷积和。考研题中常用卷积分析系统响应、零状态响应和频域乘积关系。\n\n来源：样例知识库-通信工程信号与系统。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-signal-001",
+      "specialty": "通信工程",
+      "subject": "信号与系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "卷积的物理意义有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "卷积描述线性时不变系统中输入信号与系统冲激响应共同决定输出的过程。连续系统输出可表示为输入与冲激响应的卷积积分，离散系统输出可表示为卷积和。考研题中常用卷积分析系统响应、零状态响应和频域乘积关系。\n\n来源：样例知识库-通信工程信号与系统。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-signal-001",
+      "specialty": "通信工程",
+      "subject": "信号与系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到卷积的物理意义，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "卷积描述线性时不变系统中输入信号与系统冲激响应共同决定输出的过程。连续系统输出可表示为输入与冲激响应的卷积积分，离散系统输出可表示为卷积和。考研题中常用卷积分析系统响应、零状态响应和频域乘积关系。\n\n来源：样例知识库-通信工程信号与系统。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-signal-001",
+      "specialty": "通信工程",
+      "subject": "信号与系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：香农公式。"
+      },
+      {
+        "role": "assistant",
+        "content": "香农公式给出了带宽受限且存在高斯白噪声信道的理论信道容量：C = B log2(1 + S/N)。其中 B 为信道带宽，S/N 为信噪比。它说明在给定带宽和信噪比条件下，可靠通信速率存在理论上限。\n\n来源：样例知识库-通信工程通信原理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-001",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "香农公式有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "香农公式给出了带宽受限且存在高斯白噪声信道的理论信道容量：C = B log2(1 + S/N)。其中 B 为信道带宽，S/N 为信噪比。它说明在给定带宽和信噪比条件下，可靠通信速率存在理论上限。\n\n来源：样例知识库-通信工程通信原理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-001",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到香农公式，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "香农公式给出了带宽受限且存在高斯白噪声信道的理论信道容量：C = B log2(1 + S/N)。其中 B 为信道带宽，S/N 为信噪比。它说明在给定带宽和信噪比条件下，可靠通信速率存在理论上限。\n\n来源：样例知识库-通信工程通信原理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-001",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：采样定理。"
+      },
+      {
+        "role": "assistant",
+        "content": "采样定理指出，对最高频率为 fm 的带限连续信号，采样频率 fs 应满足 fs >= 2fm，才能在理想条件下由采样值无失真重构原信号。若采样频率不足，会产生频谱混叠。\n\n来源：样例知识库-通信工程数字信号处理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-dsp-001",
+      "specialty": "通信工程",
+      "subject": "数字信号处理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "采样定理有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "采样定理指出，对最高频率为 fm 的带限连续信号，采样频率 fs 应满足 fs >= 2fm，才能在理想条件下由采样值无失真重构原信号。若采样频率不足，会产生频谱混叠。\n\n来源：样例知识库-通信工程数字信号处理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-dsp-001",
+      "specialty": "通信工程",
+      "subject": "数字信号处理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到采样定理，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "采样定理指出，对最高频率为 fm 的带限连续信号，采样频率 fs 应满足 fs >= 2fm，才能在理想条件下由采样值无失真重构原信号。若采样频率不足，会产生频谱混叠。\n\n来源：样例知识库-通信工程数字信号处理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-dsp-001",
+      "specialty": "通信工程",
+      "subject": "数字信号处理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：民事法律行为。"
+      },
+      {
+        "role": "assistant",
+        "content": "民事法律行为是民事主体通过意思表示设立、变更、终止民事法律关系的行为。有效的民事法律行为通常需要行为人具有相应民事行为能力、意思表示真实、不违反法律行政法规强制性规定和公序良俗。\n\n来源：样例知识库-法学民法学。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-civil-001",
+      "specialty": "法学",
+      "subject": "民法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "民事法律行为有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "民事法律行为是民事主体通过意思表示设立、变更、终止民事法律关系的行为。有效的民事法律行为通常需要行为人具有相应民事行为能力、意思表示真实、不违反法律行政法规强制性规定和公序良俗。\n\n来源：样例知识库-法学民法学。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-civil-001",
+      "specialty": "法学",
+      "subject": "民法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到民事法律行为，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "民事法律行为是民事主体通过意思表示设立、变更、终止民事法律关系的行为。有效的民事法律行为通常需要行为人具有相应民事行为能力、意思表示真实、不违反法律行政法规强制性规定和公序良俗。\n\n来源：样例知识库-法学民法学。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-civil-001",
+      "specialty": "法学",
+      "subject": "民法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：犯罪构成。"
+      },
+      {
+        "role": "assistant",
+        "content": "犯罪构成是刑法规定的决定某一行为构成犯罪所必须具备的一切主客观要件的有机统一，通常包括犯罪客体、犯罪客观方面、犯罪主体和犯罪主观方面。分析案例时应依次判断各构成要件。\n\n来源：样例知识库-法学刑法学。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-criminal-001",
+      "specialty": "法学",
+      "subject": "刑法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "犯罪构成有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "犯罪构成是刑法规定的决定某一行为构成犯罪所必须具备的一切主客观要件的有机统一，通常包括犯罪客体、犯罪客观方面、犯罪主体和犯罪主观方面。分析案例时应依次判断各构成要件。\n\n来源：样例知识库-法学刑法学。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-criminal-001",
+      "specialty": "法学",
+      "subject": "刑法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到犯罪构成，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "犯罪构成是刑法规定的决定某一行为构成犯罪所必须具备的一切主客观要件的有机统一，通常包括犯罪客体、犯罪客观方面、犯罪主体和犯罪主观方面。分析案例时应依次判断各构成要件。\n\n来源：样例知识库-法学刑法学。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-criminal-001",
+      "specialty": "法学",
+      "subject": "刑法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：法律规则与法律原则。"
+      },
+      {
+        "role": "assistant",
+        "content": "法律规则通常具有明确的行为模式和法律后果，适用方式较为确定；法律原则具有概括性、价值导向性和弹性，常用于解释法律、填补漏洞和处理规则冲突。主观题作答时应先界定概念，再比较特征和适用场景。\n\n来源：样例知识库-法学法理学。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-jurisprudence-001",
+      "specialty": "法学",
+      "subject": "法理学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "法律规则与法律原则有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "法律规则通常具有明确的行为模式和法律后果，适用方式较为确定；法律原则具有概括性、价值导向性和弹性，常用于解释法律、填补漏洞和处理规则冲突。主观题作答时应先界定概念，再比较特征和适用场景。\n\n来源：样例知识库-法学法理学。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-jurisprudence-001",
+      "specialty": "法学",
+      "subject": "法理学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到法律规则与法律原则，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "法律规则通常具有明确的行为模式和法律后果，适用方式较为确定；法律原则具有概括性、价值导向性和弹性，常用于解释法律、填补漏洞和处理规则冲突。主观题作答时应先界定概念，再比较特征和适用场景。\n\n来源：样例知识库-法学法理学。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-jurisprudence-001",
+      "specialty": "法学",
+      "subject": "法理学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：宪法基本原则。"
+      },
+      {
+        "role": "assistant",
+        "content": "宪法基本原则是宪法制度和宪法规范的基础性准则，通常包括人民主权原则、基本人权原则、法治原则和权力制约原则。答题时应结合宪法文本、制度安排和现实功能展开。\n\n来源：样例知识库-法学宪法学。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-constitution-001",
+      "specialty": "法学",
+      "subject": "宪法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "宪法基本原则有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "宪法基本原则是宪法制度和宪法规范的基础性准则，通常包括人民主权原则、基本人权原则、法治原则和权力制约原则。答题时应结合宪法文本、制度安排和现实功能展开。\n\n来源：样例知识库-法学宪法学。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-constitution-001",
+      "specialty": "法学",
+      "subject": "宪法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到宪法基本原则，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "宪法基本原则是宪法制度和宪法规范的基础性准则，通常包括人民主权原则、基本人权原则、法治原则和权力制约原则。答题时应结合宪法文本、制度安排和现实功能展开。\n\n来源：样例知识库-法学宪法学。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-constitution-001",
+      "specialty": "法学",
+      "subject": "宪法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "招生信息使用原则应如何核验？"
+      },
+      {
+        "role": "assistant",
+        "content": "院校招生信息应优先引用目标院校研究生院、学院官网、招生目录、考试大纲、复试录取办法等正式来源。回答涉及年份、人数、分数线、参考书时，应标注具体年份并提示以当年官方通知为准。\n\n来源：样例知识库-院校招生信息规范。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-info-001",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "查询招生信息使用原则时应优先看哪些官方来源？"
+      },
+      {
+        "role": "assistant",
+        "content": "院校招生信息应优先引用目标院校研究生院、学院官网、招生目录、考试大纲、复试录取办法等正式来源。回答涉及年份、人数、分数线、参考书时，应标注具体年份并提示以当年官方通知为准。\n\n来源：样例知识库-院校招生信息规范。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-info-001",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请说明招生信息使用原则的使用边界和时效风险。"
+      },
+      {
+        "role": "assistant",
+        "content": "院校招生信息应优先引用目标院校研究生院、学院官网、招生目录、考试大纲、复试录取办法等正式来源。回答涉及年份、人数、分数线、参考书时，应标注具体年份并提示以当年官方通知为准。\n\n来源：样例知识库-院校招生信息规范。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-info-001",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请根据考研备考场景说明：三阶段复习框架。"
+      },
+      {
+        "role": "assistant",
+        "content": "考研专业课复习可分为基础、强化、冲刺三个阶段。基础阶段重在建立知识框架和教材通读，强化阶段重在真题训练和专题归纳，冲刺阶段重在错题回炉、模拟训练和答题模板稳定。\n\n来源：样例知识库-备考规划方法。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "planning-001",
+      "specialty": "通用",
+      "subject": "复习规划",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "怎样把三阶段复习框架落实到一周复习安排？"
+      },
+      {
+        "role": "assistant",
+        "content": "考研专业课复习可分为基础、强化、冲刺三个阶段。基础阶段重在建立知识框架和教材通读，强化阶段重在真题训练和专题归纳，冲刺阶段重在错题回炉、模拟训练和答题模板稳定。\n\n来源：样例知识库-备考规划方法。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "planning-001",
+      "specialty": "通用",
+      "subject": "复习规划",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "使用三阶段复习框架时有哪些容易忽略的执行要点？"
+      },
+      {
+        "role": "assistant",
+        "content": "考研专业课复习可分为基础、强化、冲刺三个阶段。基础阶段重在建立知识框架和教材通读，强化阶段重在真题训练和专题归纳，冲刺阶段重在错题回炉、模拟训练和答题模板稳定。\n\n来源：样例知识库-备考规划方法。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "planning-001",
+      "specialty": "通用",
+      "subject": "复习规划",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "研招网院校库使用原则应如何核验？"
+      },
+      {
+        "role": "assistant",
+        "content": "研招网院校库可用于核验招生单位名称、所在地、主管部门、院校特性，以及招生简章、网报公告、在线咨询等入口。院校库信息由招生单位自主维护，疑问应咨询发布单位。\n\n来源：研招网-院校库（https://yz.chsi.com.cn/sch/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "yz-chsi-school-db",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "查询研招网院校库使用原则时应优先看哪些官方来源？"
+      },
+      {
+        "role": "assistant",
+        "content": "研招网院校库可用于核验招生单位名称、所在地、主管部门、院校特性，以及招生简章、网报公告、在线咨询等入口。院校库信息由招生单位自主维护，疑问应咨询发布单位。\n\n来源：研招网-院校库（https://yz.chsi.com.cn/sch/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "yz-chsi-school-db",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请说明研招网院校库使用原则的使用边界和时效风险。"
+      },
+      {
+        "role": "assistant",
+        "content": "研招网院校库可用于核验招生单位名称、所在地、主管部门、院校特性，以及招生简章、网报公告、在线咨询等入口。院校库信息由招生单位自主维护，疑问应咨询发布单位。\n\n来源：研招网-院校库（https://yz.chsi.com.cn/sch/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "yz-chsi-school-db",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：研招网招生简章索引使用原则。"
+      },
+      {
+        "role": "assistant",
+        "content": "研招网招生简章板块可用于查找各招生单位发布的招生章程、招生简章和发布日期。回答院校招生问题时，应同时保留院校名称、年份、发布日期和原始链接。\n\n来源：研招网-招生简章（https://yz.chsi.com.cn/kyzx/zsjz/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "yz-chsi-zsjz-index",
+      "specialty": "通用",
+      "subject": "招生简章",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "研招网招生简章索引使用原则有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "研招网招生简章板块可用于查找各招生单位发布的招生章程、招生简章和发布日期。回答院校招生问题时，应同时保留院校名称、年份、发布日期和原始链接。\n\n来源：研招网-招生简章（https://yz.chsi.com.cn/kyzx/zsjz/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "yz-chsi-zsjz-index",
+      "specialty": "通用",
+      "subject": "招生简章",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到研招网招生简章索引使用原则，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "研招网招生简章板块可用于查找各招生单位发布的招生章程、招生简章和发布日期。回答院校招生问题时，应同时保留院校名称、年份、发布日期和原始链接。\n\n来源：研招网-招生简章（https://yz.chsi.com.cn/kyzx/zsjz/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "yz-chsi-zsjz-index",
+      "specialty": "通用",
+      "subject": "招生简章",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：研招网硕士专业目录使用原则。"
+      },
+      {
+        "role": "assistant",
+        "content": "研招网硕士专业目录可用于按地区、院校、专业、学习方式等条件查询招生专业。整理目录数据时，应保留查询条件、查询日期和对应年份，避免把不同年份目录混用。\n\n来源：研招网-硕士专业目录（https://yz.chsi.com.cn/zsml/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "yz-chsi-zsml-principle",
+      "specialty": "通用",
+      "subject": "硕士目录",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "研招网硕士专业目录使用原则有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "研招网硕士专业目录可用于按地区、院校、专业、学习方式等条件查询招生专业。整理目录数据时，应保留查询条件、查询日期和对应年份，避免把不同年份目录混用。\n\n来源：研招网-硕士专业目录（https://yz.chsi.com.cn/zsml/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "yz-chsi-zsml-principle",
+      "specialty": "通用",
+      "subject": "硕士目录",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到研招网硕士专业目录使用原则，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "研招网硕士专业目录可用于按地区、院校、专业、学习方式等条件查询招生专业。整理目录数据时，应保留查询条件、查询日期和对应年份，避免把不同年份目录混用。\n\n来源：研招网-硕士专业目录（https://yz.chsi.com.cn/zsml/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "yz-chsi-zsml-principle",
+      "specialty": "通用",
+      "subject": "硕士目录",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "沈阳工业大学考研官方信息源应如何核验？"
+      },
+      {
+        "role": "assistant",
+        "content": "沈阳工业大学院校信息优先核验研招网院校库、研招网招生简章、研招网硕士目录、学校官网和研究生院官网。用户提供的入口包括研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-368034.dhtml，招生简章 https://yz.chsi.com.cn/sch/viewZszc--infoId-3430305238,categoryId-10461044,schId-368034,mindex-12.dhtml，硕士目录查询结果，学校官网 https://www.sut.edu.cn/，研究生院官网 https://yjsxy.sut.edu.cn/。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。\n\n来源：研招网+沈阳工业大学官网（https://yz.chsi.com.cn/sch/schoolInfo--schId-368034.dhtml）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-sut-official-sources",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "查询沈阳工业大学考研官方信息源时应优先看哪些官方来源？"
+      },
+      {
+        "role": "assistant",
+        "content": "沈阳工业大学院校信息优先核验研招网院校库、研招网招生简章、研招网硕士目录、学校官网和研究生院官网。用户提供的入口包括研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-368034.dhtml，招生简章 https://yz.chsi.com.cn/sch/viewZszc--infoId-3430305238,categoryId-10461044,schId-368034,mindex-12.dhtml，硕士目录查询结果，学校官网 https://www.sut.edu.cn/，研究生院官网 https://yjsxy.sut.edu.cn/。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。\n\n来源：研招网+沈阳工业大学官网（https://yz.chsi.com.cn/sch/schoolInfo--schId-368034.dhtml）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-sut-official-sources",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请说明沈阳工业大学考研官方信息源的使用边界和时效风险。"
+      },
+      {
+        "role": "assistant",
+        "content": "沈阳工业大学院校信息优先核验研招网院校库、研招网招生简章、研招网硕士目录、学校官网和研究生院官网。用户提供的入口包括研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-368034.dhtml，招生简章 https://yz.chsi.com.cn/sch/viewZszc--infoId-3430305238,categoryId-10461044,schId-368034,mindex-12.dhtml，硕士目录查询结果，学校官网 https://www.sut.edu.cn/，研究生院官网 https://yjsxy.sut.edu.cn/。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。\n\n来源：研招网+沈阳工业大学官网（https://yz.chsi.com.cn/sch/schoolInfo--schId-368034.dhtml）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-sut-official-sources",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "北京理工大学考研官方信息源应如何核验？"
+      },
+      {
+        "role": "assistant",
+        "content": "北京理工大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367811.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E5%8C%97%E4%BA%AC%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-367811.dhtml，学校官网 https://www.bit.edu.cn/，研究生院官网 https://grd.bit.edu.cn/，研究生招生页面 https://grd.bit.edu.cn/zsgz/ssyjs/index.htm。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。\n\n来源：研招网+北京理工大学官网（https://yz.chsi.com.cn/sch/schoolInfo--schId-367811.dhtml）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-bit-official-sources",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "查询北京理工大学考研官方信息源时应优先看哪些官方来源？"
+      },
+      {
+        "role": "assistant",
+        "content": "北京理工大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367811.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E5%8C%97%E4%BA%AC%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-367811.dhtml，学校官网 https://www.bit.edu.cn/，研究生院官网 https://grd.bit.edu.cn/，研究生招生页面 https://grd.bit.edu.cn/zsgz/ssyjs/index.htm。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。\n\n来源：研招网+北京理工大学官网（https://yz.chsi.com.cn/sch/schoolInfo--schId-367811.dhtml）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-bit-official-sources",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请说明北京理工大学考研官方信息源的使用边界和时效风险。"
+      },
+      {
+        "role": "assistant",
+        "content": "北京理工大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367811.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E5%8C%97%E4%BA%AC%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-367811.dhtml，学校官网 https://www.bit.edu.cn/，研究生院官网 https://grd.bit.edu.cn/，研究生招生页面 https://grd.bit.edu.cn/zsgz/ssyjs/index.htm。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。\n\n来源：研招网+北京理工大学官网（https://yz.chsi.com.cn/sch/schoolInfo--schId-367811.dhtml）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-bit-official-sources",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "上海交通大学考研官方信息源应如何核验？"
+      },
+      {
+        "role": "assistant",
+        "content": "上海交通大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-368012.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-368012.dhtml，学校官网 https://www.sjtu.edu.cn/，研究生院官网 https://www.gs.sjtu.edu.cn/，研究生招生网 https://yzb.sjtu.edu.cn/。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。\n\n来源：研招网+上海交通大学官网（https://yz.chsi.com.cn/sch/schoolInfo--schId-368012.dhtml）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-sjtu-official-sources",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "查询上海交通大学考研官方信息源时应优先看哪些官方来源？"
+      },
+      {
+        "role": "assistant",
+        "content": "上海交通大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-368012.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-368012.dhtml，学校官网 https://www.sjtu.edu.cn/，研究生院官网 https://www.gs.sjtu.edu.cn/，研究生招生网 https://yzb.sjtu.edu.cn/。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。\n\n来源：研招网+上海交通大学官网（https://yz.chsi.com.cn/sch/schoolInfo--schId-368012.dhtml）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-sjtu-official-sources",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请说明上海交通大学考研官方信息源的使用边界和时效风险。"
+      },
+      {
+        "role": "assistant",
+        "content": "上海交通大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-368012.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-368012.dhtml，学校官网 https://www.sjtu.edu.cn/，研究生院官网 https://www.gs.sjtu.edu.cn/，研究生招生网 https://yzb.sjtu.edu.cn/。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。\n\n来源：研招网+上海交通大学官网（https://yz.chsi.com.cn/sch/schoolInfo--schId-368012.dhtml）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-sjtu-official-sources",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "清华大学考研官方信息源应如何核验？"
+      },
+      {
+        "role": "assistant",
+        "content": "清华大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367824.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-367824.dhtml，学校官网 https://www.tsinghua.edu.cn/，清华大学研究生招生网 https://yz.tsinghua.edu.cn/。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。\n\n来源：研招网+清华大学研究生招生网（https://yz.chsi.com.cn/sch/schoolInfo--schId-367824.dhtml）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-tsinghua-official-sources",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "查询清华大学考研官方信息源时应优先看哪些官方来源？"
+      },
+      {
+        "role": "assistant",
+        "content": "清华大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367824.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-367824.dhtml，学校官网 https://www.tsinghua.edu.cn/，清华大学研究生招生网 https://yz.tsinghua.edu.cn/。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。\n\n来源：研招网+清华大学研究生招生网（https://yz.chsi.com.cn/sch/schoolInfo--schId-367824.dhtml）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-tsinghua-official-sources",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请说明清华大学考研官方信息源的使用边界和时效风险。"
+      },
+      {
+        "role": "assistant",
+        "content": "清华大学院校信息优先核验研招网院校库 https://yz.chsi.com.cn/sch/schoolInfo--schId-367824.dhtml，研招网院校搜索 https://yz.chsi.com.cn/sch/searchyxmc.do?yxmc=%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6，研招网招生简章列表 https://yz.chsi.com.cn/sch/listZszc--schId-367824.dhtml，学校官网 https://www.tsinghua.edu.cn/，清华大学研究生招生网 https://yz.tsinghua.edu.cn/。涉及招生人数、参考书、考试科目、复试线时必须标注年份并以官方通知为准。\n\n来源：研招网+清华大学研究生招生网（https://yz.chsi.com.cn/sch/schoolInfo--schId-367824.dhtml）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "school-tsinghua-official-sources",
+      "specialty": "通用",
+      "subject": "院校信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：本项目示例专业方向和示例学校。"
+      },
+      {
+        "role": "assistant",
+        "content": "本项目初赛示例专业方向选择计算机408、通信工程、法学；示例学校选择沈阳工业大学、北京理工大学、上海交通大学、清华大学。该组合覆盖工科专业课、信息通信、法学主观题，以及不同地区和不同层次高校的院校信息核验。\n\n来源：项目范围设定；年份：2026；采集日期：2026-07-21。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "scope-specialty-school-demo",
+      "specialty": "通用",
+      "subject": "项目范围",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "本项目示例专业方向和示例学校有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "本项目初赛示例专业方向选择计算机408、通信工程、法学；示例学校选择沈阳工业大学、北京理工大学、上海交通大学、清华大学。该组合覆盖工科专业课、信息通信、法学主观题，以及不同地区和不同层次高校的院校信息核验。\n\n来源：项目范围设定；年份：2026；采集日期：2026-07-21。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "scope-specialty-school-demo",
+      "specialty": "通用",
+      "subject": "项目范围",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到本项目示例专业方向和示例学校，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "本项目初赛示例专业方向选择计算机408、通信工程、法学；示例学校选择沈阳工业大学、北京理工大学、上海交通大学、清华大学。该组合覆盖工科专业课、信息通信、法学主观题，以及不同地区和不同层次高校的院校信息核验。\n\n来源：项目范围设定；年份：2026；采集日期：2026-07-21。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "scope-specialty-school-demo",
+      "specialty": "通用",
+      "subject": "项目范围",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "清华大学计算机科学与技术系官方入口应如何核验？"
+      },
+      {
+        "role": "assistant",
+        "content": "清华大学计算机方向学院级信息应优先核验清华大学计算机科学与技术系官网 https://www.cs.tsinghua.edu.cn/，并与清华大学研究生招生网和研招网院校库交叉核验。涉及招生人数、考试科目、复试安排、导师方向时必须以对应年份官方通知为准。\n\n来源：清华大学计算机科学与技术系官网（https://www.cs.tsinghua.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-tsinghua-cs",
+      "specialty": "计算机",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "查询清华大学计算机科学与技术系官方入口时要保留哪些官方来源信息？"
+      },
+      {
+        "role": "assistant",
+        "content": "清华大学计算机方向学院级信息应优先核验清华大学计算机科学与技术系官网 https://www.cs.tsinghua.edu.cn/，并与清华大学研究生招生网和研招网院校库交叉核验。涉及招生人数、考试科目、复试安排、导师方向时必须以对应年份官方通知为准。\n\n来源：清华大学计算机科学与技术系官网（https://www.cs.tsinghua.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-tsinghua-cs",
+      "specialty": "计算机",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请按考研院校咨询口径说明清华大学计算机科学与技术系官方入口，并提示时效风险。"
+      },
+      {
+        "role": "assistant",
+        "content": "清华大学计算机方向学院级信息应优先核验清华大学计算机科学与技术系官网 https://www.cs.tsinghua.edu.cn/，并与清华大学研究生招生网和研招网院校库交叉核验。涉及招生人数、考试科目、复试安排、导师方向时必须以对应年份官方通知为准。\n\n来源：清华大学计算机科学与技术系官网（https://www.cs.tsinghua.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-tsinghua-cs",
+      "specialty": "计算机",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "清华大学电子工程系官方入口应如何核验？"
+      },
+      {
+        "role": "assistant",
+        "content": "清华大学通信工程相关方向学院级信息应优先核验清华大学电子工程系官网 https://www.ee.tsinghua.edu.cn/，并与清华大学研究生招生网和研招网硕士目录交叉核验。涉及招生方向、考试科目、复试安排、导师方向时必须以对应年份官方通知为准。\n\n来源：清华大学电子工程系官网（https://www.ee.tsinghua.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-tsinghua-ee",
+      "specialty": "通信工程",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "查询清华大学电子工程系官方入口时要保留哪些官方来源信息？"
+      },
+      {
+        "role": "assistant",
+        "content": "清华大学通信工程相关方向学院级信息应优先核验清华大学电子工程系官网 https://www.ee.tsinghua.edu.cn/，并与清华大学研究生招生网和研招网硕士目录交叉核验。涉及招生方向、考试科目、复试安排、导师方向时必须以对应年份官方通知为准。\n\n来源：清华大学电子工程系官网（https://www.ee.tsinghua.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-tsinghua-ee",
+      "specialty": "通信工程",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请按考研院校咨询口径说明清华大学电子工程系官方入口，并提示时效风险。"
+      },
+      {
+        "role": "assistant",
+        "content": "清华大学通信工程相关方向学院级信息应优先核验清华大学电子工程系官网 https://www.ee.tsinghua.edu.cn/，并与清华大学研究生招生网和研招网硕士目录交叉核验。涉及招生方向、考试科目、复试安排、导师方向时必须以对应年份官方通知为准。\n\n来源：清华大学电子工程系官网（https://www.ee.tsinghua.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-tsinghua-ee",
+      "specialty": "通信工程",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "清华大学法学院官方入口应如何核验？"
+      },
+      {
+        "role": "assistant",
+        "content": "清华大学法学方向学院级信息应优先核验清华大学法学院官网 https://www.law.tsinghua.edu.cn/，并与清华大学研究生招生网和研招网院校库交叉核验。涉及法学专业方向、招生计划、复试安排时必须以对应年份官方通知为准。\n\n来源：清华大学法学院官网（https://www.law.tsinghua.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-tsinghua-law",
+      "specialty": "法学",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "查询清华大学法学院官方入口时要保留哪些官方来源信息？"
+      },
+      {
+        "role": "assistant",
+        "content": "清华大学法学方向学院级信息应优先核验清华大学法学院官网 https://www.law.tsinghua.edu.cn/，并与清华大学研究生招生网和研招网院校库交叉核验。涉及法学专业方向、招生计划、复试安排时必须以对应年份官方通知为准。\n\n来源：清华大学法学院官网（https://www.law.tsinghua.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-tsinghua-law",
+      "specialty": "法学",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请按考研院校咨询口径说明清华大学法学院官方入口，并提示时效风险。"
+      },
+      {
+        "role": "assistant",
+        "content": "清华大学法学方向学院级信息应优先核验清华大学法学院官网 https://www.law.tsinghua.edu.cn/，并与清华大学研究生招生网和研招网院校库交叉核验。涉及法学专业方向、招生计划、复试安排时必须以对应年份官方通知为准。\n\n来源：清华大学法学院官网（https://www.law.tsinghua.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-tsinghua-law",
+      "specialty": "法学",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "北京理工大学计算机学院官方入口应如何核验？"
+      },
+      {
+        "role": "assistant",
+        "content": "北京理工大学计算机方向学院级信息应优先核验北京理工大学计算机学院官网 https://cs.bit.edu.cn/，并与北京理工大学研究生院、研究生招生页面和研招网院校库交叉核验。涉及招生人数、考试科目、复试安排时必须以对应年份官方通知为准。\n\n来源：北京理工大学计算机学院官网（https://cs.bit.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-bit-cs",
+      "specialty": "计算机",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "查询北京理工大学计算机学院官方入口时要保留哪些官方来源信息？"
+      },
+      {
+        "role": "assistant",
+        "content": "北京理工大学计算机方向学院级信息应优先核验北京理工大学计算机学院官网 https://cs.bit.edu.cn/，并与北京理工大学研究生院、研究生招生页面和研招网院校库交叉核验。涉及招生人数、考试科目、复试安排时必须以对应年份官方通知为准。\n\n来源：北京理工大学计算机学院官网（https://cs.bit.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-bit-cs",
+      "specialty": "计算机",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请按考研院校咨询口径说明北京理工大学计算机学院官方入口，并提示时效风险。"
+      },
+      {
+        "role": "assistant",
+        "content": "北京理工大学计算机方向学院级信息应优先核验北京理工大学计算机学院官网 https://cs.bit.edu.cn/，并与北京理工大学研究生院、研究生招生页面和研招网院校库交叉核验。涉及招生人数、考试科目、复试安排时必须以对应年份官方通知为准。\n\n来源：北京理工大学计算机学院官网（https://cs.bit.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-bit-cs",
+      "specialty": "计算机",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "北京理工大学信息与电子学院官方入口应如何核验？"
+      },
+      {
+        "role": "assistant",
+        "content": "北京理工大学通信工程相关方向学院级信息应优先核验北京理工大学信息与电子学院官网 https://sie.bit.edu.cn/，并与北京理工大学研究生院、研究生招生页面和研招网硕士目录交叉核验。涉及招生方向、考试科目、复试安排时必须以对应年份官方通知为准。\n\n来源：北京理工大学信息与电子学院官网（https://sie.bit.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-bit-sie",
+      "specialty": "通信工程",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "查询北京理工大学信息与电子学院官方入口时要保留哪些官方来源信息？"
+      },
+      {
+        "role": "assistant",
+        "content": "北京理工大学通信工程相关方向学院级信息应优先核验北京理工大学信息与电子学院官网 https://sie.bit.edu.cn/，并与北京理工大学研究生院、研究生招生页面和研招网硕士目录交叉核验。涉及招生方向、考试科目、复试安排时必须以对应年份官方通知为准。\n\n来源：北京理工大学信息与电子学院官网（https://sie.bit.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-bit-sie",
+      "specialty": "通信工程",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请按考研院校咨询口径说明北京理工大学信息与电子学院官方入口，并提示时效风险。"
+      },
+      {
+        "role": "assistant",
+        "content": "北京理工大学通信工程相关方向学院级信息应优先核验北京理工大学信息与电子学院官网 https://sie.bit.edu.cn/，并与北京理工大学研究生院、研究生招生页面和研招网硕士目录交叉核验。涉及招生方向、考试科目、复试安排时必须以对应年份官方通知为准。\n\n来源：北京理工大学信息与电子学院官网（https://sie.bit.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-bit-sie",
+      "specialty": "通信工程",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "北京理工大学法学院官方入口应如何核验？"
+      },
+      {
+        "role": "assistant",
+        "content": "北京理工大学法学方向学院级信息应优先核验北京理工大学法学院官网 https://law.bit.edu.cn/，并与北京理工大学研究生院、研究生招生页面和研招网院校库交叉核验。涉及法学专业方向、招生计划、复试安排时必须以对应年份官方通知为准。\n\n来源：北京理工大学法学院官网（https://law.bit.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-bit-law",
+      "specialty": "法学",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "查询北京理工大学法学院官方入口时要保留哪些官方来源信息？"
+      },
+      {
+        "role": "assistant",
+        "content": "北京理工大学法学方向学院级信息应优先核验北京理工大学法学院官网 https://law.bit.edu.cn/，并与北京理工大学研究生院、研究生招生页面和研招网院校库交叉核验。涉及法学专业方向、招生计划、复试安排时必须以对应年份官方通知为准。\n\n来源：北京理工大学法学院官网（https://law.bit.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-bit-law",
+      "specialty": "法学",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请按考研院校咨询口径说明北京理工大学法学院官方入口，并提示时效风险。"
+      },
+      {
+        "role": "assistant",
+        "content": "北京理工大学法学方向学院级信息应优先核验北京理工大学法学院官网 https://law.bit.edu.cn/，并与北京理工大学研究生院、研究生招生页面和研招网院校库交叉核验。涉及法学专业方向、招生计划、复试安排时必须以对应年份官方通知为准。\n\n来源：北京理工大学法学院官网（https://law.bit.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-bit-law",
+      "specialty": "法学",
+      "subject": "学院信息",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：栈与队列的区别。"
+      },
+      {
+        "role": "assistant",
+        "content": "栈是只允许在同一端进行插入和删除的线性表，遵循后进先出；队列通常在队尾入队、队头出队，遵循先进先出。栈常用于函数调用、括号匹配和深度优先搜索，队列常用于层次遍历、缓冲和广度优先搜索。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-003",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "栈与队列的区别有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "栈是只允许在同一端进行插入和删除的线性表，遵循后进先出；队列通常在队尾入队、队头出队，遵循先进先出。栈常用于函数调用、括号匹配和深度优先搜索，队列常用于层次遍历、缓冲和广度优先搜索。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-003",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到栈与队列的区别，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "栈是只允许在同一端进行插入和删除的线性表，遵循后进先出；队列通常在队尾入队、队头出队，遵循先进先出。栈常用于函数调用、括号匹配和深度优先搜索，队列常用于层次遍历、缓冲和广度优先搜索。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-003",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：二叉树遍历。"
+      },
+      {
+        "role": "assistant",
+        "content": "二叉树先序遍历顺序为根、左、右，中序为左、根、右，后序为左、右、根，层序遍历按层从上到下访问。已知先序和中序或后序和中序，在结点值互异时可以唯一确定一棵二叉树。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-004",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "二叉树遍历有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "二叉树先序遍历顺序为根、左、右，中序为左、根、右，后序为左、右、根，层序遍历按层从上到下访问。已知先序和中序或后序和中序，在结点值互异时可以唯一确定一棵二叉树。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-004",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到二叉树遍历，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "二叉树先序遍历顺序为根、左、右，中序为左、根、右，后序为左、右、根，层序遍历按层从上到下访问。已知先序和中序或后序和中序，在结点值互异时可以唯一确定一棵二叉树。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-004",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：散列表冲突处理。"
+      },
+      {
+        "role": "assistant",
+        "content": "散列冲突是不同关键字映射到同一散列地址。常见处理方法包括开放定址法和拉链法。平均查找长度与装填因子、散列函数和冲突处理方法有关，装填因子过大通常会降低查找效率。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-005",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "散列表冲突处理有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "散列冲突是不同关键字映射到同一散列地址。常见处理方法包括开放定址法和拉链法。平均查找长度与装填因子、散列函数和冲突处理方法有关，装填因子过大通常会降低查找效率。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-005",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到散列表冲突处理，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "散列冲突是不同关键字映射到同一散列地址。常见处理方法包括开放定址法和拉链法。平均查找长度与装填因子、散列函数和冲突处理方法有关，装填因子过大通常会降低查找效率。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-005",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：稳定排序与复杂度。"
+      },
+      {
+        "role": "assistant",
+        "content": "直接插入排序、冒泡排序、归并排序通常是稳定排序；简单选择排序、快速排序、堆排序通常不稳定。归并排序和堆排序最坏时间复杂度为 O(n log n)，快速排序平均为 O(n log n)、最坏为 O(n^2)。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-006",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "稳定排序与复杂度有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "直接插入排序、冒泡排序、归并排序通常是稳定排序；简单选择排序、快速排序、堆排序通常不稳定。归并排序和堆排序最坏时间复杂度为 O(n log n)，快速排序平均为 O(n log n)、最坏为 O(n^2)。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-006",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到稳定排序与复杂度，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "直接插入排序、冒泡排序、归并排序通常是稳定排序；简单选择排序、快速排序、堆排序通常不稳定。归并排序和堆排序最坏时间复杂度为 O(n log n)，快速排序平均为 O(n log n)、最坏为 O(n^2)。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-ds-006",
+      "specialty": "计算机",
+      "subject": "数据结构",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：死锁必要条件。"
+      },
+      {
+        "role": "assistant",
+        "content": "死锁产生需要同时满足互斥、请求并保持、不可剥夺和循环等待四个必要条件。破坏任一必要条件可以预防死锁；银行家算法通过安全性检查进行死锁避免。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-os-002",
+      "specialty": "计算机",
+      "subject": "操作系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "死锁必要条件有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "死锁产生需要同时满足互斥、请求并保持、不可剥夺和循环等待四个必要条件。破坏任一必要条件可以预防死锁；银行家算法通过安全性检查进行死锁避免。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-os-002",
+      "specialty": "计算机",
+      "subject": "操作系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到死锁必要条件，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "死锁产生需要同时满足互斥、请求并保持、不可剥夺和循环等待四个必要条件。破坏任一必要条件可以预防死锁；银行家算法通过安全性检查进行死锁避免。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-os-002",
+      "specialty": "计算机",
+      "subject": "操作系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：虚拟内存与缺页。"
+      },
+      {
+        "role": "assistant",
+        "content": "虚拟内存基于局部性原理，只把当前需要的页面调入内存。访问页表中不存在于内存的页面会产生缺页中断，由操作系统调页；若无空闲页框，还要依据页面置换算法选择淘汰页。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-os-003",
+      "specialty": "计算机",
+      "subject": "操作系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "虚拟内存与缺页有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "虚拟内存基于局部性原理，只把当前需要的页面调入内存。访问页表中不存在于内存的页面会产生缺页中断，由操作系统调页；若无空闲页框，还要依据页面置换算法选择淘汰页。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-os-003",
+      "specialty": "计算机",
+      "subject": "操作系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到虚拟内存与缺页，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "虚拟内存基于局部性原理，只把当前需要的页面调入内存。访问页表中不存在于内存的页面会产生缺页中断，由操作系统调页；若无空闲页框，还要依据页面置换算法选择淘汰页。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-os-003",
+      "specialty": "计算机",
+      "subject": "操作系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：进程调度算法。"
+      },
+      {
+        "role": "assistant",
+        "content": "先来先服务实现简单但可能产生护航效应；短作业优先有利于降低平均等待时间但可能使长作业饥饿；时间片轮转适合分时系统；优先级调度可通过动态优先级缓解饥饿。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-os-004",
+      "specialty": "计算机",
+      "subject": "操作系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "进程调度算法有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "先来先服务实现简单但可能产生护航效应；短作业优先有利于降低平均等待时间但可能使长作业饥饿；时间片轮转适合分时系统；优先级调度可通过动态优先级缓解饥饿。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-os-004",
+      "specialty": "计算机",
+      "subject": "操作系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到进程调度算法，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "先来先服务实现简单但可能产生护航效应；短作业优先有利于降低平均等待时间但可能使长作业饥饿；时间片轮转适合分时系统；优先级调度可通过动态优先级缓解饥饿。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-os-004",
+      "specialty": "计算机",
+      "subject": "操作系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：文件索引分配。"
+      },
+      {
+        "role": "assistant",
+        "content": "索引分配为每个文件建立索引块，索引项记录文件数据块地址，支持直接访问且文件块可离散存放。多级索引可支持大文件，但访问深层索引会增加磁盘 I/O。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-os-005",
+      "specialty": "计算机",
+      "subject": "操作系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "文件索引分配有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "索引分配为每个文件建立索引块，索引项记录文件数据块地址，支持直接访问且文件块可离散存放。多级索引可支持大文件，但访问深层索引会增加磁盘 I/O。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-os-005",
+      "specialty": "计算机",
+      "subject": "操作系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到文件索引分配，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "索引分配为每个文件建立索引块，索引项记录文件数据块地址，支持直接访问且文件块可离散存放。多级索引可支持大文件，但访问深层索引会增加磁盘 I/O。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-os-005",
+      "specialty": "计算机",
+      "subject": "操作系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：TCP 拥塞控制。"
+      },
+      {
+        "role": "assistant",
+        "content": "TCP 拥塞控制常包括慢开始、拥塞避免、快重传和快恢复。慢开始阶段拥塞窗口按确认轮次近似指数增长，达到慢开始门限后转为线性增长；检测到拥塞后调整门限和窗口。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-net-002",
+      "specialty": "计算机",
+      "subject": "计算机网络",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "TCP 拥塞控制有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "TCP 拥塞控制常包括慢开始、拥塞避免、快重传和快恢复。慢开始阶段拥塞窗口按确认轮次近似指数增长，达到慢开始门限后转为线性增长；检测到拥塞后调整门限和窗口。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-net-002",
+      "specialty": "计算机",
+      "subject": "计算机网络",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到TCP 拥塞控制，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "TCP 拥塞控制常包括慢开始、拥塞避免、快重传和快恢复。慢开始阶段拥塞窗口按确认轮次近似指数增长，达到慢开始门限后转为线性增长；检测到拥塞后调整门限和窗口。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-net-002",
+      "specialty": "计算机",
+      "subject": "计算机网络",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：IPv4 子网划分。"
+      },
+      {
+        "role": "assistant",
+        "content": "子网掩码用于区分网络前缀和主机号。一个前缀长度为 p 的 IPv4 子网共有 2^(32-p) 个地址，传统题目中通常扣除网络地址和广播地址后计算可用主机地址。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-net-003",
+      "specialty": "计算机",
+      "subject": "计算机网络",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "IPv4 子网划分有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "子网掩码用于区分网络前缀和主机号。一个前缀长度为 p 的 IPv4 子网共有 2^(32-p) 个地址，传统题目中通常扣除网络地址和广播地址后计算可用主机地址。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-net-003",
+      "specialty": "计算机",
+      "subject": "计算机网络",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到IPv4 子网划分，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "子网掩码用于区分网络前缀和主机号。一个前缀长度为 p 的 IPv4 子网共有 2^(32-p) 个地址，传统题目中通常扣除网络地址和广播地址后计算可用主机地址。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-net-003",
+      "specialty": "计算机",
+      "subject": "计算机网络",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：DNS 解析过程。"
+      },
+      {
+        "role": "assistant",
+        "content": "DNS 将域名映射为 IP 地址。本地主机通常向本地 DNS 服务器发起递归查询，本地 DNS 服务器可依次向根、顶级域和权威 DNS 服务器进行迭代查询，并缓存结果以降低后续解析时延。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-net-004",
+      "specialty": "计算机",
+      "subject": "计算机网络",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "DNS 解析过程有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "DNS 将域名映射为 IP 地址。本地主机通常向本地 DNS 服务器发起递归查询，本地 DNS 服务器可依次向根、顶级域和权威 DNS 服务器进行迭代查询，并缓存结果以降低后续解析时延。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-net-004",
+      "specialty": "计算机",
+      "subject": "计算机网络",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到DNS 解析过程，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "DNS 将域名映射为 IP 地址。本地主机通常向本地 DNS 服务器发起递归查询，本地 DNS 服务器可依次向根、顶级域和权威 DNS 服务器进行迭代查询，并缓存结果以降低后续解析时延。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-net-004",
+      "specialty": "计算机",
+      "subject": "计算机网络",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：CSMA/CD 工作原理。"
+      },
+      {
+        "role": "assistant",
+        "content": "CSMA/CD 用于早期共享式半双工以太网：发送前监听信道，边发送边检测冲突，发生冲突后发送强化信号并执行二进制指数退避。交换式全双工以太网不存在同一冲突域内的碰撞问题。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-net-005",
+      "specialty": "计算机",
+      "subject": "计算机网络",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "CSMA/CD 工作原理有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "CSMA/CD 用于早期共享式半双工以太网：发送前监听信道，边发送边检测冲突，发生冲突后发送强化信号并执行二进制指数退避。交换式全双工以太网不存在同一冲突域内的碰撞问题。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-net-005",
+      "specialty": "计算机",
+      "subject": "计算机网络",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到CSMA/CD 工作原理，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "CSMA/CD 用于早期共享式半双工以太网：发送前监听信道，边发送边检测冲突，发生冲突后发送强化信号并执行二进制指数退避。交换式全双工以太网不存在同一冲突域内的碰撞问题。\n\n来源：计算机408稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "cs-408-net-005",
+      "specialty": "计算机",
+      "subject": "计算机网络",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：傅里叶变换的意义。"
+      },
+      {
+        "role": "assistant",
+        "content": "傅里叶变换把时域信号分解为不同频率复指数分量，用频谱描述各频率成分的幅度和相位。它便于分析系统频率响应、滤波、调制和带宽，时域卷积对应频域乘积。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-signal-002",
+      "specialty": "通信工程",
+      "subject": "信号与系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "傅里叶变换的意义有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "傅里叶变换把时域信号分解为不同频率复指数分量，用频谱描述各频率成分的幅度和相位。它便于分析系统频率响应、滤波、调制和带宽，时域卷积对应频域乘积。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-signal-002",
+      "specialty": "通信工程",
+      "subject": "信号与系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到傅里叶变换的意义，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "傅里叶变换把时域信号分解为不同频率复指数分量，用频谱描述各频率成分的幅度和相位。它便于分析系统频率响应、滤波、调制和带宽，时域卷积对应频域乘积。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-signal-002",
+      "specialty": "通信工程",
+      "subject": "信号与系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：线性时不变系统判定。"
+      },
+      {
+        "role": "assistant",
+        "content": "线性要求系统满足齐次性和可加性，时不变要求输入延时后输出只发生相同延时。线性时不变系统可由冲激响应完整表征，输出等于输入与冲激响应的卷积。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-signal-003",
+      "specialty": "通信工程",
+      "subject": "信号与系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "线性时不变系统判定有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "线性要求系统满足齐次性和可加性，时不变要求输入延时后输出只发生相同延时。线性时不变系统可由冲激响应完整表征，输出等于输入与冲激响应的卷积。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-signal-003",
+      "specialty": "通信工程",
+      "subject": "信号与系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到线性时不变系统判定，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "线性要求系统满足齐次性和可加性，时不变要求输入延时后输出只发生相同延时。线性时不变系统可由冲激响应完整表征，输出等于输入与冲激响应的卷积。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-signal-003",
+      "specialty": "通信工程",
+      "subject": "信号与系统",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：数字调制方式比较。"
+      },
+      {
+        "role": "assistant",
+        "content": "ASK 用幅度承载信息、抗幅度噪声能力较弱；FSK 用频率承载信息、非相干检测较方便；PSK 用相位承载信息、功率利用率较高。QPSK 每个符号可携带 2 bit，在相同码元速率下比 BPSK 具有更高比特率。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-002",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "数字调制方式比较有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "ASK 用幅度承载信息、抗幅度噪声能力较弱；FSK 用频率承载信息、非相干检测较方便；PSK 用相位承载信息、功率利用率较高。QPSK 每个符号可携带 2 bit，在相同码元速率下比 BPSK 具有更高比特率。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-002",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到数字调制方式比较，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "ASK 用幅度承载信息、抗幅度噪声能力较弱；FSK 用频率承载信息、非相干检测较方便；PSK 用相位承载信息、功率利用率较高。QPSK 每个符号可携带 2 bit，在相同码元速率下比 BPSK 具有更高比特率。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-002",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：匹配滤波器。"
+      },
+      {
+        "role": "assistant",
+        "content": "匹配滤波器在白噪声背景下使指定抽样时刻的输出信噪比最大，其冲激响应与已知信号的时间反转共轭形式相关。它是数字通信最佳接收机分析中的重要组成。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-003",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "匹配滤波器有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "匹配滤波器在白噪声背景下使指定抽样时刻的输出信噪比最大，其冲激响应与已知信号的时间反转共轭形式相关。它是数字通信最佳接收机分析中的重要组成。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-003",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到匹配滤波器，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "匹配滤波器在白噪声背景下使指定抽样时刻的输出信噪比最大，其冲激响应与已知信号的时间反转共轭形式相关。它是数字通信最佳接收机分析中的重要组成。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-003",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：信道编码作用。"
+      },
+      {
+        "role": "assistant",
+        "content": "信道编码通过加入受控冗余，使接收端能够检测或纠正传输错误，提高可靠性。其代价通常是降低有效码率或增加带宽、时延和编解码复杂度。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-004",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "信道编码作用有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "信道编码通过加入受控冗余，使接收端能够检测或纠正传输错误，提高可靠性。其代价通常是降低有效码率或增加带宽、时延和编解码复杂度。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-004",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到信道编码作用，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "信道编码通过加入受控冗余，使接收端能够检测或纠正传输错误，提高可靠性。其代价通常是降低有效码率或增加带宽、时延和编解码复杂度。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-004",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：DFT 与 FFT。"
+      },
+      {
+        "role": "assistant",
+        "content": "DFT 把有限长离散序列变换到离散频域，直接计算复杂度约为 O(N^2)。FFT 是利用旋转因子周期性和对称性快速计算 DFT 的算法，典型复杂度为 O(N log N)，结果定义不变。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-dsp-002",
+      "specialty": "通信工程",
+      "subject": "数字信号处理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "DFT 与 FFT有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "DFT 把有限长离散序列变换到离散频域，直接计算复杂度约为 O(N^2)。FFT 是利用旋转因子周期性和对称性快速计算 DFT 的算法，典型复杂度为 O(N log N)，结果定义不变。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-dsp-002",
+      "specialty": "通信工程",
+      "subject": "数字信号处理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到DFT 与 FFT，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "DFT 把有限长离散序列变换到离散频域，直接计算复杂度约为 O(N^2)。FFT 是利用旋转因子周期性和对称性快速计算 DFT 的算法，典型复杂度为 O(N log N)，结果定义不变。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-dsp-002",
+      "specialty": "通信工程",
+      "subject": "数字信号处理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：FIR 与 IIR 滤波器。"
+      },
+      {
+        "role": "assistant",
+        "content": "FIR 滤波器单位冲激响应有限，可实现严格线性相位且通常稳定，但达到同等选择性可能需要较高阶数；IIR 单位冲激响应无限，较低阶数即可获得较陡过渡带，但相位和稳定性设计更复杂。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-dsp-003",
+      "specialty": "通信工程",
+      "subject": "数字信号处理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "FIR 与 IIR 滤波器有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "FIR 滤波器单位冲激响应有限，可实现严格线性相位且通常稳定，但达到同等选择性可能需要较高阶数；IIR 单位冲激响应无限，较低阶数即可获得较陡过渡带，但相位和稳定性设计更复杂。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-dsp-003",
+      "specialty": "通信工程",
+      "subject": "数字信号处理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到FIR 与 IIR 滤波器，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "FIR 滤波器单位冲激响应有限，可实现严格线性相位且通常稳定，但达到同等选择性可能需要较高阶数；IIR 单位冲激响应无限，较低阶数即可获得较陡过渡带，但相位和稳定性设计更复杂。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-dsp-003",
+      "specialty": "通信工程",
+      "subject": "数字信号处理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：PCM 编码步骤。"
+      },
+      {
+        "role": "assistant",
+        "content": "脉冲编码调制 PCM 通常包括抽样、量化和编码。抽样把连续时间信号离散化，量化把幅值映射到有限电平并产生量化误差，编码再把量化电平表示为二进制码组。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-005",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "PCM 编码步骤有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "脉冲编码调制 PCM 通常包括抽样、量化和编码。抽样把连续时间信号离散化，量化把幅值映射到有限电平并产生量化误差，编码再把量化电平表示为二进制码组。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-005",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到PCM 编码步骤，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "脉冲编码调制 PCM 通常包括抽样、量化和编码。抽样把连续时间信号离散化，量化把幅值映射到有限电平并产生量化误差，编码再把量化电平表示为二进制码组。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-005",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：OFDM 基本原理。"
+      },
+      {
+        "role": "assistant",
+        "content": "OFDM 把高速数据流分配到多个相互正交的低速子载波并行传输，可提高频谱利用率并降低多径造成的码间串扰。循环前缀可对抗一定范围内的多径时延扩展，但会产生额外开销。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-006",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "OFDM 基本原理有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "OFDM 把高速数据流分配到多个相互正交的低速子载波并行传输，可提高频谱利用率并降低多径造成的码间串扰。循环前缀可对抗一定范围内的多径时延扩展，但会产生额外开销。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-006",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到OFDM 基本原理，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "OFDM 把高速数据流分配到多个相互正交的低速子载波并行传输，可提高频谱利用率并降低多径造成的码间串扰。循环前缀可对抗一定范围内的多径时延扩展，但会产生额外开销。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-principle-006",
+      "specialty": "通信工程",
+      "subject": "通信原理",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：平稳随机过程。"
+      },
+      {
+        "role": "assistant",
+        "content": "广义平稳随机过程的均值为常数，自相关函数只与两个时刻的时间差有关。其功率谱密度与自相关函数构成傅里叶变换对，这是分析随机信号频域功率分布的重要关系。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-probability-001",
+      "specialty": "通信工程",
+      "subject": "随机过程",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "平稳随机过程有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "广义平稳随机过程的均值为常数，自相关函数只与两个时刻的时间差有关。其功率谱密度与自相关函数构成傅里叶变换对，这是分析随机信号频域功率分布的重要关系。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-probability-001",
+      "specialty": "通信工程",
+      "subject": "随机过程",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到平稳随机过程，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "广义平稳随机过程的均值为常数，自相关函数只与两个时刻的时间差有关。其功率谱密度与自相关函数构成傅里叶变换对，这是分析随机信号频域功率分布的重要关系。\n\n来源：通信工程稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "comm-probability-001",
+      "specialty": "通信工程",
+      "subject": "随机过程",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：民事行为能力。"
+      },
+      {
+        "role": "assistant",
+        "content": "民事行为能力是民事主体以自己的行为取得民事权利、承担民事义务的资格。分析自然人行为效力时，应结合年龄、辨认能力、行为性质以及法定代理人的同意或追认。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-civil-002",
+      "specialty": "法学",
+      "subject": "民法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "民事行为能力有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "民事行为能力是民事主体以自己的行为取得民事权利、承担民事义务的资格。分析自然人行为效力时，应结合年龄、辨认能力、行为性质以及法定代理人的同意或追认。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-civil-002",
+      "specialty": "法学",
+      "subject": "民法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到民事行为能力，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "民事行为能力是民事主体以自己的行为取得民事权利、承担民事义务的资格。分析自然人行为效力时，应结合年龄、辨认能力、行为性质以及法定代理人的同意或追认。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-civil-002",
+      "specialty": "法学",
+      "subject": "民法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：代理制度。"
+      },
+      {
+        "role": "assistant",
+        "content": "代理人以被代理人名义在代理权限内实施民事法律行为，其法律后果通常直接归属于被代理人。答题时应区分有权代理、无权代理、表见代理和代理权滥用。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-civil-003",
+      "specialty": "法学",
+      "subject": "民法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "代理制度有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "代理人以被代理人名义在代理权限内实施民事法律行为，其法律后果通常直接归属于被代理人。答题时应区分有权代理、无权代理、表见代理和代理权滥用。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-civil-003",
+      "specialty": "法学",
+      "subject": "民法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到代理制度，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "代理人以被代理人名义在代理权限内实施民事法律行为，其法律后果通常直接归属于被代理人。答题时应区分有权代理、无权代理、表见代理和代理权滥用。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-civil-003",
+      "specialty": "法学",
+      "subject": "民法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：合同效力分析。"
+      },
+      {
+        "role": "assistant",
+        "content": "合同效力分析应依次审查主体能力、意思表示、内容是否违反强制性规定或公序良俗，以及是否存在无效、可撤销、效力待定等特别事由，并区分合同成立与合同生效。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-civil-004",
+      "specialty": "法学",
+      "subject": "民法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "合同效力分析有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "合同效力分析应依次审查主体能力、意思表示、内容是否违反强制性规定或公序良俗，以及是否存在无效、可撤销、效力待定等特别事由，并区分合同成立与合同生效。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-civil-004",
+      "specialty": "法学",
+      "subject": "民法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到合同效力分析，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "合同效力分析应依次审查主体能力、意思表示、内容是否违反强制性规定或公序良俗，以及是否存在无效、可撤销、效力待定等特别事由，并区分合同成立与合同生效。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-civil-004",
+      "specialty": "法学",
+      "subject": "民法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：侵权责任构成。"
+      },
+      {
+        "role": "assistant",
+        "content": "一般过错侵权通常从行为、损害、因果关系和过错等要素展开。具体案件还要判断是否适用无过错责任、过错推定、免责事由以及多数人侵权规则。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-civil-005",
+      "specialty": "法学",
+      "subject": "民法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "侵权责任构成有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "一般过错侵权通常从行为、损害、因果关系和过错等要素展开。具体案件还要判断是否适用无过错责任、过错推定、免责事由以及多数人侵权规则。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-civil-005",
+      "specialty": "法学",
+      "subject": "民法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到侵权责任构成，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "一般过错侵权通常从行为、损害、因果关系和过错等要素展开。具体案件还要判断是否适用无过错责任、过错推定、免责事由以及多数人侵权规则。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-civil-005",
+      "specialty": "法学",
+      "subject": "民法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：犯罪故意与过失。"
+      },
+      {
+        "role": "assistant",
+        "content": "犯罪故意包括直接故意和间接故意，核心在于行为人明知危害结果并希望或放任其发生；犯罪过失包括疏忽大意和过于自信，分别表现为应当预见而未预见或已经预见但轻信能够避免。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-criminal-002",
+      "specialty": "法学",
+      "subject": "刑法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "犯罪故意与过失有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "犯罪故意包括直接故意和间接故意，核心在于行为人明知危害结果并希望或放任其发生；犯罪过失包括疏忽大意和过于自信，分别表现为应当预见而未预见或已经预见但轻信能够避免。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-criminal-002",
+      "specialty": "法学",
+      "subject": "刑法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到犯罪故意与过失，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "犯罪故意包括直接故意和间接故意，核心在于行为人明知危害结果并希望或放任其发生；犯罪过失包括疏忽大意和过于自信，分别表现为应当预见而未预见或已经预见但轻信能够避免。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-criminal-002",
+      "specialty": "法学",
+      "subject": "刑法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：正当防卫。"
+      },
+      {
+        "role": "assistant",
+        "content": "正当防卫通常要求存在现实不法侵害、侵害正在进行、防卫针对不法侵害人、具有防卫意图且没有明显超过必要限度造成重大损害。案例题应围绕起因、时间、对象、意图和限度逐项分析。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-criminal-003",
+      "specialty": "法学",
+      "subject": "刑法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "正当防卫有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "正当防卫通常要求存在现实不法侵害、侵害正在进行、防卫针对不法侵害人、具有防卫意图且没有明显超过必要限度造成重大损害。案例题应围绕起因、时间、对象、意图和限度逐项分析。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-criminal-003",
+      "specialty": "法学",
+      "subject": "刑法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到正当防卫，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "正当防卫通常要求存在现实不法侵害、侵害正在进行、防卫针对不法侵害人、具有防卫意图且没有明显超过必要限度造成重大损害。案例题应围绕起因、时间、对象、意图和限度逐项分析。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-criminal-003",
+      "specialty": "法学",
+      "subject": "刑法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：法治基本要求。"
+      },
+      {
+        "role": "assistant",
+        "content": "法治强调法律具有普遍约束力，公权力依法配置和运行，权利得到确认与救济，法律适用保持公开、公平和可预期。论述题应把规范制度、权力制约和权利保障结合起来。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-jurisprudence-002",
+      "specialty": "法学",
+      "subject": "法理学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "法治基本要求有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "法治强调法律具有普遍约束力，公权力依法配置和运行，权利得到确认与救济，法律适用保持公开、公平和可预期。论述题应把规范制度、权力制约和权利保障结合起来。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-jurisprudence-002",
+      "specialty": "法学",
+      "subject": "法理学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到法治基本要求，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "法治强调法律具有普遍约束力，公权力依法配置和运行，权利得到确认与救济，法律适用保持公开、公平和可预期。论述题应把规范制度、权力制约和权利保障结合起来。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-jurisprudence-002",
+      "specialty": "法学",
+      "subject": "法理学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：基本权利限制。"
+      },
+      {
+        "role": "assistant",
+        "content": "基本权利并非绝对不受限制。分析限制是否正当时，通常需要考察法律依据、正当目的、手段与目的的关联、必要性以及利益衡量，并防止限制侵害权利核心。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-constitution-002",
+      "specialty": "法学",
+      "subject": "宪法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "基本权利限制有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "基本权利并非绝对不受限制。分析限制是否正当时，通常需要考察法律依据、正当目的、手段与目的的关联、必要性以及利益衡量，并防止限制侵害权利核心。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-constitution-002",
+      "specialty": "法学",
+      "subject": "宪法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到基本权利限制，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "基本权利并非绝对不受限制。分析限制是否正当时，通常需要考察法律依据、正当目的、手段与目的的关联、必要性以及利益衡量，并防止限制侵害权利核心。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-constitution-002",
+      "specialty": "法学",
+      "subject": "宪法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：行政行为合法性审查。"
+      },
+      {
+        "role": "assistant",
+        "content": "行政行为合法性审查通常关注主体权限、事实依据、法律适用、法定程序和裁量是否适当。案例题应先识别行为类型，再判断可诉性、合法性和可能的救济途径。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-admin-001",
+      "specialty": "法学",
+      "subject": "行政法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "行政行为合法性审查有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "行政行为合法性审查通常关注主体权限、事实依据、法律适用、法定程序和裁量是否适当。案例题应先识别行为类型，再判断可诉性、合法性和可能的救济途径。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-admin-001",
+      "specialty": "法学",
+      "subject": "行政法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到行政行为合法性审查，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "行政行为合法性审查通常关注主体权限、事实依据、法律适用、法定程序和裁量是否适当。案例题应先识别行为类型，再判断可诉性、合法性和可能的救济途径。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-admin-001",
+      "specialty": "法学",
+      "subject": "行政法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请用考研答题口径说明：证据审查判断。"
+      },
+      {
+        "role": "assistant",
+        "content": "证据审查应围绕真实性、关联性和合法性展开，并结合证明责任、证明标准和全案证据形成判断。单一证据的证明力不能脱离取得方式、内容可靠性和其他证据印证。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-evidence-001",
+      "specialty": "法学",
+      "subject": "诉讼法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "证据审查判断有哪些核心概念、适用条件和易错点？"
+      },
+      {
+        "role": "assistant",
+        "content": "证据审查应围绕真实性、关联性和合法性展开，并结合证明责任、证明标准和全案证据形成判断。单一证据的证明力不能脱离取得方式、内容可靠性和其他证据印证。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-evidence-001",
+      "specialty": "法学",
+      "subject": "诉讼法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "如果在考研题目中遇到证据审查判断，应怎样组织答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "证据审查应围绕真实性、关联性和合法性展开，并结合证明责任、证明标准和全案证据形成判断。单一证据的证明力不能脱离取得方式、内容可靠性和其他证据印证。\n\n来源：法学稳定知识点整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "law-evidence-001",
+      "specialty": "法学",
+      "subject": "诉讼法学",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请根据考研备考场景说明：主动回忆学习法。"
+      },
+      {
+        "role": "assistant",
+        "content": "主动回忆要求合上资料后用问题、口述或默写提取知识，比反复阅读更能暴露记忆缺口。复习时可把每章转成问题清单，并在当天、次日和周末重复自测。\n\n来源：备考学习方法整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "planning-002",
+      "specialty": "通用",
+      "subject": "复习规划",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "怎样把主动回忆学习法落实到一周复习安排？"
+      },
+      {
+        "role": "assistant",
+        "content": "主动回忆要求合上资料后用问题、口述或默写提取知识，比反复阅读更能暴露记忆缺口。复习时可把每章转成问题清单，并在当天、次日和周末重复自测。\n\n来源：备考学习方法整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "planning-002",
+      "specialty": "通用",
+      "subject": "复习规划",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "使用主动回忆学习法时有哪些容易忽略的执行要点？"
+      },
+      {
+        "role": "assistant",
+        "content": "主动回忆要求合上资料后用问题、口述或默写提取知识，比反复阅读更能暴露记忆缺口。复习时可把每章转成问题清单，并在当天、次日和周末重复自测。\n\n来源：备考学习方法整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "planning-002",
+      "specialty": "通用",
+      "subject": "复习规划",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请根据考研备考场景说明：间隔复习安排。"
+      },
+      {
+        "role": "assistant",
+        "content": "间隔复习把同一知识点分散到多个时间点回顾。可采用 1 天、3 天、7 天、14 天的初始节奏，再依据自测正确率调整；遗忘快的内容缩短间隔，稳定掌握的内容延长间隔。\n\n来源：备考学习方法整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "planning-003",
+      "specialty": "通用",
+      "subject": "复习规划",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "怎样把间隔复习安排落实到一周复习安排？"
+      },
+      {
+        "role": "assistant",
+        "content": "间隔复习把同一知识点分散到多个时间点回顾。可采用 1 天、3 天、7 天、14 天的初始节奏，再依据自测正确率调整；遗忘快的内容缩短间隔，稳定掌握的内容延长间隔。\n\n来源：备考学习方法整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "planning-003",
+      "specialty": "通用",
+      "subject": "复习规划",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "使用间隔复习安排时有哪些容易忽略的执行要点？"
+      },
+      {
+        "role": "assistant",
+        "content": "间隔复习把同一知识点分散到多个时间点回顾。可采用 1 天、3 天、7 天、14 天的初始节奏，再依据自测正确率调整；遗忘快的内容缩短间隔，稳定掌握的内容延长间隔。\n\n来源：备考学习方法整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "planning-003",
+      "specialty": "通用",
+      "subject": "复习规划",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请根据考研备考场景说明：错题标签与回炉。"
+      },
+      {
+        "role": "assistant",
+        "content": "错题应按概念不清、方法不会、计算失误、审题偏差和记忆遗漏分类。回炉时先遮住答案独立重做，再补写错误原因、正确触发条件和同类题识别线索。\n\n来源：备考学习方法整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "planning-004",
+      "specialty": "通用",
+      "subject": "复习规划",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "怎样把错题标签与回炉落实到一周复习安排？"
+      },
+      {
+        "role": "assistant",
+        "content": "错题应按概念不清、方法不会、计算失误、审题偏差和记忆遗漏分类。回炉时先遮住答案独立重做，再补写错误原因、正确触发条件和同类题识别线索。\n\n来源：备考学习方法整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "planning-004",
+      "specialty": "通用",
+      "subject": "复习规划",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "使用错题标签与回炉时有哪些容易忽略的执行要点？"
+      },
+      {
+        "role": "assistant",
+        "content": "错题应按概念不清、方法不会、计算失误、审题偏差和记忆遗漏分类。回炉时先遮住答案独立重做，再补写错误原因、正确触发条件和同类题识别线索。\n\n来源：备考学习方法整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "planning-004",
+      "specialty": "通用",
+      "subject": "复习规划",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请根据考研备考场景说明：周复盘指标。"
+      },
+      {
+        "role": "assistant",
+        "content": "周复盘应记录计划完成率、真题正确率、薄弱章节、重复错误和有效学习时长。下一周只保留少量高优先级改进动作，避免计划过满导致无法执行。\n\n来源：备考学习方法整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "planning-005",
+      "specialty": "通用",
+      "subject": "复习规划",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "怎样把周复盘指标落实到一周复习安排？"
+      },
+      {
+        "role": "assistant",
+        "content": "周复盘应记录计划完成率、真题正确率、薄弱章节、重复错误和有效学习时长。下一周只保留少量高优先级改进动作，避免计划过满导致无法执行。\n\n来源：备考学习方法整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "planning-005",
+      "specialty": "通用",
+      "subject": "复习规划",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "使用周复盘指标时有哪些容易忽略的执行要点？"
+      },
+      {
+        "role": "assistant",
+        "content": "周复盘应记录计划完成率、真题正确率、薄弱章节、重复错误和有效学习时长。下一周只保留少量高优先级改进动作，避免计划过满导致无法执行。\n\n来源：备考学习方法整理。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "planning-005",
+      "specialty": "通用",
+      "subject": "复习规划",
+      "source_type": "curated_reference"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "上海交通大学计算机学院官方入口应如何核验？"
+      },
+      {
+        "role": "assistant",
+        "content": "上海交通大学计算机相关方向的学院级信息可优先核验上海交通大学计算机学院（网络空间安全学院、密码学院）官网 https://www.cs.sjtu.edu.cn/，并与上海交通大学研究生招生网和研招网院校库交叉核验。涉及招生人数、考试科目和复试安排时必须以对应年份官方通知为准。\n\n来源：上海交通大学计算机学院官网（https://www.cs.sjtu.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-sjtu-cs",
+      "specialty": "计算机",
+      "subject": "学院信息",
+      "source_type": "official_website"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "查询上海交通大学计算机学院官方入口时要保留哪些官方来源信息？"
+      },
+      {
+        "role": "assistant",
+        "content": "上海交通大学计算机相关方向的学院级信息可优先核验上海交通大学计算机学院（网络空间安全学院、密码学院）官网 https://www.cs.sjtu.edu.cn/，并与上海交通大学研究生招生网和研招网院校库交叉核验。涉及招生人数、考试科目和复试安排时必须以对应年份官方通知为准。\n\n来源：上海交通大学计算机学院官网（https://www.cs.sjtu.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-sjtu-cs",
+      "specialty": "计算机",
+      "subject": "学院信息",
+      "source_type": "official_website"
+    }
+  },
+  {
+    "images": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "请按考研院校咨询口径说明上海交通大学计算机学院官方入口，并提示时效风险。"
+      },
+      {
+        "role": "assistant",
+        "content": "上海交通大学计算机相关方向的学院级信息可优先核验上海交通大学计算机学院（网络空间安全学院、密码学院）官网 https://www.cs.sjtu.edu.cn/，并与上海交通大学研究生招生网和研招网院校库交叉核验。涉及招生人数、考试科目和复试安排时必须以对应年份官方通知为准。\n\n来源：上海交通大学计算机学院官网（https://www.cs.sjtu.edu.cn/）；年份：2026；采集日期：2026-07-21。 涉及时效信息时，应以对应年份官方通知为准。"
+      }
+    ],
+    "metadata": {
+      "knowledge_id": "dept-sjtu-cs",
+      "specialty": "计算机",
+      "subject": "学院信息",
+      "source_type": "official_website"
+    }
+  }
+]
